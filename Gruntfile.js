@@ -236,7 +236,7 @@ module.exports = function (grunt) {
     usemin: {
       html: ['dist/{,*/}*.html'],
       css: ['dist/styles/{,*/}*.css'],
-      js: ['dist/scripts/{,*/}*.js'],
+      js: ['dist/scripts/**/*.js'],
       options: {
         assetsDirs: [
           'dist',
@@ -349,7 +349,6 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            '*.js',
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
@@ -365,7 +364,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'app',
             dest: 'dist/scripts',
-            src: 'modules/{,*/}*.js'
+            src: 'modules/**/*.js'
           }
           ,
           {
@@ -460,7 +459,7 @@ module.exports = function (grunt) {
     'copy:dist',
     //'cdnify',
     'cssmin',
-    'uglify',
+    //'uglify',
     'filerev',
     'usemin',
     'htmlmin'
