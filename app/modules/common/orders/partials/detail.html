@@ -33,28 +33,28 @@
   <table st-table="detailRows" class="table table-striped">
     <thead>
     <tr>
-      <th st-ratio="30" st-sort="account.orderDate">Order date</th>
-      <th st-ratio="25" st-sort="account.investment">Investment</th>
-      <th st-ratio="25" st-sort="account.type">Type</th>
-      <th st-ratio="25" st-sort="account.units">Units</th>
-      <th st-ratio="25" st-sort="account.filledUnits">Filled units</th>
-      <th st-ratio="25" st-sort="account.limitPrice">Limit price</th>
+      <th st-ratio="10" st-sort="account.orderDate">Order date</th>
+      <th st-ratio="10" st-sort="account.investment">Investment</th>
+      <th st-ratio="10" st-sort="account.type">Type</th>
+      <th st-ratio="10" st-sort="account.units">Units</th>
+      <th st-ratio="10" st-sort="account.filledUnits">Filled</th>
+      <th st-ratio="10" st-sort="account.limitPrice">Price</th>
       <th st-ratio="10" st-sort="account.valid">Valid</th>
-      <th st-ratio="15" st-sort="account.fee">Fee</th>
-      <th st-ratio="15" st-sort="account.amount">Amount</th>
-      <th st-ratio="15" st-sort="account.orderSource">Order source</th>
-      <th st-ratio="15" st-sort="account.status">Status</th>
-      <th st-ratio="15" st-sort="account.detail">Details</th>
+      <th st-ratio="10" st-sort="account.fee">Fee</th>
+      <th st-ratio="10" st-sort="account.amount">Amount</th>
+      <th st-ratio="10" st-sort="account.orderSource">Source</th>
+      <th st-ratio="10" st-sort="account.status">Status</th>
+      <th st-ratio="5" st-sort="account.detail">Details</th>
 
     </tr>
     </thead>
     <tbody ng-repeat="account in orderDetails.orders">
 
     <tr>
-      <td st-ratio="10">{{account.orderDate}}</td>
-      <td st-ratio="5">{{account.investment}}</td>
-      <td st-ratio="5">{{account.type}}</td>
-      <td st-ratio="5">{{account.units}}</td>
+      <td st-ratio="20">{{account.orderDate}}</td>
+      <td st-ratio="10">{{account.investment}}</td>
+      <td st-ratio="10">{{account.type}}</td>
+      <td st-ratio="">{{account.units}}</td>
       <td st-ratio="5">{{account.filledUnits}}</td>
       <td st-ratio="5">{{account.limitPrice}}</td>
       <td st-ratio="10">{{account.valid}}</td>
@@ -66,23 +66,44 @@
                           ng-click="collapsed = !collapsed"></a></td>
     </tr>
 
+    <!--<tr collapse="collapsed">-->
+
+    <!--<td></td>-->
+    <!--<td></td>-->
+
+    <!--<td colspan="16" class="transactionDetails">-->
+    <!--Transaction Details-->
+    <!--<hr/>-->
+    <!--</td>-->
+    <!--</tr>-->
+
     <tr collapse="collapsed">
       <td st-ratio="2"></td>
       <td st-ratio="5"></td>
       <td st-ratio="100" colspan="18">
+
         <table st-ratio="100">
           <thead>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td colspan="16" class="transactionDetails">
+              Transaction Details
+            </td>
+          </tr>
+
           <tr>
             <th></th>
             <th></th>
-            <th st-ratio="10" st-sort="transaction.reference">Reference</th>
-            <th st-ratio="10" st-sort="transaction.orderTaker">Order taker</th>
-            <th st-ratio="20" st-sort="transaction.lastUpdated">Updated</th>
-            <th st-ratio="10" st-sort="transaction.filledUnits">Filled</th>
-            <th st-ratio="10" st-sort="transaction.price">Price</th>
-            <th st-ratio="10" st-sort="transaction.amount">amount</th>
-            <th st-ratio="10" st-sort="transaction.fundingPriority">Funding priority</th>
-            <th st-ratio="10" st-sort="transaction.status">Status</th>
+            <th st-ratio="10" st-sort="transaction.reference">REF</th>
+            <th st-ratio="10" st-sort="transaction.orderTaker">ORDER TAKER</th>
+            <th st-ratio="20" st-sort="transaction.lastUpdated">UPDATED</th>
+            <th st-ratio="10" st-sort="transaction.filledUnits">FILLED</th>
+            <th st-ratio="10" st-sort="transaction.price">PRICE</th>
+            <th st-ratio="10" st-sort="transaction.amount">AMOUNT</th>
+            <th st-ratio="10" st-sort="transaction.fundingPriority">PRIORITY</th>
+            <th st-ratio="10" st-sort="transaction.status">STATUS</th>
           </tr>
           </thead>
           <tbody>
