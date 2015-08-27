@@ -1,0 +1,137 @@
+<hr class="detail"/>
+
+<div class="row form-inline">
+  <div class="col-sm-4">
+    <label>Account</label>
+    <span>{{orderDetails.accountId}}</span>
+  </div>
+  <div class="col-sm-4">
+    <label>Accounttype</label>
+    <span>{{orderDetails.accountType}}</span>
+  </div>
+</div>
+
+<hr class="detail"/>
+
+<div class="row form-inline">
+  <div class="col-sm-6">
+    <label>Accountname</label>
+    <span>{{orderDetails.accountName}}</span>
+  </div>
+</div>
+
+<hr class="detail"/>
+
+<div class="row">
+  <order-source-filter></order-source-filter>
+  <reset-filter></reset-filter>
+</div>
+
+<table-filter></table-filter>
+
+<div>
+  <table st-table="detailRows" class="table table-striped">
+    <thead>
+    <tr>
+      <th st-ratio="30" st-sort="account.orderDate">Order date</th>
+      <th st-ratio="25" st-sort="account.investment">Investment</th>
+      <th st-ratio="25" st-sort="account.type">Type</th>
+      <th st-ratio="25" st-sort="account.units">Units</th>
+      <th st-ratio="25" st-sort="account.filledUnits">Filled units</th>
+      <th st-ratio="25" st-sort="account.limitPrice">Limit price</th>
+      <th st-ratio="10" st-sort="account.valid">Valid</th>
+      <th st-ratio="15" st-sort="account.fee">Fee</th>
+      <th st-ratio="15" st-sort="account.amount">Amount</th>
+      <th st-ratio="15" st-sort="account.orderSource">Order source</th>
+      <th st-ratio="15" st-sort="account.status">Status</th>
+      <th st-ratio="15" st-sort="account.detail">Details</th>
+
+    </tr>
+    </thead>
+    <tbody ng-repeat="account in orderDetails.orders">
+
+    <tr>
+      <td st-ratio="10">{{account.orderDate}}</td>
+      <td st-ratio="5">{{account.investment}}</td>
+      <td st-ratio="5">{{account.type}}</td>
+      <td st-ratio="5">{{account.units}}</td>
+      <td st-ratio="5">{{account.filledUnits}}</td>
+      <td st-ratio="5">{{account.limitPrice}}</td>
+      <td st-ratio="10">{{account.valid}}</td>
+      <td st-ratio="5">{{account.fee}}</td>
+      <td st-ratio="5">{{account.amount}}</td>
+      <td st-ratio="5">{{account.orderSource}}</td>
+      <td st-ratio="5">{{account.status}}</td>
+      <td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]"
+                          ng-click="collapsed = !collapsed"></a></td>
+    </tr>
+
+    <tr collapse="collapsed">
+      <td st-ratio="2"></td>
+      <td st-ratio="5"></td>
+      <td st-ratio="100" colspan="18">
+        <table st-ratio="100">
+          <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th st-ratio="10" st-sort="transaction.reference">Reference</th>
+            <th st-ratio="10" st-sort="transaction.orderTaker">Order taker</th>
+            <th st-ratio="20" st-sort="transaction.lastUpdated">Updated</th>
+            <th st-ratio="10" st-sort="transaction.filledUnits">Filled</th>
+            <th st-ratio="10" st-sort="transaction.price">Price</th>
+            <th st-ratio="10" st-sort="transaction.amount">amount</th>
+            <th st-ratio="10" st-sort="transaction.fundingPriority">Funding priority</th>
+            <th st-ratio="10" st-sort="transaction.status">Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr ng-repeat="transaction in account.transactions">
+            <td>
+            </td>
+            <td></td>
+            <td st-ratio="10">
+              {{transaction.reference}}
+            </td>
+            <td st-ratio="15">
+              {{transaction.orderTaker}}
+            </td>
+            <td st-ratio="25">
+              {{transaction.lastUpdated}}
+            </td>
+            <td st-ratio="10">
+              {{transaction.filledUnits}}
+            </td>
+            <td st-ratio="10">
+              {{transaction.price}}
+            </td>
+            <td st-ratio="10">
+              {{transaction.amount}}
+            </td>
+            <td st-ratio="10">
+              {{transaction.fundingPriority}}
+            </td>
+            <td st-ratio="10">
+              {{transaction.status}}
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </td>
+      <td></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+      <td colspan="11" class="text-center">
+        <div st-items-by-page="10" st-pagination="10"
+             st-template="modules/common/orders/partials/pagination.custom.html"></div>
+      </td>
+    </tr>
+    </tfoot>
+  </table>
+</div>
+</div></div>
+
+<!--todo remove this-->
+<a ui-sref="tabs">back to tabs(to be removed)</a>

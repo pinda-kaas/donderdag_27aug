@@ -1,0 +1,40 @@
+<div>
+
+  <div>
+
+    <h5>{{accounts.length}} results match your search selection.</h5>
+
+    <table st-ratio="100" st-table="accounts" class="table table-striped">
+      <thead>
+      <tr>
+        <th st-ratio="10" st-sort="accountId.key">Account</th>
+        <th st-ratio="30" st-sort="account.accountName"></th>
+        <th st-ratio="10" st-sort="account.adviser">Adviser</th>
+        <th st-ratio="20" st-sort="account.productName">Product</th>
+        <th st-ratio="30" st-sort="minOpenOrderState">Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="account in accounts | filter:accountName ">
+        <td st-ratio="10" ><a ui-sref="orderDetail"> {{account.account.accountId.key}}</a></td>
+        <td st-ratio="10" >{{account.account.accountName}}</td>
+        <td st-ratio="10" >{{account.account.adviser}}</td>
+        <td st-ratio="10" >{{account.account.productName}}</td>
+        <td st-ratio="10" >{{account.minOpenOrderState}}</td>
+      </tr>
+      </tbody>
+
+      <tfoot>
+      <tr>
+        <td colspan="5" class="text-center">
+          <div st-items-by-page="10" st-pagination=""
+               st-template="modules/common/orders/partials/pagination.custom.html"></div>
+        </td>
+
+      </tr>
+      </tfoot>
+
+    </table>
+
+  </div>
+</div>

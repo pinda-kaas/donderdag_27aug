@@ -1,0 +1,1643 @@
+@charset "utf-8";
+/* 
+	CSS Document BASE STYLES 
+	Frame work created by Christian Buchholz 2011 
+ 
+*/
+
+/* Body Font >> Body font, color and size 
+-----------------------------------------------------------------------------------------------------------*/
+body {
+		font-size:62.5%;
+		line-height:1.5em;
+}
+/* Header Styles >> Global Styles  >> Please define project specfic styles in project css
+-----------------------------------------------------------------------------------------------------------*/
+h1 {
+	
+}
+
+h2 {
+		font-size:2.0em;
+}
+
+h3 {
+		font-size:1.6em;
+}
+
+h4 {
+		font-size:1.3em;
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+/* Font >> Size in Pixel >>  Pixel definition in numeric values for exact font size display 
+-----------------------------------------------------------------------------------------------------------*/
+.px8 {
+		font-size:8px;
+}
+
+.px9 {
+		font-size:9px;
+}
+
+.px10 {
+		font-size:10px;
+}
+
+.px11 {
+		font-size:11px;
+}
+
+.px12 {
+		font-size:12px;
+}
+
+.px13 {
+		font-size:13px;
+}
+
+.px14 {
+		font-size:14px;
+}
+
+.px15 {
+		font-size:15px;
+}
+
+.px16 {
+		font-size:16px;
+}
+
+.px18 {
+		font-size:18px;
+}
+
+.px20 {
+		font-size:20px;
+}
+
+.px22 {
+		font-size:22px;
+}
+
+.px24 {
+		font-size:24px;
+}
+
+.px26 {
+		font-size:26px;
+}
+/* Font Size  >> Size in EM >> Values for dynamic font manipulation set as variable names 
+-----------------------------------------------------------------------------------------------------------*/
+.xxSmall {
+		font-size:0.8em;
+}
+
+.xSmall {
+		font-size:0.9em;
+}
+
+.small {
+		font-size:1em;
+}
+
+.smallMedium {
+		font-size:1.1em;
+}
+
+.medium {
+		font-size:1.2em;
+}
+
+.mediumLarge {
+		font-size:1.3em;
+}
+
+.large {
+		font-size:1.4em;
+}
+
+.xLarge {
+		font-size:1.6em;
+}
+
+.1xLarge {
+		font-size:1.8em;
+}
+
+.2xLarge {
+		font-size:2.0em;
+}
+
+.3xLarge {
+		font-size:2.2em;
+}
+
+.4xLarge {
+		font-size:2.4em;
+}
+
+.5xLarge {
+		font-size:2.6em;
+}
+/* Display Settings >> Show hide block 
+-----------------------------------------------------------------------------------------------------------*/
+.hide {
+		display:none;
+}
+
+.block,.show {
+		display:block;
+}
+
+.visible {
+		visibility:visible;
+}
+
+.invisible {
+		visibility:hidden;
+}
+
+.inlineBlock {
+		display:inline-block;
+}
+
+.inline {
+		display:inline;
+}
+
+.overflowShow {
+		overflow:visible;
+}
+
+/* Positioning elements
+----------------------------------------------------------------------------------------------------*/
+.absolute {
+	position: absolute;
+	/* Advice:  requries inline style or objct will be on the top left of the relative parent or body */
+}
+
+.relative {
+		position:relative;
+}
+
+.floatLeft {
+		float:left;
+}
+
+.floatRight {
+		float:right;
+}
+
+.floatNone {
+		float:none;
+}
+/* Margin elements
+----------------------------------------------------------------------------------------------------*/
+.marginLeft {
+		margin-left:10px;
+}
+
+.marginRight {
+		margin-right:10px;
+}
+
+.marginTop {
+		margin-top:10px;
+}
+
+.marginDown {
+		margin-bottom:10px;
+}
+
+.halfMarginRight {
+		margin-right:5px;
+}
+
+.halfMarginLeft {
+		margin-left:5px;
+}
+
+.halfMarginTop {
+		margin-top:5px;
+}
+
+.halfMarginDown {
+		margin-bottom:5px;
+}
+
+.autoMargin {
+		margin:0 auto;
+}
+/* padding elements
+----------------------------------------------------------------------------------------------------*/
+.doublePaddingLeft {
+		padding-left:18px!important;
+}
+
+.doublePaddingRight {
+		padding-right:18px!important;
+}
+
+.doublePaddingTop {
+		padding-top:20px!important;
+}
+
+.doublePaddingBottom {
+		padding-bottom:18px!important;
+}
+
+.doublePaddingLeft {
+		padding-left:18px!important;
+}
+
+.paddingLeft {
+		padding-left:10px!important;
+}
+
+.paddingRight {
+		padding-right:10px!important;
+}
+
+.paddingTop {
+		padding-top:10px!important;
+}
+
+.paddingBottom {
+		padding-bottom:10px!important;
+}
+
+.paddingAll {
+		padding:10px!important;
+}
+
+.halfPaddingRight {
+		padding-right:5px!important;
+}
+
+.halfPaddingLeft {
+		padding-left:5px!important;
+}
+
+.halfPaddingTop {
+		padding-top:5px!important;
+}
+
+.halfPaddingBottom {
+		padding-bottom:5px!important;
+}
+/* Colors >> Primary 
+-----------------------------------------------------------------------------------------------------------*/
+.brandColor {
+		background:#000000;
+}
+
+.bodyBackground {
+		background:#ffffff;
+}
+/* Colors >> Secondary 
+-----------------------------------------------------------------------------------------------------------*/
+
+/* Colors >> Background 
+-----------------------------------------------------------------------------------------------------------*/
+
+/* Colors >> Link Color and Style 
+-----------------------------------------------------------------------------------------------------------*/
+a {
+		color:#666666;
+		text-decoration:none;
+}
+/* Text >>  
+-----------------------------------------------------------------------------------------------------------*/
+.textCenter {
+		text-align:center;
+}
+
+.textLeft,.alpha {
+		text-align:left!important;
+}
+
+.numeric,.textRight {
+		text-align:right;
+}
+
+.italic {
+		font-style:italic;
+}
+
+.capital {
+		text-transform:capitalize;
+}
+
+.upperCase {
+		text-transform:uppercase;
+}
+
+.upperLowerCase {
+		text-transform:lowercase;
+}
+
+.bold {
+		font-weight:600!important;
+}
+
+.normal {
+		font-weight:200!important;
+		font-style:normal;
+}
+
+.normalLineHeight {
+		line-height:1.5em!important;
+}
+
+.toneDown {
+		color:#b3b3b3;
+}
+
+.underline {
+		text-decoration:underline;
+}
+/* Borders >> 
+-----------------------------------------------------------------------------------------------------------*/
+.rightBorder {
+		border-right:1px solid #E8E8E8;
+}
+
+.rightBorderSpacer {
+		width:0px;
+		border-right:1px solid #E8E8E8;
+		float:left;
+		max-height:100%;
+}
+
+.leftBorder {
+		border-left:1px solid #E8E8E8;
+}
+
+.bottomBorder {
+		border-bottom:1px solid #E8E8E8;
+}
+
+.topBorder {
+		border-top:1px solid #E8E8E8;
+}
+/* Buttons >> Primary Button  >> Image button and text styles
+-----------------------------------------------------------------------------------------------------------*/
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	Button backgrounds are define by a sprite values to be changed are :
+	- background top/left
+	- adjust padding based on designed button using curtain technic
+	
+	Text elements are in a seperat style block to take following changes need to be done based on style guide
+	and design 
+	
+	- height of button to define the centering of the text
+	- line height
+	- font weight and font size
+	- color 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+a.primaryButton {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -12px;
+		padding: 0px 12px 0px 0px;
+}
+
+a.primaryButton span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -12px;
+		padding:0 0 0 12px;
+		height:26px;
+		display:inline-block;
+}
+
+a.primaryButton:hover {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -51px;
+}
+
+a.primaryButton:hover span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -51px;
+}
+
+a.primaryButton {
+		height:26px;
+		line-height:24px;
+		font-weight:bold;
+		font-size:12px;
+		color:#fff!important;
+		text-decoration:none!important;
+		display:inline-block;
+		float:left;
+		cursor:pointer;
+}
+
+a.primaryButton:hover {
+		color:#fff;
+		text-decoration:none;
+}
+/* Buttons >> Secondary Button >> Image button and text styles 
+-----------------------------------------------------------------------------------------------------------*/
+a.secondaryButton {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -246px;
+		padding: 0px 12px 0px 0px;
+}
+
+a.secondaryButton span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -12px -246px;
+		padding:0 0 0 12px;
+		display:inline-block;
+		height:26px;
+}
+
+a.secondaryButton:hover {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -286px;
+}
+
+a.secondaryButton:hover span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -12px -286px;
+}
+
+a.secondaryButton {
+		height:26px;
+		line-height:26px;
+		font-weight:bold;
+		font-size:11px;
+		color:#333333;
+		text-decoration:none!important;
+		display:inline-block;
+		float:left;
+		cursor:pointer;
+}
+
+a.secondaryButton:hover {
+		color:#006699;
+		text-decoration:underline;
+}
+
+/* Buttons >> Variable Width Buttons >> Image button and text styles 
+-----------------------------------------------------------------------------------------------------------*/
+a.variableWidthButton {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -246px;
+		padding: 0px 12px 0px 0px;
+}
+
+a.variableWidthButton span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -12px -246px;
+		padding:0 0 0 12px;
+		display:inline-block;
+		height:26px;
+		width:80%;
+		white-space: nowrap;
+}
+
+a.variableWidthButton:hover {
+		background:url(../../mpm/images/sprite.gif) no-repeat right -286px;
+}
+
+a.variableWidthButton:hover span {
+		background:url(../../mpm/images/sprite.gif) no-repeat -12px -286px;
+}
+
+a.variableWidthButton {
+		height:26px;
+		line-height:26px;
+		font-weight:bold;
+		font-size:11px;
+		color:#333333;
+		text-decoration:none!important;
+		text-align:center;
+		display:inline-block;
+		float:left;
+		cursor:pointer;
+}
+
+a.variableWidthButton:hover {
+		color:#006699;
+		text-decoration:underline;
+}
+
+/* Form Styles >> Pulldownk
+-----------------------------------------------------------------------------------------------------------*/
+.jqtransformdone label {
+		margin-top:4px;
+		margin-right: 8px;
+		display: block;
+		float:left;
+}
+
+.jqtransformdone div.rowElem {
+		clear:both;
+		padding:4px 0px;
+}
+
+.primaryPulldown .jqTransformSelectWrapper {
+		background:url("../../mpm/images/sprite.gif") no-repeat -14px -1124px;
+		color:#FFFFFF;
+		font-weight:600;
+}
+
+.jqTransformSelectWrapper {
+		position:relative;
+		height: 28px;
+		background:url("../../mpm/images/sprite.gif") no-repeat -16px -710px;
+		float:left;
+		_margin-left:5px; /*needed for IE6 */
+}
+
+.jqtransformDialog .jqTransformSelectWrapper {
+		position:relative;
+		height: 28px;
+		background:url("../../mpm/images/sprite.gif") no-repeat -16px -710px;
+		float:left;
+		width:220px!important;
+}
+
+.jqtransformDialog .jqTransformSelectWrapper ul {
+		width:260px!important;
+}
+
+.jqtransformCompressed .jqTransformSelectWrapper {
+		position:relative;
+		height: 28px;
+		background:url("../../mpm/images/sprite.gif") no-repeat -14px -710px;
+		float:left;
+		width:260px!important;
+}
+
+.jqTransformSelectWrapper div span {
+		font-size: 12px;
+		float: none;
+		position: absolute;
+		white-space: nowrap;
+		height: 25px;
+		line-height: 12px;
+		padding: 8px 0 0 8px;
+		overflow: hidden;
+	cursor: pointer; /*border: 1px solid #CCCCCC;*/
+/*	border-right: none;*/
+}
+
+.primaryPulldown {
+		margin-left:10px;
+}
+
+.primaryPulldown .jqTransformSelectWrapper a.jqTransformSelectOpen:hover,.primaryPulldown .jqTransformSelectWrapper a.jqTransformSelectOpen
+	{
+		background:url("../../mpm/images/sprite.gif") no-repeat -764px -1124px;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen {
+		background:url("../../mpm/images/sprite.gif") no-repeat -764px -710px;
+		display:block;
+		height:28px;
+		position:absolute;
+		right:0;
+		width:32px;
+		border:none!important;
+		text-decoration:none!important;
+}
+
+.jqTransformSelectWrapper a.jqTransformSelectOpen:hover {
+		background:url("../../mpm/images/sprite.gif") no-repeat -764px -670px;
+		border:none!important;
+		text-decoration:none!important;
+}
+
+.jqTransformSelectWrapper ul {
+		position: absolute;
+		width: 43px;
+		top: 26px;
+		left: 5px;
+		list-style: none;
+		background-color: #EAE9E9;
+		display: none;
+		margin: 0px!important;
+		padding: 0px;
+		min-height:50px;
+		max-height: 150px;
+		height:100px;
+		height:auto!important;
+		overflow-y: auto;
+		overflow-x:hidden;
+		z-index:1000;
+		border: 1px solid #eae9e9;
+}
+
+.jqTransformSelectWrapper ul a {
+		display: block;
+		padding: 5px;
+		text-decoration: none;
+		color:#333;
+		background-color: #eae9e9;
+		font-size: 12px;
+}
+
+.jqTransformSelectWrapper ul a.selected {
+		background: #ffffff;
+		color: #333;
+}
+
+.jqTransformSelectWrapper ul a:hover,.jqTransformSelectWrapper ul a.selected:hover
+	{
+		background:#0087cf;
+		color: #fff!important;
+}
+/* Required for Term Depoist */
+.termModalSelect .jqTransformSelectWrapper {
+	width:320px!important;
+}	
+
+.termModalSelect .jqTransformSelectWrapper {
+		width:320px!important;
+}
+
+.termModalSelect span {
+		width:310px!important;
+}
+
+.termModalSelect ul {
+		width:320px!important;
+}
+
+.lsIntlTradeValue {
+	float:left;
+}
+
+.lsIntlCurrencyName {
+	float:left;
+	margin-top:5px;
+	margin-right:5px;
+	width:40px;
+}
+
+.dialogTransformXLarge .jqTransformSelectWrapper {
+		width:260px!important;
+}
+
+.dialogTransformXLarge span {
+		width:250px!important;
+}
+
+.dialogTransformXLarge ul {
+		width:260px!important;
+}
+
+.dialogTransformLarge .jqTransformSelectWrapper {
+		width:200px!important;
+}
+
+.dialogTransformLarge span {
+		width:190px!important;
+}
+
+.dialogTransformLarge ul {
+		width:210px!important;
+}
+
+.dialogTransformMedium .jqTransformSelectWrapper {
+		width:150px!important;
+}
+
+.dialogTransformMedium span {
+		width:140px!important;
+}
+
+.dialogTransformMedium ul {
+		width:160px!important;
+}
+
+.eventsPulldown ul,.marketIndices ul {
+		width:240px!important;
+}
+
+.unitPrice ul {
+		height:250px!important;
+		width:280px!important;
+}
+
+.dialogTransformMedium ul,.dialogTransformLarge ul,.dialogTransformXLarge ul
+	{
+		overflow-x: hidden;
+		overflow-y: scroll;
+}
+
+.jqTransformSelectWrapper ul li {
+		font-weight:300;
+		width:100%;
+}
+/* ------
+/* -------------
+ * Hidden - used to hide the original form elements,.jqtransform select
+ * ------------- */
+.hidden,.jqTransformHidden {
+		display: none;
+}
+/* Form Styles >> Textarea
+-----------------------------------------------------------------------------------------------------------*/
+input[type="password"],input[type="text"] {
+		background-color:#fff;
+		height: 19px;
+		_height: 18px;
+		height/*\**/:18px\9;
+		height: 18px\9;
+}
+
+label {
+		line-height:normal;
+}
+/* Form Styles >> Input fields >> XSMALL
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperXSmall {
+		background:url(../../mpm/images/sprite.gif) no-repeat;
+		width:50px;
+		height:24px;
+		display:block;
+		float:left;
+}
+
+input.InputXSmall,input.InputXSmallActive,input.InputXSmallError {
+		color:#333333;
+		border: 0;
+		margin:2px 2px 0 2px;
+		_margin:1px 2px 0 2px;
+		padding-top:2px;
+		width: 47px;
+		z-index:0;
+}
+
+*+html input.InputXSmall,*+html input.InputXSmallActive,*+html input.InputXSmallError
+	{
+		margin:1px 1px 0 2px;
+}
+/*
+input.InputXSmall {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputXSmallActive";'),  this.onblur = new Function ('this.className = "InputXSmall";')  );
+}*/
+/* Form Styles >> Input fields >> SMALL
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperSmall {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -794px;
+		width:80px;
+		height:24px;
+		display:block;
+		float:left;
+		z-index:1;
+}
+
+input.InputSmall,input.InputSmallActive,input.InputSmallError {
+		color:#333333;
+		border: 0;
+		margin:2px 2px 0 2px;
+		_margin:1px 2px 0 2px;
+		padding-top:2px;
+		width: 77px;
+		z-index:0;
+}
+
+*+html input.InputSmall,*+html input.InputSmallActive,*+html input.InputSmallError
+	{
+		margin:1px 1px 0 2px;
+}
+/*input.InputSmall {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputSmallActive";'),  this.onblur = new Function ('this.className = "InputSmall";')  );
+}*/
+/* Form Styles >> Input fields >> SMALL MEDIUM
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperSmallMedium {
+		background:url(../../mpm/images/sprite.gif) no-repeat;
+		width:122px;
+		height:24px;
+		display:block;
+		float:left;
+		z-index:0;
+}
+
+input.InputSmallMedium,input.InputSmallMediumActive,input.InputSmallMediumError
+	{
+		color:#333333;
+		border: 0;
+		margin:2px 2px 0 2px;
+		_margin:1px 2px 0 2px;
+		padding-left:0px;
+		padding-top:2px;
+		width: 118px;
+		z-index:0;
+}
+/*
+input.InputSmallMedium {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputSmallMediumActive";'),  this.onblur = new Function ('this.className = "InputSmallMedium";')  );
+}*/
+/* Form Styles >> Input fields >> MEDIUM
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperMedium {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -863px;
+		background-color: #FFFFFF;
+		width:153px;
+		height:24px;
+		display:block;
+		float:left;
+		z-index:0;
+}
+
+input.InputMedium,input.InputMediumActive,input.InputMediumError {
+		color:#333333;
+		border: 0;
+		margin:2px 2px 0 2px;
+		_margin:1px 2px 0 2px;
+		padding-left:0px;
+		padding-top:2px;
+		width: 149px;
+		z-index:0;
+}
+/*
+input.InputMedium {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputMediumActive";'),  this.onblur = new Function ('this.className = "InputMedium";')  );
+}*/
+/* Form Styles >> Input fields >> LARGE
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperLarge {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -904px;
+		width:193px;
+		height:24px;
+		font-size:1.2em;
+		display:block;
+}
+
+input.InputLarge,input.InputLargeError,input.InputLargeActive {
+		color:#333333;
+		border: 0;
+		margin:2px 2px 0 2px;
+		padding-left:0px;
+		padding-top:2px;
+		width: 190px;
+		z-index:0;
+}
+/*
+input.InputLarge {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputLargeActive";'),  this.onblur = new Function ('this.className = "InputLarge";')  );
+}*/
+/* Form Styles >> Input fields >> XLARGE
+  -----------------------------------------------------------------------------------------------------------*/
+span.WrapperXLarge {
+		background:url(../../mpm/images/sprite.gif) no-repeat -14px -939px;
+		width:300px;
+		height:24px;
+		font-size:1.2em;
+		line-height:24px;
+		display:block;
+		float:left;
+}
+
+input.InputXLarge,input.InputXLargeActive,input.InputXLargeError {
+		border: 0;
+		margin:2px 2px 0 2px;
+		padding-left:0px;
+		padding-top:2px;
+		width:291px;
+}
+/*
+input.InputXLarge {
+ focus: expression(  this.onfocus = new Function ('this.className = "InputXLargeActive";'),  this.onblur = new Function ('this.className = "InputXLarge";')  );
+}*/
+/* Form Styles >> Input fields >> COLOR FOCUS/ACTIVE
+  -----------------------------------------------------------------------------------------------------------*/
+input.InputTradeXSmall:focus,input.InputXSmall:focus,input.InputSmall:focus,input.InputSmallMedium:focus,input.InputMedium:focus,input.InputLarge:focus,input.InputXLarge:focus,input.InputXSmallActive,input.InputSmallActive,input.InputMediumActive,input.InputLargeActive,input.InputXLargeActive,input.InputSmallDateActive,input.InputSmallTradeActive,input.InputTradeXSmallActive,input.InputSmallMediumActive
+	{ /*	background-color:#ffffcc;*/
+	
+}
+/* Form Styles >> Input fields >> COLOR ERROR >> ERROR Color only required if defined in FS
+  -----------------------------------------------------------------------------------------------------------*/
+input.InputXSmallError,input.InputSmallError,input.InputMediumError,input.InputSmallMediumError,input.InputLargeError,input.InputXLargeError,input.InputSmallDateError,input.InputSmallTradeError,input.InputTradeXSmallError
+	{
+		background-color:#ffe8e8;
+}
+/*icons >> 
+  -----------------------------------------------------------------------------------------------------------*/
+div.iconContainer {
+		float:left;
+}
+
+div.utilitiesContainer {
+		float:right;
+}
+
+.pdf,.document,.print {
+		height:20px;
+		width:22px;
+		display:block;
+		float:left;
+		line-height:normal; /* Needed for IE6 */
+}
+
+.errorIcon,.warningIcon,.magnifierIcon,.errorWarningIcon {
+		display:block;
+		width:20px;
+		height:15px;
+		float:left;
+		margin: 7px 0 0;
+		line-height:normal; /* Needed for IE6 */
+}
+
+.errorIconRight {
+		background:url(../../mpm/images/sprite.gif) no-repeat -615px -1555px;
+		display:block;
+		width:20px;
+		height:15px;
+		float:right;
+		margin: 7px 0 0;
+		line-height:normal; /* Needed for IE6 */
+}
+
+.helpIcon {
+		display:inline-block;
+		width:20px;
+		height:15px;
+		_padding:8px 0 0 0;
+}
+
+.headerGroup .helpIcon {
+		_padding:6px 0 0 0;
+}
+
+.largeWarningIcon {
+		display:inline-block;
+		width:40px;
+		height:40px;
+		margin: 5px;
+		line-height:normal; /* Needed for IE6 */
+		float:left;
+}
+
+.pdf {
+		background:url(../../mpm/images/sprite.gif) no-repeat -330px -561px;
+}
+
+.document {
+		background:url(../../mpm/images/sprite.gif) no-repeat -252px -565px;
+}
+
+.print {
+		background:url(../../mpm/images/sprite.gif) no-repeat -249px -619px;
+}
+
+.errorIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -615px -1555px;
+}
+
+.warningIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -610px -1412px;
+}
+
+.errorWarningIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -610px -1429px;
+}
+
+.magnifierIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -612px -1533px;
+}
+
+.helpIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -612px -1533px;
+}
+
+.largeWarningIcon {
+		background:url(../../mpm/images/sprite.gif) no-repeat -602px -1584px;
+}
+
+.transactLabel .helpIcon {
+		margin: 0;
+}
+
+.greenTick{
+	background:url(../../mpm/images/sprite.gif) no-repeat -612px -1641px;
+	display:block;
+	float:left;
+	width:20px;
+	height:20px;
+	margin:0 5px 0 0;
+}
+/*Error and Alerts >> 
+  -----------------------------------------------------------------------------------------------------------*/
+.errorContainer,.largeErrorContainer {
+		margin:0 0 15px 0;
+		float:left;
+		clear:both;
+}
+
+.messageBox {
+		float:left;
+		clear:both;
+}
+
+.genericMessage,.warningMessage,.errorMessage {
+		float:left;
+		line-height:normal;
+		display:inline-block;
+		word-wrap:normal;
+		clear:both;
+}
+
+.warningMessage,.errorMessage {
+		font-weight:600;
+}
+
+.modalMessage {
+		font-weight:400;
+		line-height:normal;
+		display:inline-block;
+		width:80%;
+		font-size:1.2em;
+		margin-left:15px;
+		word-wrap:normal;
+		float:left;
+}
+
+.genericMessage {
+		color:#000;
+}
+
+.errorMessage {
+		color:#FF0000;
+}
+
+.warningMessage {
+		color:#E59306;
+}
+
+ul.inlineError {
+		padding:5px 0 0 40px;
+}
+
+.errorLabel {
+		width: 100px;
+}
+/*Spinners and loading elements >> 
+  -----------------------------------------------------------------------------------------------------------*/	
+.spinnerContainer {
+	position:fixed;
+	width:300px;
+	height:150px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	z-index:904;
+	border:12px #ccc solid;
+}
+
+* html .spinnerContainer { /* ie6 hack */
+    position: absolute;
+	margin-top: expression(0 -   parseInt(this.offsetHeight/ 2)+  (TBWindowMargin=
+		 document.documentElement&&  document.documentElement.scrollTop||  document.body.scrollTop
+		)+  'px' );
+}
+
+.spinnerContainer p.largeSpinner {
+		background:url(../../public/images/style-spinner.gif) no-repeat;
+		width:72px;
+		height:72px;
+		margin:7% 37%;
+}
+
+.smallSpinner {
+		background:url(../../public/images/spinner.gif) no-repeat;
+		width:16px;
+		height:16px;
+		display:block;
+		margin:5px 0 0 5px;
+}
+
+.spinnerContainer p {
+		font-size:1.2em;
+		text-align:center;
+		width:100%;
+		padding-bottom:10px;
+		font-weight:600;
+}
+
+/*Modal >> 
+  -----------------------------------------------------------------------------------------------------------*/	
+.modalBackground, .spinnerBackground {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background:#000000;
+	opacity: 0.6;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+
+.modalBackground {
+	z-index:900;
+}
+
+.spinnerBackground {
+	z-index:902;
+}
+
+* html .modalBackground, * html .spinnerBackground { /* ie6 hack */
+    position: absolute;
+	width: expression(document.body.clientWidth+'px');
+	height: expression(document.body.scrollHeight >   document.body.offsetHeight ?  
+		document.body.scrollHeight :   document.body.offsetHeight +   'px');
+
+/*	filter: alpha(opacity=60);*/
+}
+
+.modalContainer {
+	position:absolute;
+	z-index:901;
+	padding: 10px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #C4C0B9;
+}
+
+* html .modalContainer { /* ie6 hack */
+	position: absolute;
+	margin-top: expression(0 -   parseInt(this.offsetHeight/ 2)+  (TBWindowMargin=
+		 document.documentElement&&  document.documentElement.scrollTop||  document.body.scrollTop
+		)+  'px' );
+}
+
+/*Dialog >> 
+  -----------------------------------------------------------------------------------------------------------*/ 
+.dialogBackground {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index:910;
+    top: 0px;
+    left: 0px;
+    background:#ffffff;
+    opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+* html .dialogBackground { /* ie6 hack */
+    position: fixed;
+    width: expression(document.body.clientWidth+'px');
+	height: expression(document.body.scrollHeight >   document.body.offsetHeight ?  
+		document.body.scrollHeight :   document.body.offsetHeight +   'px');
+
+/*  filter: alpha(opacity=60);*/
+}
+
+.dialogContainer {
+    position:fixed;
+    z-index:911;
+    padding: 20px;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #C4C0B9;
+    width:500px;
+}
+
+* html .dialogContainer { /* ie6 hack */
+    position: fixed;
+	margin-top: expression(0 -   parseInt(this.offsetHeight/ 2)+  (TBWindowMargin=
+		 document.documentElement&&  document.documentElement.scrollTop||  document.body.scrollTop
+		)+  'px' );
+}
+
+/*Expand and Collapse >>
+  -----------------------------------------------------------------------------------------------------------*/
+.jq-wrapIconExpand,.jq-wrapIconCollapse {
+	background: transparent
+		url(../../public/images/expand_collapse_icon.gif) no-repeat scroll
+		left top;
+		height:15px;
+		font-size:12px;
+		padding:0 6px;
+		text-decoration:none;
+}
+
+.jq-wrapIconExpand {
+		background-position:left 0;
+}
+
+.jq-wrapIconExpand:hover {
+		background-position:left -15px;
+}
+
+.jq-wrapIconCollapse {
+		background-position:left -30px;
+}
+
+.jq-wrapIconCollapse:hover {
+		background-position:left -45px;
+}
+
+.jq-wrapIconCollapse,.jq-wrapIconExpand {
+		cursor: pointer;
+}
+/* UI Auto Complete >> 
+------------------------------------------------------------------------*/	
+.ui-autocomplete {
+		background:#FFFFFF;
+		width:35em!important;
+		border-bottom:#CCCCCC 1px solid;
+		border-left:#CCCCCC 1px solid;
+		border-right:#CCCCCC 1px solid;
+		margin-top:18px;
+		float:left;
+		overflow-y:auto;
+		overflow-x:hidden;
+		height:auto;
+		position:absolute!important;
+}
+
+.ui-autocomplete li {
+	
+}
+
+.ui-autocomplete .ui-menu-item a {
+		font-size:1.2em;
+		cursor:pointer;
+		line-height:1.5em;
+		padding:5px 10px;
+		display:block;
+}
+
+.ui-autocomplete li a.ui-state-hover {
+    background-color:#ADADAD!important;
+    color:#FFFFFF!important;
+}
+
+/* Navigations >> Main Navigation
+----------------------------------------------------------------------------------------------------*/
+.mainTopNav {
+		position:relative;
+		z-index:90;
+}
+/*** ESSENTIAL STYLES ***/
+.topNavigation,.topNavigation * {
+		margin:			0;
+		padding:		0;
+		list-style:		none;
+}
+
+.topNavigation ul {
+		position:absolute;
+		top:-999em;
+		width:18em; /* left offset of submenus need to match (see below) */
+}
+
+.topNavigation li {
+		float:left;
+		position:relative;
+}
+
+.topNavigation li:hover {
+		z-index: 100;
+}
+
+.topNavigation * li:hover {
+		visibility:inherit; /* fixes IE7 'sticky bug' */
+}
+
+.topNavigation a {
+		display:block;
+		position:relative;
+		text-decoration:none;
+		font-size:12px;
+		cursor:pointer;
+		padding:0 10px;
+}
+
+.topNavigation li ul li {
+	
+}
+
+.topNavigation ul li ul li a {
+		padding:5px;
+		line-height:1.5em;
+}
+
+.topNavigation li.sfHover li a:hover,.topNavigation li li a:hover {
+		text-decoration:underline;
+}
+
+.topNavigation li:hover ul,.topNavigation li.sfHover ul {
+		left:			0;
+		top:			2.8em;  /* match top ul list item height */
+		z-index:		99;
+}
+
+ul.topNavigation li:hover li ul,ul.topNavigation li.sfHover li ul {
+		top:			-999em;
+}
+
+ul.topNavigation li li:hover ul,ul.topNavigation li li.sfHover ul {
+		left:			17.3em; /* match ul width */
+		top:			-1px;
+}
+
+ul.topNavigation li li:hover li ul,ul.topNavigation li li.sfHover li ul
+	{
+		top:			-999em;
+}
+
+ul.topNavigation li li li:hover ul,ul.topNavigation li li li.sfHover ul
+	{
+		left:			17.3em; /* match ul width */
+		top:			-1px;
+}
+/*** DEMO SKIN ***/
+.topNavigation {
+		float:			left;
+		margin-bottom:	1em;
+}
+
+.topNavigation a,.topNavigation a:visited {
+	/* visited pseudo selector so IE6 applies text colour*/
+	
+}
+
+.topNavigation li li,.topNavigation li li li {
+		font-size:12px;
+		margin:0px;
+		padding:0;
+		width:100%;
+}
+
+.topNavigation li:hover,.topNavigation li.sfHover,.topNavigation a:focus,.topNavigation a:hover,.topNavigation a:active
+	{
+		outline:0;
+}
+
+.topNavigation li.sfHover a {
+	
+}
+/*** arrows **/
+.topNavigation a.sf-with-ul {
+		padding-right: 	2.25em;
+	min-width: 1px;
+	/* trigger IE7 hasLayout so spans position accurately */
+}
+
+.sf-sub-indicator {
+		position:		absolute;
+		display:		block;
+		right:			0.9em;
+		top:			0.36em; /* IE6 only */
+		width:			10px;
+		height:			10px;
+		text-indent: 	-999em;
+		overflow:		hidden;
+}
+
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+		top:			.75em;
+		right:			0.9em;
+	background-position: 0 -100px;
+	/* use translucent arrow for modern browsers*/
+}
+
+.footerStrip {
+		height:10px;
+		width:100%;
+		/* Required for IE6 */
+	font-size:0px;
+		line-height:0;/* end required */
+}
+/* List Styles
+-----------------------------------------------------------------------------------------------------------*/
+.listArrow {
+		list-style:outside;
+		list-style-image:url(../images/arrow.gif);
+		padding:0 0 0 25px;
+		display:inline-block;
+}
+
+.listDash {
+		list-style:outside;
+		list-style-image:url(../images/dash.gif);
+		padding:0 0 0 30px;
+		display:inline-block;
+}
+
+.listBullets {
+		list-style: disc outside none;
+		padding:0 0 0 50px;
+}
+
+.listReset {
+		list-style: none;
+		list-style-image: none;
+}
+/* TipTip CSS - Version 1.2 */
+#tiptip_holder {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 999;
+}
+
+#tiptip_holder.tip_top {
+		padding-bottom: 5px;
+}
+
+#tiptip_holder.tip_bottom {
+		padding-top: 5px;
+}
+
+#tiptip_holder.tip_right {
+		padding-left: 5px;
+}
+
+#tiptip_holder.tip_left {
+		padding-right: 5px;
+}
+
+#tiptip_content {
+		font-size: 12px;
+		line-height:1.5em;
+		color: #333333;
+		padding: 4px 8px;
+		border: 1px solid #959595;
+		background-color: #fff;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		_width:220px;
+}
+
+#tiptip_arrow,#tiptip_arrow_inner {
+		display:none;
+		position: absolute;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 6px;
+		height: 0;
+		width: 0;
+		top:10px;
+}
+
+#tiptip_holder.tip_top #tiptip_arrow {
+		border-top-color: #959595;
+		border-top-color: #959595;
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow {
+		border-bottom-color: #959595;
+		border-bottom-color: #959595;
+}
+
+#tiptip_holder.tip_right #tiptip_arrow {
+		border-right-color: #959595;
+		border-right-color: #959595;
+}
+
+#tiptip_holder.tip_left #tiptip_arrow {
+		border-left-color:#959595;
+		border-left-color: #959595;
+}
+
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+		margin-top: -7px;
+		margin-left: -6px;
+		border-top-color: #959595;
+		border-top-color:#959595;
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+		margin-top: -5px;
+		margin-left: -6px;
+		border-bottom-color: rgb(25,25,25);
+		border-bottom-color: #959595;
+}
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+		margin-top: -6px;
+		margin-left: -5px;
+		border-right-color: rgb(25,25,25);
+		border-right-color: #959595;
+}
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+		margin-top: -6px;
+		margin-left: -7px;
+		border-left-color: #959595;
+		border-left-color: #959595;
+}
+			
+/* Webkit Hacks  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+ #tiptip_content {
+ padding: 4px 8px 5px 8px;
+ background-color: #ffffff;
+}
+}
+
+.textContent UL {
+	MARGIN-BOTTOM: 0px;
+	FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+	LIST-STYLE-TYPE: disc;
+	margin-left: 40px;
+}
+
+.textContent LI {
+	color: #000000;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	line-height: normal;
+	list-style-type: square;
+}
+/* BV style Hacks */
+.MPMDEU .dataTable thead th,.MPMMFI .dataTable thead th,.MPMOPT .dataTable thead th,.MPMPRI .dataTable thead th,.MPMGRO .dataTable thead th,.MPMHIL .dataTable thead th
+	{
+	background-color: #eee;
+	border-bottom: 1px solid #E8E8E8;
+	border-top: 1px solid #E8E8E8;
+}
+
+.MPMACM .footerStrip{
+	background: white;
+	height:10px;
+	margin-top: 0;
+}
+
+.MPMHIL .footerStrip{
+	height: 1px;
+}
+
+.MPMDEU .footerStrip,.MPMMFI .footerStrip,.MPMOPT .footerStrip,.MPMPRI .footerStrip,.MPMGRO .footerStrip,.MPMHIL .footerStrip
+	{
+	background-color: #E6E4E5;
+}
+
+.MPMDEU .pageTitle h2,.MPMMFI .pageTitle h2,.MPMOPT .pageTitle h2,.MPMPRI .pageTitle h2,.MPMGRO .pageTitle h2
+	{
+	border-color: #E6E4E5;
+}
+
+.MPMDEU a,.MPMMFI a,.MPMOPT a,.MPMPRI a,.MPMGRO a,.MPMHIL a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.MPMDEU .footerBG {
+	background:#fff;
+}
+
+.MPMDEU .fontSeconSubColor {
+	color: #000;
+}
+
+.alert {
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #fcf8e3;
+	border: 1px solid #fbeed5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.alert,
+.alert h4 {
+	color: #c09853;
+}
+
+.alert h4 {
+	margin: 0;
+}
+
+.alert .close {
+	position: relative;
+	top: -2px;
+	right: -21px;
+	line-height: 20px;
+}
+
+.close {
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #000000;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 0.2;
+	filter: alpha(opacity = 20);
+}
+
+.close:hover,.close:focus {
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.4;
+	filter: alpha(opacity = 40);
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}

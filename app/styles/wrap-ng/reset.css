@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+/*empire reset css - created by CB 27/08/2008*/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, checkbox, radio, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+   	outline: none;
+    border:none;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin:0 0 0 0;
+	padding:0 0 0 0;
+}
+
+ul, ol { 
+	list-style: none; 
+}
+
+img {
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+a.img {
+	border:0;
+}
+
+.png { 
+	behavior: url(js/png.htc); 
+	}
+
+legend{
+	display:none;
+	height:1px;
+	width:1px;
+	text-indent:-90000px;
+	overflow:hidden;
+}
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+#javax_faces_developmentstage_messages { /* Needed for Transact */
+	display:none;
+}
+
+

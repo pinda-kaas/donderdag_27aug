@@ -1,0 +1,206 @@
+[
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND"
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.4162
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND"
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.4162
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND"
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.4162
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND"
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.4162
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND "
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.41623
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V00169"
+      },
+      "accountName": "ROBERG SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "PER0076AU"
+      },
+      "name": "Pengana Property Securities Fund",
+      "type": "WHOLESALE_MANAGED_FUND"
+    },
+    "settlementDate": "08-22-2015",
+    "tradeDate": "29-06-2009",
+    "orderType": "REDEMPTION",
+    "units": 24162,
+    "fee": "$100.00",
+    "price": {
+      "currency": "AUD",
+      "value": 0.4162
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 10056.75
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  }
+]

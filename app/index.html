@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>WIP</title>
+
+  <!-- <base href=""> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- meta data ends here -->
+
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+
+  <!-- Wrap ng original styles -->
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/page.css">
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/core.css">
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/icons-pictos.css">
+  <link rel="stylesheet" type="text/css" href="styles/wrap-ng/project.css">
+  <!-- End Wrap ng original styles -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css"/>
+  <!-- endbuild -->
+
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+
+
+  <!-- endbuild -->
+
+</head>
+<body ng-app="WIP">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+  <div class="header">
+
+    <h3 class="text-muted"> Work in progress</h3>
+  </div>
+
+  <div class="wrap">
+    <div ui-view=""></div>
+  </div>
+
+  <div class="footer">
+  </div>
+
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/json3/lib/json3.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-smart-table/dist/smart-table.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="modules/app.js"></script>
+<script src="modules/common/orders/controllers/ordersCtrl.js"></script>
+<script src="modules/common/orders/directives/ordersTab.js"></script>
+<script src="modules/common/orders/directives/awaitingSettlementsTab.js"></script>
+<script src="modules/common/orders/directives/completeOrdersTab.js"></script>
+<script src="modules/common/orders/services/configService.js"></script>
+<script src="modules/common/orders/services/wipService.js"></script>
+<script src="modules/common/orders/controllers/awaitingSettlementsCtrl.js"></script>
+<script src="modules/common/orders/directives/stRatio.js"></script>
+<script src="modules/common/orders/filters/showCurrency.js"></script>
+<script src="modules/common/orders/controllers/completeOrdersCtrl.js"></script>
+<script src="modules/common/orders/directives/tableFilter.js"></script>
+<script src="modules/common/orders/filters/dateRangeFilter.js"></script>
+<script src="modules/common/orders/directives/datepicker.js"></script>
+<script src="modules/common/orders/controllers/orderDetailCtrl.js"></script>
+<script src="modules/common/orders/directives/orderSourceFilter.js"></script>
+<script src="modules/common/orders/directives/resetFilter.js"></script>
+
+<!-- endbuild -->
+
+</body>
+</html>

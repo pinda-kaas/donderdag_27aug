@@ -1,0 +1,318 @@
+@charset "utf-8";
+/* 
+	CSS Document PAGE LAYOUT FRAMEWORK  based on 960Grid System 
+	all main page layouts defined here !! DO NOT DEFINE PROJECT BASED LAYOUTS HERE !! 
+	Frame work created by CB 2009 
+ 
+*/
+
+html,body{
+	height:100%;
+	}
+
+/* Page Layout >> ROOT
+----------------------------------------------------------------------------------------------------*/
+#root{
+	min-height:100%;
+	width:100%;
+	
+	}
+
+/* Page Layout >> Wrapper
+----------------------------------------------------------------------------------------------------*/
+.rootWrapper {
+	width:990px;
+	margin:0 auto;
+	display:block;
+	min-height:100%;
+}
+
+
+/* Page Layout >> Global Grid 
+----------------------------------------------------------------------------------------------------*/
+.columStatic,
+.columFluid,
+.columTable{
+	height:auto;
+	float:left;
+}
+.columStatic{
+	width:990px;
+	margin:auto;	
+}
+.columFluid{
+	width:100%;
+}
+
+.columTable{
+	width:960px;
+}
+.half,
+.one,
+.oneHalf,
+.two,
+.twoHalf,
+.three,
+.threeHalf,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine,
+.ten,
+.eleven,
+.twelve,
+.full
+{
+	float: left;
+	display:inline;
+	
+	
+}
+
+
+.columStatic .one, 
+.columStatic .two,
+.columStatic .three,
+.columStatic .four,
+.columStatic .five,
+.columStatic .six,
+.columStatic .seven,
+.columStatic .eight,
+.columStatic .nine,
+.columStatic .ten,
+.columStatic .eleven,
+.columStatic .twelve{
+
+}
+
+.columTable .half,
+.columTable .one,
+.columTable .oneHalf,
+.columTable .two,
+.columTable .twoHalf,
+.columTable .three,
+.columTable .threeHalf,
+.columTable .four,
+.columTable .five,
+.columTable .six,
+.columTable .seven,
+.columTable .eight,
+.columTable .nine,
+.columTable .ten,
+.columTable .eleven,
+.columTable .twelve{
+ 	margin:		0;
+	padding:	0;
+}
+
+.columFluid .half,
+.columFluid .one,
+.columFluid .two,
+.columFluid .three,
+.columFluid .four,
+.columFluid .five,
+.columFluid .six,
+.columFluid .six_1,
+.columFluid .seven,
+.columFluid .eight,
+.columFluid .nine,
+.columFluid .ten,
+.columFluid .eleven,
+.columFluid .twelve{
+ 	margin:0;
+	display:inline-block;
+	overflow:hidden;
+}
+
+/*Static Page Layout >> 12 Grid Elements
+Grid is adjusted to fit colums 
+----------------------------------------------------------------------------------------------------*/
+
+.columStatic .one {
+	width:80px;
+}
+.columStatic .two {
+	width:160px;
+}
+.columStatic .three {
+	width:240px;
+}
+.columStatic .four {
+	width:320px;
+}
+.columStatic .five {
+	width:400px;
+}
+.columStatic .six {
+	width:480px;
+}
+.columStatic .seven {
+	width:560px;
+}
+.columStatic .eight {
+	width:640px;
+}
+.columStatic .nine {
+	width:720px;
+}
+.columStatic .ten {
+	width:800px;
+}
+.columStatic .eleven {
+	width:880px;
+}
+.columStatic .twelve {
+	width:960px;
+}
+.columStatic .full{
+	width:990px;
+}
+
+/*Table Page Layout >> 12 Grid Elements
+----------------------------------------------------------------------------------------------------*/
+
+.columTable .one {
+	width:22px;
+}
+.columTable .oneHalf {
+	width:33px;
+}
+.columTable .two {
+	width:165px;
+}
+.columTable .twoHalf{
+	width:210px;
+}
+.columTable .three {
+	width:280px;
+}
+.columTable .threeHalf {
+    width:350px;
+}
+.columTable .ten {
+	width:795px;
+}
+
+/*Fluid Page Layout >> 12 Grid Elements
+----------------------------------------------------------------------------------------------------*/
+.columFluid .half{
+	width:4%;
+}
+.columFluid .one {
+	width:8.33%;
+}
+.columFluid .oneHalf {
+	width:12.5%;
+}
+.columFluid .two {
+	width:16.66%;
+}
+.columFluid .three {
+	width:24.99%;
+}
+.columFluid .four {
+	width:33.32%;
+}
+.columFluid .five {
+	width:41.65%;
+}
+.columFluid .six {
+	width:49.98%;
+}
+.columFluid .seven {
+	width:58.1%;
+}
+.columFluid .eight {
+	width:66.64%;
+}
+.columFluid .nine {
+	width:74.97%;
+}
+.columFluid .ten {
+	width:83.3;
+}
+.columFluid .eleven {
+	width:91.63%;
+}
+.columFluid .full,
+.columFluid .twelve {
+	width:100%;
+}
+
+/* Page Layout >> Children Reset margin
+----------------------------------------------------------------------------------------------------*/
+
+.first {
+	margin-left: 0;
+}
+
+.last {
+	margin-right: 0;
+}
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	line-height:0;
+	font-size:0px!important;
+	width:0;
+	float:none!important;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+.clearBoth{
+	clear:both;
+	}
+.maxWidth{
+	width:100%;
+	}
+
+.tabs {
+	background:#fff;
+	margin-top: 10px;
+}
+
+.tabs li {
+	list-style:none;
+	display:inline;
+}
+
+.tabs a {
+	padding:5px 10px;
+	display:inline-block;
+	background:#fff;
+	color:#666;
+	text-decoration:none;
+	font-size: 12pt;
+}
+
+.tabs a.active {
+	background:#666;
+	color:#fff;
+}

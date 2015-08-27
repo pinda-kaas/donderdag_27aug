@@ -1,0 +1,62 @@
+<div class="main">
+
+  <div class="well search form-inline">
+    <div class="row">
+      <div class="col-sm-10">
+        <label for="">Account Search:</label>
+        <input type="text" class="form-control" ng-model="accountName" id="field4" placeholder="Search by account name or number"/>
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div class="col-sm-2">
+
+        <div class="btn-group" dropdown is-open="status.isopen">
+
+          <button id="single-button" type="button" class="btn btn-primary" dropdown-toggle ng-disabled="disabled">
+            Advisers<span class="caret"></span>
+          </button>
+
+          adviser: {{adviser}}
+          <ul class="dropdown-menu" role="menu" ng-model="adviser" aria-labelledby="single-button">
+            <li role="menuitem"><a href="#" ng-click="selectAdviser('Mark')">Mark</a></li>
+            <li role="menuitem"><a href="#" ng-click="selectAdviser('Ed')">Ed</a></li>
+            <li role="menuitem"><a href="#" ng-click="selectAdviser('Fred')">Fred</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <reset-filter></reset-filter>
+
+  <div class="orders">
+    <div>
+      <div>
+        <div>
+          <tabset id="tab">
+
+            <tab heading="Orders" active="ordersTabActive" >
+              <orders-tab></orders-tab>
+            </tab>
+
+            <tab heading="Awaiting settlement" active="settlementsTabActive">
+              <table-filter security="testing"></table-filter>
+              <awaiting-settlements-tab></awaiting-settlements-tab>
+            </tab>
+
+            <tab heading="Complete" active="completedTabActive" >
+              <table-filter></table-filter>
+              <complete-orders-tab></complete-orders-tab>
+            </tab>
+
+          </tabset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

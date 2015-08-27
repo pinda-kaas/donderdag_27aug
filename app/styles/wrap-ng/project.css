@@ -1,0 +1,1053 @@
+@charset "utf-8";
+/* 
+	CSS Document PROJECT BASED STYLES 
+	Frame work created by Christian Buchholz 2011 
+ 
+*/
+body {
+		color:#2E2E2E;
+}
+/* Custome Page Layout >> Elements
+----------------------------------------------------------------------------------------------------*/
+
+.globalNav {
+		background:url(../images/bg-globalnav.gif) repeat-x;
+}
+.bgTopBanner {
+		background:url(../../mpmswp/images/top-banner.jpg) no-repeat;
+		width:990px;
+		height:104px;
+}
+
+.fontSeconSubColor {
+		color:#FFFFFF;
+}
+/* Custome Page Layout >> Footer
+----------------------------------------------------------------------------------------------------*/
+
+.footerBG {
+		background:url(../images/bg-footer.gif) repeat-x;
+		height:130px;
+}
+.footerStrip {
+		background:#0087CF;
+}
+.footerNav {
+		background:#5d5d5d;
+}
+
+.bannerNav {
+	position:absolute;
+	top:15px;
+	right:15px;	
+}
+
+.bannerSearchNav {
+		position:absolute;
+		bottom:0px;
+		*bottom:10px;
+		right:15px;	
+}
+
+.bannerSearchNav li {
+	float:left;
+	margin:0 3px 0 0;
+}
+
+.bannerSearchNav input {
+	border:solid 1px;
+	height:20px;
+	height:18px\9;
+	_height:18px;
+}
+
+a.bannerSearchButton {
+		background:url(../../mpmswp/images/sprite.gif) no-repeat -20px -1580px;
+		padding: 0px 12px 0px 0px;
+		margin: 0px 0px 12px 0px;
+		height:20px;
+		line-height:20px;
+		font-weight:bold;
+		font-size:12px;
+		color:#fff!important;
+		text-decoration:none!important;
+		display:inline-block;
+		float:left;
+		cursor:pointer;
+}
+
+a.bannerSearchButton span {
+		background:url(../../mpmswp/images/sprite.gif) no-repeat -20px -1580px;
+		padding:0 0 0 12px;
+		height:20px;
+		display:inline-block;
+}
+
+.bannerNav li,
+.bannerNav li a,
+.footerNav li,
+.footerNav li a {
+		color:#FFFFFF;
+}
+/* Branding >> 
+----------------------------------------------------------------------------------------------------*/
+.brandingLogo {
+		background:url(../../mpmswp/images/sprite.gif) no-repeat -8px -1219px;
+		height:104px;
+		width:350px;
+		float:left;
+		display:block;
+}
+.sloganLogo {
+		background:url(../../mpmswp/images/sprite.gif) no-repeat -8px -1339px #000000;
+		width:103px;
+		height:28px;
+		float:left;
+		display:block;
+		padding:0px!Important;
+		margin:0px!Important;
+}
+/* Navigations >>  Navigation 
+----------------------------------------------------------------------------------------------------*/
+
+.globalNav li,
+.globalNav li a,
+.globalNav li a:hover,
+.footerNav,
+.footerNav a,
+.footerNav a:hover {
+		color:#FFF;
+}
+/* Navigations >> Main Navigation
+----------------------------------------------------------------------------------------------------*/
+.mainTopNav {
+		background:url(../images/bg-nav.gif) repeat-x;
+}
+/*** ESSENTIAL STYLES ***/
+
+.topNavigation {
+		color:#FFFFFF;
+}
+.topNavigation a {
+		color:#FFFFFF;
+}
+.topNavigation li:hover,
+.topNavigation li.sfHover {
+		background-color:#fff;
+}
+.topNavigation li.sfHover ul li:hover,
+.topNavigation li ul {
+		background:#EAE9E9;
+}
+.topNavigation li.sfHover ul {
+		border-bottom:1px solid #c9c9c9;
+		border-right:1px solid #c9c9c9;
+}
+.topNavigation li:hover a,
+.topNavigation li.sfHover a,
+.topNavigation li.sfHover li a {
+		color:#000000;
+}
+/*** arrows **/
+
+.sf-sub-indicator {
+		background: url(../../public/images/arrows-ffffff.gif) no-repeat 0px -101px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+		_background: url(../../public/images/arrows-ffffff.gif) no-repeat 0px -102px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+/* apply hovers to modern browsers */
+
+a:focus > .sf-sub-indicator,
+a:hover > .sf-sub-indicator,
+a:active > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator,
+li.sfHover > a > .sf-sub-indicator {
+		background: url(../../public/images/arrows-ffffff.gif) no-repeat -10px -101px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+/* point right for anchors in subs */
+.topNavigation ul .sf-sub-indicator {
+		background-position:  -10px 0;
+}
+.topNavigation ul a > .sf-sub-indicator {
+		background-position:  0 0;
+}
+/* apply hovers to modern browsers */
+.topNavigation ul a:focus > .sf-sub-indicator,
+.topNavigation ul a:hover > .sf-sub-indicator,
+.topNavigation ul a:active > .sf-sub-indicator,
+.topNavigation ul li:hover > a > .sf-sub-indicator,
+.topNavigation ul li.sfHover > a > .sf-sub-indicator {
+		background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+/* Navigations >> Jump Menu
+----------------------------------------------------------------------------------------------------*/
+.jumpNavigation .jumpersMenuPrimary {
+		background:url("../../mpmswp/images/sprite.gif") no-repeat right -1124px;
+		color:#FFFFFF;
+}
+.jumpNavigation .jumpersMenuPrimary span {
+		background:url("../../mpmswp/images/sprite.gif") no-repeat -14px -1124px;
+}
+.jumpNavigation .jumpersMenuSecondary {
+		background:url("../../mpmswp/images/sprite.gif") no-repeat right -710px;
+}
+.jumpNavigation .jumpersMenuSecondary span {
+		background:url("../../mpmswp/images/sprite.gif") no-repeat -16px -710px;
+}
+.jumpNavigation ul li a {
+		color:#000000;
+}
+/* Brand Color >> 
+----------------------------------------------------------------------------------------------------*/
+h2,
+a,
+.brandFontColor {
+	color:#0b85d6;
+}
+a.removeBrandColor{
+	color:#2E2E2E;
+	}
+/* Content >> 
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Process Styles  >> 
+  -----------------------------------------------------------------------------------------------------------*/
+.stepContainer ul {
+		background:#a6a6a6;
+}
+.stepContainer li {
+}
+.stepContainer .inactive {
+		color:#464646;
+		background:#a6a6a6;
+}
+.stepContainer .active {
+		color:#fff;
+		background:#0087cf;
+}
+.stepContainer .activeStart,
+.stepContainer .inactiveStart,
+.stepContainer .inactiveEnd {
+}
+.stepContainer .arrow {
+		font-weight:600;
+		color:#0087cf;
+}
+.stepContainer h3 {
+}
+.stepContainer .activeStart {
+		background:url(../../mpm/images/stepStartOn.gif) no-repeat;
+}
+.stepContainer .inactiveStart {
+		background:url(../../mpm/images/stepStart.gif) no-repeat;
+}
+.stepContainer .inactiveEnd {
+		background:url(../../mpm/images/stepEnd.gif) no-repeat;
+}
+
+.paging_full_numbers {
+	width: 400px;
+	height: 22px;
+	line-height: 22px;
+}
+
+.paging_full_numbers a:active {
+	outline: none
+}
+
+.paging_full_numbers a:hover {
+	text-decoration: none;
+}
+
+.paging_full_numbers a.paginate_button,.paging_full_numbers a.paginate_active,span.paginate_button
+	{
+	padding: 4px 5px 0;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+	color: #9C9C9C !important;
+}
+
+.paging_full_numbers a.paginate_button {
+}
+
+.paging_full_numbers a.paginate_button:hover {
+	background-color: #ccc;
+	text-decoration: none !important;
+}
+
+.paging_full_numbers a.paginate_active {
+	float:left;
+}
+
+.dataTables_wrapper {
+	position: relative;
+	clear: both;
+	zoom: 1; /* Feeling sorry for IE */
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 250px;
+	height: 30px;
+	margin-left: -125px;
+	margin-top: -15px;
+	padding: 14px 0 2px 0;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+	background-color: white;
+}
+
+.dataTables_length {
+	float: right;
+	font-size: 1.1em;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	float: left;
+	font-size:1.1em;
+	margin-top:6px;
+}
+
+.dataTables_paginate {
+	margin: 0 auto;
+	width: 280px;
+}
+
+.paginate_page {
+	float: left;
+    margin: 6px 5px 0 0;
+	}
+	
+.dataTables_paginate input.InputSmall {
+	float:left;
+	margin-top:3px;
+	}
+	
+.paginate_of {
+	float: left;
+    margin: 6px 0px 0px 1px;
+	}
+
+.paginate_disabled_previous,
+.paginate_enabled_previous,
+.paginate_disabled_next,
+.paginate_enabled_next,
+.paginate_button
+	{
+	height: 19px;
+	line-height: 19px;
+	float: left;
+	cursor: pointer;
+	*cursor: hand;
+	color: #9C9C9C !important;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.paginate_button.first {
+
+	}
+	
+.paginate_button.previous {
+
+	}
+	
+.paginate_button.next {
+
+	}
+	
+.paginate_button.last {
+
+	}
+
+.paginate_disabled_previous:hover,
+.paginate_enabled_previous:hover,
+.paginate_disabled_next:hover,
+.paginate_enabled_next:hover,
+.paginate_button:hover
+	{
+	text-decoration: none !important;
+}
+
+.paginate_disabled_previous:active,
+.paginate_enabled_previous:active,
+.paginate_disabled_next:active,
+.paginate_enabled_next:active
+.paginate_button:active
+	{
+	outline: none;
+}
+
+.paginate_disabled_previous,
+.paginate_disabled_next {
+	color: #666 !important;
+	
+}
+
+.paginate_disabled_previous,
+.paginate_enabled_previous {
+	padding-left: 23px;
+}
+
+.paginate_disabled_next,
+.paginate_enabled_next {
+	padding-right: 23px;
+	margin-left: 10px;
+}
+
+.paginate_disabled_previous,
+.paginate_enabled_previous, 
+.paginate_enabled_previous:hover,
+.paginate_disabled_next,
+.paginate_enabled_next,
+.paginate_enabled_next:hover,
+.paginate_button,
+.paginate_button:hover {
+/*	background: url('../../public/images/pagination-arrows.gif') no-repeat;*/
+}
+
+
+/* Form Styles  >> 
+  #################### Required by FDS (Fee Disclosure Statement) module #################################  
+  -----------------------------------------------------------------------------------------------------------*/
+
+.mainHeader {
+	line-height: 1;
+	margin-top:5px;
+}
+
+.headerGroup h4 {
+	font-size:16px;
+	padding-bottom: 5px;
+}
+	
+.formSubDivider, .formDivider {
+	height: 0;
+}
+
+input[type="text"].fdsText {
+	border: 1px solid #8c8c8c;
+	padding: 1px 0 3px 5px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 12px;
+	height: auto;
+	_height: auto;
+	color: #2E2E2E;
+}
+
+#bulkTransactSearch .InputSmall {
+	border: 1px solid #8c8c8c;
+	padding: 1px 0 3px 5px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 12px;
+	height: auto;
+	_height: auto;
+	color: #2E2E2E;	
+}
+
+#bulkTransactSearch .tableBorderBottom {
+	border-bottom: #D6E1E7 1px solid;
+}
+
+#uploadFileModalView .formBoxStyled .formBox ul {
+	width: 95%;
+}
+
+textarea {
+	border: 1px solid #8c8c8c;
+	padding: 3px 0 3px 5px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #2E2E2E;
+}
+
+textarea[disabled] {
+	border: 0 none;
+	padding: 3px 0;
+	color: #2E2E2E;
+	font-weight: bold;
+	}
+
+input:focus {
+	-webkit-box-shadow: inset 1px 1px 2px 1px rgba(200, 200, 200, .5);
+	box-shadow: inset 1px 1px 2px 1px rgba(200, 200, 200, .5); 
+}
+
+input[type="radio"] {
+    margin: -1px 2px 0 0;
+    vertical-align: middle;
+}
+
+.formBox .formLabel.radio {
+	height: auto !important;
+    padding-top: 3px;
+	}
+
+li.formField td label {
+	margin-right: 10px;
+	}
+
+select {
+	border: 1px solid #8c8c8c;
+	padding: 2px 2px 2px 5px;
+	height: 25px;
+	/*-webkit-border-radius: 4px;
+	border-radius: 4px;*/
+	font-size: 12px;
+}
+
+#legacyRoot select { 
+	height: auto;
+}
+
+.formField select[disabled] {
+	border: 0 none;
+	padding: 5px 0;
+	height: 25px;
+	-webkit-appearance: none;
+	color: #2E2E2E;
+	background: none;
+	margin-left: 0;
+	font-weight: bold;
+	width: 507px !important;
+	max-width: none;
+}
+
+.formField select.selectBorder[disabled] {
+    border: 1px solid #8C8C8C;
+    font-weight: normal;
+    margin-left: auto;
+    padding: 2px 2px 2px 5px;
+    width: 185px !important;
+}
+
+.formBox .formLabel {
+	padding-top: 5px;
+	display:block;
+}
+	
+.formBox .formLabel.textOnly {
+	height: auto !important;
+	padding-top: 0;
+	}
+	
+.mandatoryText {
+	color: #298DAA;
+    font-weight: bold;
+    font-size: 19px;
+    vertical-align: middle;
+	}
+	
+.formBox .formField.textOnly {
+	height: auto !important;
+	padding-top: 0;
+	}
+
+.formField.termDeposit {
+	overflow: visible;
+}
+
+.formField.assetSearch {
+	overflow: visible;
+}
+
+.contentName.formField {
+	overflow: hidden;
+}
+	
+.formField select{
+	width: 185px;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+	margin: 0 auto;
+	clear: both;
+	width: 100%;
+	overflow:hidden;
+	margin: 5px 0;
+	
+
+	/* Note Firefox 3.5 and before have a bug with border-collapse
+	 * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 ) 
+	 * border-spacing: 0; is one possible option. Conditional-css.com is
+	 * useful for this kind of thing
+	 *
+	 * Further note IE 6/7 has problems when calculating widths with border width.
+	 * It subtracts one px relative to the other browsers from the first column, and
+	 * adds one to the end...
+	 *
+	 * If you want that effect I'd suggest setting a border-top/left on th/td's and 
+	 * then filling in the gaps with other borders.
+	 */
+}
+
+
+.tableBorderTop{
+	border-top: #298DAA 1px solid;
+}
+
+.tableBorderBottom{
+	border-bottom: #D6E1E7 1px solid;
+	}
+	
+.dataTable thead th {
+	background-color: #D6E1E7;
+    border-bottom: 1px solid #298DAA;
+    border-top: 1px solid #298DAA;
+    color: #2E2E2E;
+    font-size: 11px;
+	}
+	
+.dataTable tbody{
+  font-size: 12px;
+}
+
+table.display thead th {
+	font-weight: normal;
+	cursor: pointer; *
+	cursor: hand;
+}
+
+.tableColumLabels{
+	text-transform:uppercase;
+	font-size:1.0em;
+}
+table.display tfoot th {
+	padding: 3px 18px 3px 10px;
+	border-top: 1px solid black;
+	font-weight: bold;
+	font-size:1.1em;
+
+}
+
+table.display tr.heading2 td {
+	border-bottom: 1px solid #aaa;
+}
+table.display thead th,
+table.display td {
+	padding: 5px 0;
+}
+
+table.display td.center {
+	text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+ 
+
+
+.sorting_asc {
+	background: url('../../public/images/sort_arrow_desc_icon.gif') no-repeat 5px center;
+}
+
+.sorting_desc {
+	background: url('../../public/images/sort_arrow_asc_icon.gif') no-repeat 5px center;
+}
+
+.sorting {
+	background: url('../../public/images/sort_both.gif') no-repeat 5px center;
+}
+
+.sorting_asc_disabled {
+	background: url('../../public/images/sort_desc_disabled.gif') no-repeat 5px center;
+}
+
+.sorting_desc_disabled {
+	background: url('../../public/images/sort_asc_disabled.gif') no-repeat 5px center;
+}
+
+.sortingRight {
+	padding-left: 13px !important;
+}
+
+.sorting_disabled {
+	background: none;
+}
+ 
+th:active {
+	outline: none;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+}
+
+table.display tr.even.gradeA {
+}
+
+table.display tr.odd.gradeC {
+}
+
+table.display tr.even.gradeC {
+}
+
+table.display tr.odd.gradeX {
+}
+
+table.display tr.even.gradeX {
+}
+
+table.display tr.odd.gradeU {
+}
+
+table.display tr.even.gradeU {
+}
+
+tr.odd {
+}
+
+tr.even {
+}
+
+  
+ /* Content >> Form Elements
+ #################### END: Required by FDS (Fee Disclosure Statement) module #################################
+----------------------------------------------------------------------------------------------------*/
+
+.formBoxStyled {
+		background:#EEE;
+}
+/* Action >> Headers and Sections
+----------------------------------------------------------------------------------------------------*/
+
+.actionContainer,
+.subAction {
+	float:left;
+	}
+.mainAction {
+	float:right;
+	}
+
+.sectionHeader {
+		background:#0B85D6;
+}
+.sectionHeader h3 {
+		color:#FFFFFF;
+}
+.actionSection {
+		border-top: 2px solid #0087cf;
+}
+.Edit a {
+		color:#FFFFFF;
+}
+.subSectionHeader .Edit a {
+}
+.declarationSection {
+		background:#E8E8E8;
+}
+/* Table Styles >> 
+  -----------------------------------------------------------------------------------------------------------*/
+.tableHeader {
+		border-top:1px solid #0087cf;
+		border-bottom:1px solid #0087cf;
+		background:#e8e8e8;
+		color:#2e2e2e;
+}
+.headerGroup {
+		border-bottom:1px solid #0087cf;
+}
+
+.tableRow {
+		border-bottom:1px solid #E8E8E8;
+		background:#FFFFFF;
+}
+.tableRowActive {
+		background-color:#fdfcc8;
+}
+.tableRowOpen {
+		background:#fdfcc8;
+}
+.tabelRowTopBorder {
+		border-top:1px solid #E8E8E8;
+}
+
+.tableBorderTop{
+    border-top: #298DAA 1px solid;
+}
+
+.tableBorderBottom{
+    border-bottom: #298DAA 1px solid;
+}
+
+.dataTable thead th {
+   background-color: #D6E1E7;
+    border-bottom: 1px solid #298DAA;
+    border-top: 1px solid #298DAA;
+    color: #2E2E2E;
+    font-size: 11px;
+   }
+   
+.dataTable tbody{
+  font-size: 12px;
+}
+
+table.display thead th {
+   font-weight: normal;
+   cursor: pointer; *
+   cursor: hand;
+}
+
+.tableColumLabels{
+   text-transform:uppercase;
+   font-size:1.0em;
+}
+table.display tfoot th {
+   padding: 3px 18px 3px 10px;
+   border-top: 1px solid black;
+   font-weight: bold;
+   font-size:1.1em;
+
+}
+
+table.display tr.heading2 td {
+   border-bottom: 1px solid #aaa;
+}
+table.display thead th,
+table.display td {
+   padding: 5px 0;
+}
+
+table.display td.center {
+   text-align: center;
+}
+
+/* Table columns
+----------------------------------------------------------------------------------------------------*/
+
+.col_55{
+   width:55px;
+   }
+
+.col_65{
+   width:65px;
+   }
+   
+.col_80{
+   width:80px;
+   }
+   
+.col_100 {
+   width:100px;
+   }
+   
+.col_120{
+   width:120px;
+   }
+   
+.col_135{
+   width:135px;
+   }
+   
+.col_160{
+   width:160px;
+   }
+   
+.col_245{
+   width:245px;
+   }
+
+.col_320{
+   width:320px;
+   }
+   
+.col_340{
+   width:340px;
+   }
+
+
+/* Expand  Sections 
+----------------------------------------------------------------------------------------------------*/
+
+/* Navigations >> Bottom Navigation
+----------------------------------------------------------------------------------------------------*/
+
+
+.ui-dialog-titlebar {
+		/*height:32px;
+	background:url(../images/bg-globalnav.gif) repeat-x top left;
+	position: relative;
+	color:#FFFFFF;
+	font-size:1.4em;
+	line-height:32px;
+	font-weight:600;*/
+	display:none;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+		background:url(../../mpmswp/images/sprite.gif) -380px -313px no-repeat;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover,
+.ui-dialog .ui-dialog-titlebar-close:focus {
+		background:url(../../mpmswp/images/sprite.gif) -380px -350px no-repeat;
+}
+/* Modal and Inline Box Elements >> 
+------------------------------------------------------------------------*/	
+
+
+.inLineBox .padHeader {
+		clear:both;
+}
+/* Utilities Buttons >> 
+----------------------------------------------------------------------------------------------------*/
+
+/* Action Sections 
+----------------------------------------------------------------------------------------------------*/
+
+/* BV Specific Icons >> 
+------------------------------------------------------------------------*/	
+.b-chart,
+.b-quote,
+.b-research,
+.b-down,
+.b-vaneyk,
+.b-commentary {
+		padding: 5px 0 0 5px;
+		width:18px;
+		height:15px;
+		display:block;
+		float:left;
+}
+.b-chart {
+		background: url(../../mpm/images/b_chart.gif) no-repeat scroll 0 0 transparent;
+}
+.b-quote {
+		background: url(../../mpm/images/b_quote.gif) no-repeat scroll 0 0 transparent;
+}
+.b-research {
+		background: url(../../mpm/images/b_research.gif) no-repeat scroll 0 0 transparent;
+}
+.b-down {
+		background: url(../../mpm/images/b_down.gif) no-repeat scroll 0 0 transparent;
+}
+.b-vaneyk {
+		background: url(../../mpm/images/b_vaneyk_snap.gif) no-repeat scroll 0 0 transparent;
+}
+.b-commentary {
+		background: url(../../mpm/images/b_commentary.gif) no-repeat scroll 0 0 transparent;
+}
+
+
+/* Legacy styles  & Colors>> 
+------------------------------------------------------------------------*/
+
+#legacyRoot .SecurityInformationBox {
+		background:#adadad;
+}
+#legacyRoot .AcctLink,
+#legacyRoot .NormalStyle a.InfoLinkItem,
+#legacyRoot span.H4,
+#legacyRoot .InfoLinkCategory,
+#legacyRoot a.AcctLink,
+#legacyRoot .TableCopyLeft a,/*#applicationMessages */
+#legacyRoot .TableCopyRight a,
+#legacyRoot .clientList .TableCopyAltLeft a,
+#legacyRoot a.Nav,
+#legacyRoot .BlankPage td a,
+#legacyRoot .CapsSectionHeader,
+#legacyRoot span.H1,
+#legacyRoot td.NormalStyle a,
+#legacyRoot .TableCopyCentre a,
+#legacyRoot .esi h2,
+#legacyRoot h1 {
+		color:#0087cf;
+}
+#legacyRoot .TableSubHeadLeft,
+#legacyRoot .TableSubHeadRight,
+#legacyRoot .TableSubHeadCentre,
+#legacyRoot .termDepositCopy #termDepositTable th {
+		background:#adadad;
+		color:#000;
+}
+#legacyRoot .clientDetailsList .odd .TableCopyLeft,
+#legacyRoot .clientDetailsList .odd .TableCopyRight,
+#legacyRoot .clientDetailsList .odd .TableCopyCentre,
+#legacyRoot .clientDetailsList .odd .TableCopyAltLeft,
+#legacyRoot .clientDetailsList .odd .TableCopyAltRight,
+#legacyRoot .clientDetailsList .odd .TableCopyAltCentre,
+#legacyRoot .clientModifyList .odd .TableCopyLeft,
+#legacyRoot .clientModifyList .odd .TableCopyRight,
+#legacyRoot .clientModifyList .odd .TableCopyCentre,
+#legacyRoot .clientModifyList .odd .TableCopyAltLeft,
+#legacyRoot .clientModifyList .odd .TableCopyAltRight,
+#legacyRoot .clientModifyList .odd .TableCopyAltCentre,
+#legacyRoot .clientList .odd .TableCopyLeft,
+#legacyRoot .clientList .odd .TableCopyRight,
+#legacyRoot .clientList .odd .TableCopyCentre,
+#legacyRoot .clientList .odd .TableCopyAltLeft,
+#legacyRoot .clientList .odd .TableCopyAltRight,
+#legacyRoot .clientList .odd .TableCopyAltCentre,
+#legacyRoot .termDepositCopy #termDepositTable .odd {
+		background:#FFFFFF;
+}
+#legacyRoot .TableHead,
+#legacyRoot .TableCopyAltRight,
+#legacyRoot .TableCopyAltLeft,
+#legacyRoot .TableCopyLeft,
+#legacyRoot .TableCopyRight,
+#legacyRoot .TableCopyCentre,
+#legacyRoot .TableCopyAltCentre,
+#legacyRoot .clientList .even .TableCopyLeft td.NormalStyle,
+#legacyRoot .clientDetailsList .even .TableCopyLeft,
+#legacyRoot .clientDetailsList .even .TableCopyRight,
+#legacyRoot .clientDetailsList .even .TableCopyCentre,
+#legacyRoot .clientDetailsList .even .TableCopyAltLeft,
+#legacyRoot .clientDetailsList .even .TableCopyAltRight,
+#legacyRoot .clientDetailsList .even .TableCopyAltCentre,
+#legacyRoot .clientModifyList .even .TableCopyLeft,
+#legacyRoot .clientModifyList .even .TableCopyRight,
+#legacyRoot .clientModifyList .even .TableCopyCentre,
+#legacyRoot .clientModifyList .even .TableCopyAltLeft,
+#legacyRoot .clientModifyList .even .TableCopyAltRight,
+#legacyRoot .clientModifyList .even .TableCopyAltCentre,
+#legacyRoot .clientList .even .TableCopyLeft,
+#legacyRoot .clientList .even .TableCopyRight,
+#legacyRoot .clientList .even .TableCopyCentre,
+#legacyRoot .clientList .even .TableCopyAltLeft,
+#legacyRoot .clientList .even .TableCopyAltRight,
+#legacyRoot .clientList .even .TableCopyAltCentre,
+#legacyRoot .termDepositCopy #termDepositTable .even {
+		background:#f6f6f6;
+}
+#legacyRoot .tdShade {
+		background:#f6f6f6!important;
+}
+#legacyRoot .TableHead {
+		background:#f6f6f6;
+}
+.changeColor {
+		color:#0087cf!important;
+}
+#legacyRoot .TableTitle,
+#legacyRoot .H6 {
+		color:#0087cf;
+}
+
+/* Excel Reporting */
+.reportForm .formLabel {
+    width: 10%;
+ }

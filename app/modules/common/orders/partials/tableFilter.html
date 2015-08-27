@@ -1,0 +1,45 @@
+<div collapse="showAdvancedSearch">
+  <div class="row tableFilter">
+
+    <div class="col-sm-2">
+      <label for="">Asset type</label>
+      <select class="form-control" name="" ng-model="assetType" ng-options="item.name for item in assetTypes">
+      </select>
+    </div>
+
+    <div class="col-sm-2">
+      <label for="">Security</label>
+      <input class="form-control" ng-model="security" type="text"/>
+    </div>
+
+    <div class="col-sm-2">
+      <label for="">Trade type</label>
+      <select class="form-control" ng-model="tradeType">
+        <option>SELL</option>
+        <option>BUY</option>
+        <option></option>
+      </select></div>
+
+    <div class="col-sm-2">
+      <label for="">Date from:</label>
+      <date-picker par1="dateFrom"></date-picker>
+    </div>
+
+    <div class="col-sm-2">
+      <label for="">Date to:</label>
+      <date-picker par1="dateTo"></date-picker>
+    </div>
+
+    <div class="col-sm-2">
+      <label for="">Period</label>
+      <select class="form-control">
+        <option>Today</option>
+        <option>Last week</option>
+        <option>Last month</option>
+        <option>User defined</option>
+      </select>
+    </div>
+
+  </div>
+
+</div>
