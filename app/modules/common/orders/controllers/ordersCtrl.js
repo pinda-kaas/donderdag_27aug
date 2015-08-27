@@ -22,4 +22,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   $scope.selectAdviser = function (adviser) {
     $scope.adviser = adviser;
   }
+
+
+
 });
