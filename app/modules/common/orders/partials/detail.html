@@ -33,18 +33,18 @@
   <table st-table="detailRows" class="table table-striped">
     <thead>
     <tr>
-      <th st-ratio="10" st-sort="account.orderDate">Order date</th>
-      <th st-ratio="10" st-sort="account.investment">Investment</th>
-      <th st-ratio="10" st-sort="account.type">Type</th>
-      <th st-ratio="10" st-sort="account.units">Units</th>
-      <th st-ratio="10" st-sort="account.filledUnits">Filled</th>
-      <th st-ratio="10" st-sort="account.limitPrice">Price</th>
-      <th st-ratio="10" st-sort="account.valid">Valid</th>
-      <th st-ratio="10" st-sort="account.fee">Fee</th>
-      <th st-ratio="10" st-sort="account.amount">Amount</th>
-      <th st-ratio="10" st-sort="account.orderSource">Source</th>
-      <th st-ratio="10" st-sort="account.status">Status</th>
-      <th st-ratio="5" st-sort="account.detail">Details</th>
+      <th st-ratio="10" st-sort="account.orderDate">ORDER DATE</th>
+      <th st-ratio="10" st-sort="account.investment">INVESTMENT</th>
+      <th st-ratio="10" st-sort="account.type">TYPE</th>
+      <th st-ratio="10" st-sort="account.units">UNITS</th>
+      <th st-ratio="10" st-sort="account.filledUnits">FILLED</th>
+      <th st-ratio="10" st-sort="account.limitPrice">PRICE</th>
+      <th st-ratio="10" st-sort="account.valid">VALID</th>
+      <th st-ratio="10" st-sort="account.fee">FEE</th>
+      <th st-ratio="10" st-sort="account.amount">AMOUNT</th>
+      <th st-ratio="10" st-sort="account.orderSource">SOURCE</th>
+      <th st-ratio="10" st-sort="account.status">STATUS</th>
+      <th st-ratio="5" st-sort="account.detail">DETAILS</th>
 
     </tr>
     </thead>
@@ -66,41 +66,30 @@
                           ng-click="collapsed = !collapsed"></a></td>
     </tr>
 
-    <!--<tr collapse="collapsed">-->
-
-    <!--<td></td>-->
-    <!--<td></td>-->
-
-    <!--<td colspan="16" class="transactionDetails">-->
-    <!--Transaction Details-->
-    <!--<hr/>-->
-    <!--</td>-->
-    <!--</tr>-->
-
     <tr collapse="collapsed">
       <td st-ratio="2"></td>
       <td st-ratio="5"></td>
       <td st-ratio="100" colspan="18">
 
-        <table st-ratio="100">
+        <table st-ratio="100" class="table table-striped">
           <thead>
 
           <tr>
             <td></td>
             <td></td>
             <td colspan="16" class="transactionDetails">
-              Transaction Details
+              <h4>Transaction Details</h4>
             </td>
           </tr>
 
           <tr>
             <th></th>
             <th></th>
-            <th st-ratio="10" st-sort="transaction.reference">REF</th>
-            <th st-ratio="10" st-sort="transaction.orderTaker">ORDER TAKER</th>
-            <th st-ratio="20" st-sort="transaction.lastUpdated">UPDATED</th>
-            <th st-ratio="10" st-sort="transaction.filledUnits">FILLED</th>
-            <th st-ratio="10" st-sort="transaction.price">PRICE</th>
+            <th st-ratio="7" st-sort="transaction.reference">REF</th>
+            <th st-ratio="10" st-sort="transaction.orderTaker">TAKER</th>
+            <th st-ratio="23" st-sort="transaction.lastUpdated">UPDATED</th>
+            <th st-ratio="5" st-sort="transaction.filledUnits">FILLED</th>
+            <th st-ratio="5" st-sort="transaction.price">PRICE</th>
             <th st-ratio="10" st-sort="transaction.amount">AMOUNT</th>
             <th st-ratio="10" st-sort="transaction.fundingPriority">PRIORITY</th>
             <th st-ratio="10" st-sort="transaction.status">STATUS</th>
@@ -111,23 +100,23 @@
             <td>
             </td>
             <td></td>
-            <td st-ratio="10">
+            <td st-ratio="7">
               {{transaction.reference}}
             </td>
-            <td st-ratio="15">
+            <td st-ratio="10">
               {{transaction.orderTaker}}
             </td>
-            <td st-ratio="25">
+            <td st-ratio="23">
               {{transaction.lastUpdated}}
             </td>
-            <td st-ratio="10">
+            <td st-ratio="5">
               {{transaction.filledUnits}}
             </td>
-            <td st-ratio="10">
-              {{transaction.price}}
+            <td st-ratio="5">
+              ${{transaction.price}}
             </td>
             <td st-ratio="10">
-              {{transaction.amount}}
+              ${{transaction.amount}}
             </td>
             <td st-ratio="10">
               {{transaction.fundingPriority}}
