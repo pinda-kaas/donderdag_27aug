@@ -264,11 +264,12 @@ module.exports = function (grunt) {
     },
     uglify: {
       dist: {
-        files: {
-          'dist/scripts/scripts.js': [
-            'dist/scripts/scripts.js'
-          ]
-        }
+        files: [{
+          expand: true,
+          src: '**/*.js',
+          dest: 'build/scripts',
+          cwd: 'modules/**'
+        }]
       }
     },
     concat: {
@@ -346,7 +347,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'modules/**.*.js',
+            '*.js',
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
@@ -357,7 +358,15 @@ module.exports = function (grunt) {
           cwd: '.tmp/images',
           dest: 'dist/images',
           src: ['generated/*']
-        }, {
+        },
+          {
+            expand: true,
+            cwd: 'app',
+            dest: 'dist/scripts',
+            src: 'modules/{,*/}*.js'
+          }
+          ,
+          {
           expand: true,
           cwd: '.',
           src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',

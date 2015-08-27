@@ -30,7 +30,7 @@
 <table-filter></table-filter>
 
 <div>
-  <table st-table="detailRows" class="table table-striped">
+  <table st-table="detailRows" class="table table-striped ">
     <thead>
     <tr>
       <th st-ratio="10" st-sort="account.orderDate">ORDER DATE</th>
@@ -38,11 +38,11 @@
       <th st-ratio="10" st-sort="account.type">TYPE</th>
       <th st-ratio="10" st-sort="account.units">UNITS</th>
       <th st-ratio="10" st-sort="account.filledUnits">FILLED</th>
-      <th st-ratio="10" st-sort="account.limitPrice">PRICE</th>
+      <th st-ratio="5" st-sort="account.limitPrice">PRICE</th>
       <th st-ratio="10" st-sort="account.valid">VALID</th>
-      <th st-ratio="10" st-sort="account.fee">FEE</th>
-      <th st-ratio="10" st-sort="account.amount">AMOUNT</th>
-      <th st-ratio="10" st-sort="account.orderSource">SOURCE</th>
+      <th st-ratio="5" st-sort="account.fee">FEE</th>
+      <th st-ratio="5" st-sort="account.amount">AMOUNT</th>
+      <th st-ratio="5" st-sort="account.orderSource">SOURCE</th>
       <th st-ratio="10" st-sort="account.status">STATUS</th>
       <th st-ratio="5" st-sort="account.detail">DETAILS</th>
 
@@ -61,7 +61,7 @@
       <td st-ratio="5">{{account.fee}}</td>
       <td st-ratio="5">{{account.amount}}</td>
       <td st-ratio="5">{{account.orderSource}}</td>
-      <td st-ratio="5">{{account.status}}</td>
+      <td st-ratio="10">{{account.status}}</td>
       <td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]"
                           ng-click="collapsed = !collapsed"></a></td>
     </tr>
@@ -78,7 +78,7 @@
             <td></td>
             <td></td>
             <td colspan="16" class="transactionDetails">
-              <h4>Transaction Details</h4>
+              <h5>Transaction Details</h5>
             </td>
           </tr>
 
