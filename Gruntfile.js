@@ -305,13 +305,14 @@ module.exports = function (grunt) {
           collapseWhitespace: true,
           conservativeCollapse: true,
           collapseBooleanAttributes: true,
-          removeCommentsFromCDATA: true
+          removeCommentsFromCDATA: true,
+          removeOptionalTags: true
         },
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>',
-          src: ['*.html'],
-          dest: '<%= yeoman.dist %>'
+          cwd: 'dist',
+          src: ['*.html', 'views/{,*/}*.html'],
+          dest: 'dist'
         }]
       }
     },
