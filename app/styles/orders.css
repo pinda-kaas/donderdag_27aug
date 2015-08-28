@@ -1,0 +1,137 @@
+/*Main style WIP */
+
+.main
+{
+  background:#ffffff;
+}
+
+/*account search*/
+.search
+{
+  margin:20px 20px;
+  padding:20px;
+}
+
+.form-inline .form-control {
+  display: inline-block;
+  width:60%;
+  vertical-align: middle
+}
+
+.search .right
+{
+  float:right;
+  display : block;
+}
+
+.search input::-webkit-input-placeholder { font-style:italic; }
+
+.search select
+{
+  width:50%;
+}
+
+.orders table td {
+  width:10%;
+  /*float:left;*/
+  word-wrap:break-word;
+}
+
+.orders table .accountName {
+  width:30%;
+  /*float:left;*/
+  word-wrap:break-word;
+}
+
+.orders table .productName {
+  width:30%;
+  /*float:left;*/
+  word-wrap:break-word;
+}
+
+.orders table .status {
+  width:20%;
+  /*float:left;*/
+  word-wrap:break-word;
+}
+
+.orders .tablerow{
+  background-color: #adadad;
+  border-spacing:2px;
+}
+
+.detail {
+  border-top: 1px solid #eee;
+  margin-bottom:1px;
+}
+
+#nrResults
+{
+  padding:10px;
+  margin:10px;
+  font-size:10px;
+}
+
+.resetFilter
+{
+  float:right;
+  margin-top:40px;
+  margin-right:20px;
+  font-size:10px;
+  /*padding:10px;*/
+}
+
+.tab-content
+{
+  margin-bottom: 10px;
+}
+
+
+.st-sort-ascent:before{
+  content: '\25B2';
+}
+
+.st-sort-descent:before{
+  content: '\25BC';
+}
+
+.input[type="password"],input[type="text"] {
+  background-color:#fff;
+  height: 34px;
+  _height: 18px;
+  height/*\**/:18px\9;
+  height: 18px\9;
+}
+
+
+/*tablefilter*/
+.tableFilter
+{
+  margin-top: 10px;
+}
+
+
+/*ordersourceFilter*/
+.advancedSearch
+{
+  font-size: 10px;
+  margin-top: 35px;
+}
+
+a
+{
+  cursor:pointer;
+}
+
+
+/*details*/
+
+.transactionDetails
+{
+  margin-top: 10px;
+}
+
+label
+{
+  margin-top: 10px;
+}
