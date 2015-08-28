@@ -32,7 +32,8 @@ app.config(function ($stateProvider) {
         })
 
       .state('orderDetail', {
-        templateUrl: 'modules/common/orders/partials/detail.html',
+        templateUrl: 'modules/common/orders/partials/detail.html?referrer',
+        params: {myParam: null},
         controller: 'OrderDetailCtrl',
         resolve: {
           orderDetails: function (wipService, configService) {

@@ -1,4 +1,4 @@
-app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders) {
+app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders,$state) {
 
   $scope.ordersTabActive = true;
   $scope.settlementsTabActive = false;
@@ -11,7 +11,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.settlementsTabActive = true;
   }
   else {
-    $scope.displayedRows=orderData;
+    $scope.displayedRows = orderData;
     $scope.accounts = orderData;
   }
 
@@ -25,20 +25,9 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   }
 
   $scope.selectAccount = function () {
-    var accountName = $scope.selectedAccount.account.accountName;
-    console.log(accountName);
 
-    var filt = _.filter($scope.accounts, function (acct) {
-      return acct.account.accountName == accountName;
-    });
+    $state.go('orderDetail', {myParam: {some: 'thing'}})
 
-    console.log('filt', filt);
-
-    debugger;
-
-    $scope.displayedRows=filt;
-
-    console.log( $scope.displayedRows);
 
   }
 
