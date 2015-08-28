@@ -4,7 +4,7 @@
 
     <h5>{{accounts.length}} results match your search selection.</h5>
 
-    <table st-ratio="100" st-table="accounts" class="table table-striped">
+    <table st-ratio="100"  st-table="displayedRows"  st-safe-src="accounts" class="table table-striped">
       <thead>
       <tr>
         <th st-ratio="10" st-sort="accountId.key">Account</th>

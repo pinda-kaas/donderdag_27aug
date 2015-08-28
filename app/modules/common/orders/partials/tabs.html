@@ -6,7 +6,8 @@
         <label for="">Account Search:</label>
         <!--<input type="text" class="form-control" ng-model="accountName" id="field4" placeholder="Search by account name or number"/>-->
 
-        <input type="text" class="form-control" ng-model="selectedAccount" bs-options="account.account.accountName for account in accounts" placeholder="Search for account" bs-typeahead>
+        {{selectedAccount}}
+        <input type="text" class="form-control" ng-click="selectAccount()" ng-model="selectedAccount" bs-options="account.account.accountName for account in accounts" placeholder="Search for account" bs-typeahead>
 
         <i class="fa fa-search"></i>
       </div>

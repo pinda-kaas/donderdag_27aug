@@ -1,14 +1,14 @@
 app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders) {
 
-  $scope.ordersTabActive=true;
-  $scope.settlementsTabActive=false;
-  $scope.completedTabActive=false;
+  $scope.ordersTabActive = true;
+  $scope.settlementsTabActive = false;
+  $scope.completedTabActive = false;
 
-  console.log('ordersctrl started');
+  console.log('ordersctr2cbvsl startesd');
 
-  if (orderData.length ==0) {
-    $scope.ordersTabActive=false;
-    $scope.settlementsTabActive=true;
+  if (orderData.length == 0) {
+    $scope.ordersTabActive = false;
+    $scope.settlementsTabActive = true;
   }
   else {
     $scope.accounts = orderData;
@@ -23,6 +23,22 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.adviser = adviser;
   }
 
+  $scope.selectAccount = function () {
+    var accountName = $scope.selectedAccount.account.accountName;
+    console.log(accountName);
+
+    var filt = _.filter($scope.accounts, function (acct) {
+      return acct.account.accountName == accountName;
+    });
+
+
+    console.log('filt', filt);
+
+    $scope.accounts=filt;
+
+    console.log($scope.accounts);
+
+  }
 
 
 });
