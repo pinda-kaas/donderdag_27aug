@@ -4,9 +4,6 @@
     <div class="row">
       <div class="col-sm-10">
         <label for="">Account Search:</label>
-        <!--<input type="text" class="form-control" ng-model="accountName" id="field4" placeholder="Search by account name or number"/>-->
-
-        {{selectedAccount}}
         <input type="text" class="form-control" ng-click="selectAccount()" ng-model="selectedAccount" bs-options="account.account.accountName for account in accounts" placeholder="Search for account" bs-typeahead>
 
         <i class="fa fa-search"></i>
@@ -30,8 +27,6 @@
       </div>
     </div>
   </div>
-
-
 
 
   <reset-filter></reset-filter>

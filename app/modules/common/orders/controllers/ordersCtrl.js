@@ -11,6 +11,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.settlementsTabActive = true;
   }
   else {
+    $scope.displayedRows=orderData;
     $scope.accounts = orderData;
   }
 
@@ -31,12 +32,13 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
       return acct.account.accountName == accountName;
     });
 
-
     console.log('filt', filt);
 
-    $scope.accounts=filt;
+    debugger;
 
-    console.log($scope.accounts);
+    $scope.displayedRows=filt;
+
+    console.log( $scope.displayedRows);
 
   }
 
