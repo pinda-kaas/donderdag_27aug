@@ -37,8 +37,11 @@ app.config(function ($stateProvider) {
         controller: 'OrderDetailCtrl',
         resolve: {
           orderDetails: function (wipService, configService) {
+              var referrer = $stateParams.myParam ;
+
+              console.log('stateParm', referrer);
             console.log('order detail resolving');
-            return wipService.getData(configService.config('mock_order_detail').url);
+            return wipService.getDetail(configService.config('mock_order_detail').url);
           }
         }
       });

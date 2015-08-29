@@ -4,7 +4,9 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.settlementsTabActive = false;
     $scope.completedTabActive = false;
 
-    console.log('ordersctr2cbvsl startesd');
+    $scope.selectedAccount ='';
+
+    console.log('ordersctrl startesd');
 
     if (orderData.length == 0) {
         $scope.ordersTabActive = false;
@@ -24,13 +26,13 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
         $scope.adviser = adviser;
     }
 
-    //$scope.selectAccount = function () {
-    //
-    //  $state.go('orderDetail', {myParam: {some: 'thing'}})
-    //
-    //
-    //}
-    //
+    $scope.selectAccount = function () {
+
+        if ($scope.selectedAccount!='') {
+            $state.go('orderDetail', {myParam: {accountID: $scope.selectedAccount}})
+        }
+    }
+
 
     $scope.getLocation = function (val) {
         return $http.get('/modules/common/orders/mock/ordersTabMockData.json', {

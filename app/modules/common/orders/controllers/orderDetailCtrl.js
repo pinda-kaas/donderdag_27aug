@@ -3,10 +3,10 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   $scope.orderDetails = orderDetails;
 
 
-  debugger;
-  var referrer = $stateParams.myParam ;
-
-  console.log('state', referrer);
+  //debugger;
+  //var referrer = $stateParams.myParam ;
+  //
+  //console.log('state', referrer);
 
   $scope.collapsed = true;
 
