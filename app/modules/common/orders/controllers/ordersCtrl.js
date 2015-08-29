@@ -26,7 +26,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
   $scope.selectAccount = function () {
 
-    $state.go('orderDetail', {myParam: {some: 'thing'}})
+    $state.go('orderDetail', {myParam: {accountId: 2}})
 
 
   }
