@@ -33,14 +33,16 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     //
 
     $scope.getLocation = function (val) {
-        return $http.get('//maps.googleapis.com/maps/api/geocode/json', {
+        return $http.get('/modules/common/orders/mock/ordersTabMockData.json', {
             params: {
-                address: val,
+                accountName: val,
                 sensor: false
             }
-        }).then(function (response) {
-            return response.data.results.map(function (item) {
-                return item.formatted_address;
+        })
+            .then(function (response) {
+            return response.data.map(function (item) {
+                console.log (item.account.accountName);
+                return item.account.accountId.key+ "-"+ item.account.accountName;
             });
         });
     };
