@@ -1,10 +1,10 @@
-app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state,$http) {
+app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
 
     $scope.ordersTabActive = true;
     $scope.settlementsTabActive = false;
     $scope.completedTabActive = false;
 
-    $scope.selectedAccount ='';
+    $scope.selectedAccount = '';
 
     console.log('ordersctrl startesd');
 
@@ -27,8 +27,8 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     }
 
     $scope.selectAccount = function () {
-
-        if ($scope.selectedAccount!='') {
+        console.log('select account');
+        if ($scope.selectedAccount != '') {
             $state.go('orderDetail', {myParam: {accountID: $scope.selectedAccount}})
         }
     }
@@ -42,11 +42,11 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
             }
         })
             .then(function (response) {
-            return response.data.map(function (item) {
-                console.log (item.account.accountName);
-                return item.account.accountId.key+ "-"+ item.account.accountName;
+                return response.data.map(function (item) {
+                    console.log(item.account.accountName);
+                    return item.account.accountId.key + "-" + item.account.accountName;
+                });
             });
-        });
     };
 
 

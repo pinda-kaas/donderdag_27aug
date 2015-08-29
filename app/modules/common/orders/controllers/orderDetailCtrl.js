@@ -1,4 +1,4 @@
-app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails, $stateParams) {
+app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails) {
 
   $scope.orderDetails = orderDetails;
 

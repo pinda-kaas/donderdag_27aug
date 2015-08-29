@@ -33,15 +33,16 @@ app.config(function ($stateProvider) {
 
       .state('orderDetail', {
         templateUrl: 'modules/common/orders/partials/detail.html?referrer',
-        params: {myParam: null},
         controller: 'OrderDetailCtrl',
         resolve: {
-          orderDetails: function (wipService, configService) {
-              var referrer = $stateParams.myParam ;
 
-              console.log('stateParm', referrer);
+          orderDetails: function (wipService, configService) {
+              console.log('resolve');
+            //  var referrer = $stateParams.myParam ;
+            //console.log('stateParm', params);
             console.log('order detail resolving');
-            return wipService.getDetail(configService.config('mock_order_detail').url);
+              //todo remove hardcoded
+            return wipService.getDetail(configService.config('mock_order_detail').url+'?accountId=2233');
           }
         }
       });
