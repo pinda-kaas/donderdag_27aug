@@ -26,7 +26,12 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
   $scope.selectAccount = function () {
 
-    $state.go('orderDetail', {myParam: {accountId: 2}})
+    $scope.selectAccount = function () {
+        console.log('select account');
+        if ($scope.selectedAccount != '') {
+            $state.go('orderDetail', {myParam: {accountID: $scope.selectedAccount}})
+        }
+    }
 
 
   }

@@ -1,6 +1,7 @@
 angular.module('WIP').factory('configService', function($http) {
   return {
     config: function(environment) {
+        console.log(environment);
       switch (environment) {
         case 'mock_orders':
           return {
