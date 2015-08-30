@@ -1,7 +1,11 @@
-app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails) {
+app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams) {
 
   $scope.orderDetails = orderDetails;
 
+
+  //accountid
+
+  console.log('orderdetail params',$stateParams)
 
   //debugger;
   //var referrer = $stateParams.myParam ;

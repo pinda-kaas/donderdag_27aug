@@ -16,7 +16,8 @@
       </thead>
       <tbody>
       <tr ng-repeat="account in accounts">
-        <td st-ratio="10" ><a ui-sref="orderDetail"> {{account.account.accountId.key}}</a></td>
+        {myParam: {accountID: $scope.selectedAccount}}
+        <td st-ratio="10" ><a ui-sref="orderDetail({myParam:account.account.accountId.key})"> {{account.account.accountId.key}}</a></td>
         <td st-ratio="10" >{{account.account.accountName}}</td>
         <td st-ratio="10" >{{account.account.adviser}}</td>
         <td st-ratio="10" >{{account.account.productName}}</td>
