@@ -4,7 +4,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   $scope.settlementsTabActive = false;
   $scope.completedTabActive = false;
 
-  console.log('ordersctr2cbvsl startesd');
+  console.log('ordersctrk started');
 
   if (orderData.length == 0) {
     $scope.ordersTabActive = false;
@@ -24,18 +24,17 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.adviser = adviser;
   }
 
-
-  $scope.getLocation = function (val) {
+  $scope.getAccount = function (val) {
     return $http.get('/modules/common/orders/mock/ordersTabMockData.json', {
       params: {
-        accountName: val,
-        sensor: false
+        accountName: val
+
       }
     })
       .then(function (response) {
         return response.data.map(function (item) {
           //console.log (item.account.accountName);
-          return item.account.accountId.key+ "-"+ item.account.accountName;
+          return item.account.accountId.key;//+ "-"+ item.account.accountName;
         });
       });
   };
@@ -45,7 +44,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.selectAccount = function () {
         console.log('select account');
         if ($scope.selectedAccount != '') {
-          $state.go('orderDetail', {myParam: angular.fromJson({accountID: $scope.selectedAccount})});
+          $state.go('orderDetail', {myParam:  $scope.selectedAccount});
         }
     }
 

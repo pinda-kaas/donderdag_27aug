@@ -8,7 +8,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   console.log('orderdetail params',$stateParams)
 
   //debugger;
-  //var referrer = $stateParams.myParam ;
+  //var referrer = $statePara   ms.myParam ;
   //
   //console.log('state', referrer);
 

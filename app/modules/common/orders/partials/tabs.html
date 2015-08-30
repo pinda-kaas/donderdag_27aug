@@ -6,8 +6,9 @@
         <label for="">Account Search:</label>
 
           sa {{selectedAccount}}
-          <input type="text" ng-model="selectedAccount" ng-click="selectAccount()" placeholder="Locations loaded via $http" typeahead="address for address in getLocation($viewValue)" typeahead-loading="loadingLocations" typeahead-no-results="noResults" class="form-control">
-          <i ng-show="loadingLocations" class="glyphicon glyphicon-refresh"></i>
+          <input type="text" ng-model="selectedAccount" ng-click="selectAccount()" placeholder="Select accountname"
+                 typeahead-loading="loadingAccounts"  typeahead="account for account in getAccount($viewValue)"  class="form-control">
+          <i ng-show="loadingAccounts" class="glyphicon glyphicon-refresh"></i>
           <div ng-show="noResults">
               <i class="glyphicon glyphicon-remove"></i> No Results Found
           </div>
