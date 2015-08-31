@@ -1,4 +1,4 @@
-app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders,$state,$http) {
+app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
 
   $scope.ordersTabActive = true;
   $scope.settlementsTabActive = false;
@@ -40,15 +40,11 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   };
 
   $scope.selectAccount = function () {
-
-    $scope.selectAccount = function () {
-        console.log('select account');
-        if ($scope.selectedAccount != '') {
-          $state.go('orderDetail', {myParam:  $scope.selectedAccount});
-        }
+    debugger;
+    console.log('select account');
+    if ($scope.selectedAccount != '' && $scope.selectedAccount!=undefined) {
+      $state.go('orderDetail', {myParam: $scope.selectedAccount});
     }
-
-
   }
 
 
