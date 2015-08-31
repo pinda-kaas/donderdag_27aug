@@ -14,7 +14,8 @@ app.directive('tableFilter', function ($filter) {
         'Managed Investments',
         'TD\'s',
         'Pension',
-        'All'
+        'All',
+        ''
       ];
 
       $scope.tradeTypes = [

@@ -49,8 +49,8 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
 
   $scope.resetFilter= function(){
-    console.log('reset filter');
-    $scope.assetType ='';
+    console.log('reset filter',$scope.assetType);
+    $scope.assetType ='All';
   }
 
 
