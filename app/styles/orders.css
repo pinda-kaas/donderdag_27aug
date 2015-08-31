@@ -1,5 +1,11 @@
 /*Main style WIP */
 
+
+body
+{
+  font-size:12px;
+}
+
 .main
 {
   background:#ffffff;
@@ -160,7 +166,7 @@ label
   font-size: 11px;
   padding-left: 5px;
   padding-right: 5px;
-  text-align: right; }
+  text-align: left; }
 @media print {
   .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
     white-space: break-all; } }
