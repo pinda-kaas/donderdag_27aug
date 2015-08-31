@@ -1,9 +1,10 @@
 <div collapse="showAdvancedSearch">
   <div class="row tableFilter">
 
+
     <div class="col-sm-2">
-      <label for="">Asset type</label>
-      <select class="form-control" name="" ng-model="assetType" ng-options="item.name for item in assetTypes">
+      <label for="">Asset type</label> assettype {{assetType}}
+      <select class="form-control" name="" ng-model="assetType" ng-options="item for item in assetTypes">
       </select>
     </div>
 

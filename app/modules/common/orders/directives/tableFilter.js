@@ -7,14 +7,14 @@ app.directive('tableFilter', function ($filter) {
       //console.log('security',$scope.security);
 
       $scope.assetTypes = [
-        {name: 'SMA'},
-        {name: 'Super'},
-        {name: 'Aus. Equities'},
-        {name: 'Intl. Equities'},
-        {name: 'Managed Investments'},
-        {name: 'TD\'s'},
-        {name: 'Pension'},
-        {name: 'All'}
+        'SMA',
+        'Super',
+        'Aus. Equities',
+        'Intl. Equities',
+        'Managed Investments',
+        'TD\'s',
+        'Pension',
+        'All'
       ];
 
       $scope.tradeTypes = [
