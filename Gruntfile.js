@@ -255,25 +255,25 @@ module.exports = function (grunt) {
     // By default, your `index.html`'s <!-- Usemin block --> will take care of
     // minification. These next options are pre-configured if you do not wish
     // to use the Usemin blocks.
-    cssmin: {
-      dist: {
-        files: {
-          'dist/styles/main.css': [
-            '.tmp/styles/{,*/}*.css'
-          ]
-        }
-      }
-    },
-    uglify: {
-      dist: {
-        files: [{
-          expand: true,
-          src: 'modules/**/*.js',
-          dest: 'build/scripts',
-          cwd: 'modules/**'
-        }]
-      }
-    },
+    //cssmin: {
+    //  dist: {
+    //    files: {
+    //      'dist/styles/main.css': [
+    //        '.tmp/styles/{,*/}*.css'
+    //      ]
+    //    }
+    //  }
+    //},
+    //uglify: {
+    //  dist: {
+    //    files: [{
+    //      expand: true,
+    //      src: 'modules/**/*.js',
+    //      dest: 'build/scripts',
+    //      cwd: 'modules/**'
+    //    }]
+    //  }
+    //},
 
 
   concat: {
@@ -378,9 +378,9 @@ module.exports = function (grunt) {
       },
       styles: {
         expand: true,
-        cwd: 'app/styles',
+        cwd: 'app/styles/**/',
         dest: '.tmp/styles/',
-        src: '{,*/}*.css'
+        src: '*.css'
       }
     },
 
@@ -393,7 +393,7 @@ module.exports = function (grunt) {
         'compass'
       ],
       dist: [
-        'compass:dist',
+        //'compass:dist',
         'imagemin',
         'svgmin'
       ]
@@ -454,17 +454,17 @@ module.exports = function (grunt) {
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+    //'concurrent:dist',
     'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
     //'cdnify',
     'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    //'uglify',
+    //'filerev',
+    //'usemin',
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [
