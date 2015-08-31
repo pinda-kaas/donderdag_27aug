@@ -18,14 +18,12 @@ app.directive('tableFilter', function ($filter) {
       ];
 
       $scope.tradeTypes = [
-        {name: 'SELL'},
-        {name: 'BUY'},
-        {name: 'BUY'},
-        {name: 'App (application)'},
-        {name: 'App (application)'},
-        {name: 'Red (redemption)'},
-        {name: 'Switches)'},
-        {name: 'All'}];
+        'SELL',
+        'BUY',
+        'App (application)',
+        'REDEMPTION',
+        'Switches',
+        'All'];
     },
     link: function ($scope) {
 

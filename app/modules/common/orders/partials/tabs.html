@@ -5,14 +5,12 @@
       <div class="col-sm-10">
         <label for="">Account Search:</label>
 
-          sa {{selectedAccount}}
           <input type="text" ng-model="selectedAccount" ng-click="selectAccount()" placeholder="Select accountname"
                  typeahead-loading="loadingAccounts"  typeahead="account for account in getAccount($viewValue)"  class="form-control">
           <i ng-show="loadingAccounts" class="glyphicon glyphicon-refresh"></i>
           <div ng-show="noResults">
               <i class="glyphicon glyphicon-remove"></i> No Results Found
           </div>
-
 
       </div>
 
@@ -49,7 +47,7 @@
             </tab>
 
             <tab heading="Awaiting settlement" active="settlementsTabActive">
-              <table-filter security="testing"></table-filter>
+              <table-filter security="acc"></table-filter>
               <awaiting-settlements-tab></awaiting-settlements-tab>
             </tab>
 

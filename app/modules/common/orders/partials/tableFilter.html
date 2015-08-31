@@ -14,10 +14,7 @@
 
     <div class="col-sm-2">
       <label for="">Trade type</label>
-      <select class="form-control" ng-model="tradeType">
-        <option>SELL</option>
-        <option>BUY</option>
-        <option></option>
+      <select class="form-control"  ng-model="tradeType" ng-options="item for item in tradeTypes">
       </select></div>
 
     <div class="col-sm-2">
