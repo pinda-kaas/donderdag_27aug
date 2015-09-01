@@ -2,7 +2,7 @@ app.directive('datePicker', function ($compile, $timeout) {
     return {
         replace: true,
         restrict:'E',
-        templateUrl: 'modules/common/orders/partials/datepicker.html',
+        templateUrl: 'views/datepicker.html',
         scope: {dt:'=par1'},
         controller: function ($scope) {
             console.log('datepicker controller');

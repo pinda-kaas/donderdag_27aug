@@ -1,6 +1,6 @@
 app.directive('orderSourceFilter', function() {
   return {
-    templateUrl: 'modules/common/orders/partials/orderSourceFilter.html',
+    templateUrl: 'views/orderSourceFilter.html',
     controller:function($scope){
       $scope.showAdvancedSearch=false;
     }
