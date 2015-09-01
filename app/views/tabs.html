@@ -2,10 +2,10 @@
 
   <div class="well search form-inline">
     <div class="row">
-      <div class="col-sm-10">
+      <div class="col-sm-8">
         <label for="">Account Search:</label>
 
-        <input type="text" ng-model="selectedAccount"  placeholder="Select accountname" typeahead-on-select='onSelect($item, $model, $label)'
+        <input type="text" id="selectaccount" ng-model="selectedAccount"   placeholder="Select accountname" typeahead-on-select='onSelect($item, $model, $label)'
                typeahead="(account.account.accountId.key + ' ' + account.account.accountName) for account in accounts | filter:$viewValue | limitTo:8"
                class="form-control" typeahead-loading="loadingAccounts" >
 
@@ -17,7 +17,7 @@
 
       </div>
 
-      <div class="col-sm-2">
+      <div class="col-sm-4">
 
         <div class="btn-group" dropdown is-open="status.isopen">
 

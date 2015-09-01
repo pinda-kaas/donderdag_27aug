@@ -1,9 +1,8 @@
 /*Main style WIP */
 
-
 body
 {
-  font-size:12px;
+  font-size:12px !important;
 }
 
 .main
@@ -103,9 +102,22 @@ body
 .input[type="password"],input[type="text"] {
   background-color:#fff;
   height: 34px;
-  _height: 18px;
-  height/*\**/:18px\9;
-  height: 18px\9;
+}
+
+#selectaccount
+{
+  width:50%;
+}
+
+#single-button
+{
+  width:150%;
+}
+
+.results
+{
+  margin-top:10px;
+  padding:10px;
 }
 
 
@@ -297,3 +309,5 @@ label
   background: #ebecec;
   padding: 1.75em;
   text-align: left; }
+
+
