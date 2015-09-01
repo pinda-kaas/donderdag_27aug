@@ -12,20 +12,203 @@ app.config(function ($stateProvider) {
 
     $stateProvider
         .state('tabs', {
-            templateUrl: 'modules/common/orders/partials/tabs.html',
+            templateUrl: '../views/tabs.html',
             controller: 'OrdersCtrl',
             resolve: {
                 orderData: function (wipService, configService) {
                     console.log('resolve orderdata');
-                    return wipService.getData(configService.config('mock_orders').url);
+                  return [
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "S43566"
+                        },
+                        "accountName": "JEFFERY CHRISTOPHER R",
+                        "productName": "Warrants",
+                        "adviser": "Mark",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "REJECTED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "V11233"
+                        },
+                        "accountName": "RISZKO SUPERANNUATION",
+                        "productName": "Warrants",
+                        "adviser": "Mark",
+                        "accountServiceType": "INVESTMENT"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "I67661"
+                        },
+                        "accountName": "SMALES SUPERANNUATION FUND",
+                        "productName": "Warrants",
+                        "adviser": "Ed",
+                        "accountServiceType": "INVESTMENT"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "V57294"
+                        },
+                        "accountName": "PAKIRI SUPERANNUATION FUND",
+                        "productName": "Warrants",
+                        "adviser": "Ed",
+                        "accountServiceType": "INVESTMENT"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "O08263"
+                        },
+                        "accountName": "HILL GREGORY JOHN",
+                        "productName": "Term deposits",
+                        "adviser": "Ed",
+                        "accountServiceType": "PENSION"
+                      },
+                      "minOpenOrderState": "EXECUTION FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U05631"
+                        },
+                        "accountName": "GROOM FIONA",
+                        "productName": "Term deposits",
+                        "adviser": "Ed",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "P85824"
+                        },
+                        "accountName": "READ PHILIP ALAN",
+                        "productName": "Term deposits",
+                        "adviser": "Ed",
+                        "accountServiceType": "PENSION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "O22076"
+                        },
+                        "accountName": "WARD ELLEN",
+                        "productName": "SMA",
+                        "adviser": "Ed",
+                        "accountServiceType": "PENSION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "O15073"
+                        },
+                        "accountName": "READ PHILIP ALAN",
+                        "productName": "SMA",
+                        "adviser": "Fred",
+                        "accountServiceType": "PENSION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U05824"
+                        },
+                        "accountName": "COLEMAN KAREN",
+                        "productName": "SMA",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U12067"
+                        },
+                        "accountName": "CABARKAPA ALEKSANDRA",
+                        "productName": "Managed funds",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U18380"
+                        },
+                        "accountName": "KITCHEN ALLICIA",
+                        "productName": "Managed funds",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "C04489"
+                        },
+                        "accountName": "CHAN WILLIAM",
+                        "productName": "Managed funds",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U19543"
+                        },
+                        "accountName": "HARRINGTON AARON",
+                        "productName": "Managed funds",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    },
+                    {
+                      "account": {
+                        "accountId": {
+                          "key": "U21812"
+                        },
+                        "accountName": "LUKATELICH AARON NICHOLAS",
+                        "productName": "Managed funds",
+                        "adviser": "Fred",
+                        "accountServiceType": "SUPERANNUATION"
+                      },
+                      "minOpenOrderState": "FAILED"
+                    }
+                  ];
+
+                  //return wipService.getData(configService.config('mock_orders').url);
                 },
                 settlementsData: function (wipService, configService) {
                     console.log('resolve settlementData');
-                    return wipService.getData(configService.config('mock_settlements').url);
+                    //return wipService.getData(configService.config('mock_settlements').url);
                 }
                 ,
                 completeOrders: function (wipService, configService) {
-                    return wipService.getData(configService.config('mock_complete_orders').url);
+                    //return wipService.getData(configService.config('mock_complete_orders').url);
                 }
 
             }
@@ -33,7 +216,7 @@ app.config(function ($stateProvider) {
 
 
       .state('orderDetail', {
-        templateUrl: 'modules/common/orders/partials/detail.html',
+        templateUrl: '../views/detail.html',
         controller: 'OrderDetailCtrl',
         url: '/detail/:myParam',
 
