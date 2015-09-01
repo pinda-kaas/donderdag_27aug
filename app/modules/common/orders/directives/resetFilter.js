@@ -1,5 +1,5 @@
 app.directive('resetFilter', function () {
   return {
-    templateUrl: '../../../../views/resetFilter.html'
+    templateUrl: 'views/resetFilter.html'
   };
 });
