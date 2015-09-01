@@ -2417,160 +2417,43 @@ var detailMockData={
           "filledUnits":950,
           "price": 50922.47,
           "amount":111222.00,
-          "fundingPriority":"Transacting",
-          "status": "ON_MARKET",
-          "detailTransactions":[
-            {
-              "reference":1234567,
-              "orderTaker":20000000,
-              "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
-              "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
-              "status": "ON_MARKET"
-            },
-            {
-              "reference":1234567,
-              "orderTaker":20000000,
-              "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
-              "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
-              "status": "ON_MARKET"
-            }
-            ,
-            {
-              "reference":1234567,
-              "orderTaker":20000000,
-              "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
-              "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
-              "status": "ON_MARKET"
-            }
-          ]
-        },
+          "fundingPriority":"level 1",
+          "status": "ON_MARKET"
+          //"detailTransactions":[
+          //  {
+          //    "reference":1234567,
+          //    "orderTaker":20000000,
+          //    "lastUpdated": "02-09-2014 12:36 PM",
+          //    "filledUnits":950,
+          //    "price": 50922.47,
+          //    "amount":111222.00,
+          //    "fundingPriority":"proceeds(1)",
+          //    "status": "ON_MARKET"
+          //  },
+          //  {
+          //    "reference":1234567,
+          //    "orderTaker":20000000,
+          //    "lastUpdated": "02-09-2014 12:36 PM",
+          //    "filledUnits":950,
+          //    "price": 50922.47,
+          //    "amount":111222.00,
+          //    "fundingPriority":"proceeds(1)",
+          //    "status": "ON_MARKET"
+          //  }
+          //  ,
+          //  {
+          //    "reference":1234567,
+          //    "orderTaker":20000000,
+          //    "lastUpdated": "02-09-2014 12:36 PM",
+          //    "filledUnits":950,
+          //    "price": 50922.47,
+          //    "amount":111222.00,
+          //    "fundingPriority":"proceeds(1)",
+          //    "status": "ON_MARKET"
+          //  }
+          //]
+        }
 
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
     }
   ],
   "_id": "55d926a61cc52afc19e363de",
