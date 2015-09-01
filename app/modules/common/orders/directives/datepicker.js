@@ -1,14 +1,11 @@
 app.directive('datePicker', function ($compile, $timeout) {
     return {
         replace: true,
-        restrict:'E',
+        restrict: 'E',
         templateUrl: 'views/datepicker.html',
-        scope: {dt:'=par1'},
+        scope: {dt: '=par1'},
         controller: function ($scope) {
             console.log('datepicker controller');
-
-            // debugger;
-
             $scope.today = function () {
                 $scope.dt = new Date();
             };

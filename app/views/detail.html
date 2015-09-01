@@ -1,3 +1,4 @@
+<div class="orders">
 <hr class="detail"/>
 
 <div class="row form-inline">
@@ -89,14 +90,19 @@
             <td> {{account.transactions.lastUpdated}}</td>
 
             <td> {{account.transactions.filledUnits}}</td>
-            <td> {{account.transactions.price}}</td>
-            <td> {{account.transactions.amount}}</td>
+            <td> ${{account.transactions.price}}</td>
+            <td> ${{account.transactions.amount}}</td>
             <td> {{account.transactions.fundingPriority}}</td>
             <td> {{account.transactions.status}}</td>
         </tr>
-        <tr collapse="collapsedDetail">
+        <tr collapse="collapsedDetail" ng-repeat="transaction in account.transactions.detailTransactions">
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td>{{transaction.lastUpdated}}</td>
+            <td>{{transaction.filledUnits}}</td>
+            <td>${{transaction.price}}</td>
         </tr>
 
     </table>
@@ -213,3 +219,4 @@
 <!--</td>-->
 <!--</tr>-->
 
+</div>

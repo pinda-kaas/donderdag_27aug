@@ -77,7 +77,7 @@ body {
   float: right;
   margin-right: 20px;
   font-size: 10px;
-  /*padding:10px;*/
+  margin-top:16px;
 }
 
 .tab-content {
@@ -327,3 +327,10 @@ label {
 .text-center {
   text-align: center;
 }
+
+
+select.form-control ,input.form-control
+{
+    font-size:12px;
+}
+
