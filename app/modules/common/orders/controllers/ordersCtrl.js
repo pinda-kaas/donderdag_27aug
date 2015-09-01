@@ -28,7 +28,6 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     return $http.get('/modules/common/orders/mock/ordersTabMockData.json', {
       params: {
         accountName: val
-
       }
     })
       .then(function (response) {
@@ -39,13 +38,16 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
       });
   };
 
-  $scope.selectAccount = function () {
-    debugger;
-    console.log('select account');
-    if ($scope.selectedAccount != '' && $scope.selectedAccount!=undefined) {
-      $state.go('orderDetail', {myParam: $scope.selectedAccount});
-    }
-  }
+  $scope.onSelect = function ($item, $model, $label) {
+    $scope.$item = $item;
+    $scope.$model = $model;
+    $scope.$label = $label;
+
+    console.log('id=',$item);
+
+    $state.go('orderDetail', {myParam: $item.account.accountId.key});
+  };
+
 
 
   $scope.resetFilter= function(){
