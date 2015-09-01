@@ -135,26 +135,6 @@ label {
   margin-top: 10px;
 }
 
-.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #eff9fd;
-}
-
-.table-striped-child > tbody > tr > td {
-  background-color: #ededed;
-}
-
-.table-striped-child > tbody > tr:nth-child(odd) > td {
-  background-color: #f7f7f7;
-}
-
-.table-striped > tbody > tr:hover > td, .table-striped > tbody > tr:hover > th, .table-striped > tbody > tr:nth-child(odd):hover > td, .table-striped > tbody > tr:nth-child(odd):hover > th {
-  background-color: #d8f0fa;
-}
-
-.table-striped-child > tbody > tr:hover > td, .table-striped-child > tbody > tr:nth-child(odd):hover > td {
-  background-color: #d8d9d9;
-}
-
 .table > tbody > tr.active > td, .table > tbody > tr:nth-child(odd).active > td {
   background-color: #d8f0fa;
 }
