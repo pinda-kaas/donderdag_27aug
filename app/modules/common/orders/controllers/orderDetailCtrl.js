@@ -13,6 +13,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   //console.log('state', referrer);
 
   $scope.collapsed = true;
+  $scope.collapseddetail=true;
 
   //$scope.detailRows= orderDetail.rows;
   console.log('orderdetail ctrl', orderDetails);

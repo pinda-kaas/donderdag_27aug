@@ -2398,62 +2398,6 @@ var detailMockData={
   "accountType": "Investment Account",
   "orders": [
     {
-      "orderDate": "08-25-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$1300.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress",
-      "transactions": [
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-        ,
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-      ]
-    },
-    {
       "orderDate": "12-06-2015",
       "investment": "ANZ",
       "type": "BUY",
@@ -2463,9 +2407,9 @@ var detailMockData={
       "valid": "today only",
       "fee": "$130.50",
       "amount": "$1000",
-      "orderSource": "Transacting",
+      "orderSource": "Tranfsssacsting",
       "status": "In progress",
-      "transactions": [
+      "transactions":
         {
           "reference":1234567,
           "orderTaker":20000000,
@@ -2473,41 +2417,43 @@ var detailMockData={
           "filledUnits":950,
           "price": 50922.47,
           "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
+          "fundingPriority":"Transacting",
+          "status": "ON_MARKET",
+          "detailTransactions":[
+            {
+              "reference":1234567,
+              "orderTaker":20000000,
+              "lastUpdated": "02-09-2014 12:36 PM",
+              "filledUnits":950,
+              "price": 50922.47,
+              "amount":111222.00,
+              "fundingPriority":"proceeds(1)",
+              "status": "ON_MARKET"
+            },
+            {
+              "reference":1234567,
+              "orderTaker":20000000,
+              "lastUpdated": "02-09-2014 12:36 PM",
+              "filledUnits":950,
+              "price": 50922.47,
+              "amount":111222.00,
+              "fundingPriority":"proceeds(1)",
+              "status": "ON_MARKET"
+            }
+            ,
+            {
+              "reference":1234567,
+              "orderTaker":20000000,
+              "lastUpdated": "02-09-2014 12:36 PM",
+              "filledUnits":950,
+              "price": 50922.47,
+              "amount":111222.00,
+              "fundingPriority":"proceeds(1)",
+              "status": "ON_MARKET"
+            }
+          ]
         },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-        ,
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-      ]
+
     },
     {
       "orderDate": "12-06-2015",
