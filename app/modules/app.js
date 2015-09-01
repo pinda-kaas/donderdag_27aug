@@ -2407,7 +2407,7 @@ var detailMockData={
       "valid": "today only",
       "fee": "$130.50",
       "amount": "$1000",
-      "orderSource": "Tranfsssacsting",
+      "orderSource": "Transacting",
       "status": "In progress",
       "transactions":
         {

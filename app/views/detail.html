@@ -97,8 +97,10 @@
           </tr>
           </thead>
           <tbody>
+
           <tr ng-repeat="transaction in account.transactions">
             <td>
+              {{transaction}}
             </td>
             <td></td>
             <td st-ratio="7">
@@ -131,6 +133,7 @@
 
           <tr collapse="collapseddetail" ng-repeat="transactions in transaction.detailTransactions">
             <td>testing detaillll</td>
+            {{transactions}}
           </tr>
 
 
