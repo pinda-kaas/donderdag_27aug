@@ -3,11 +3,18 @@ underscore.factory('_', ['$window', function () {
     return $window._;
 }]);
 
+"use strict";
+
+//angular.module('config', [])
+//
+//    .constant('ENV', {name:'development',apiEndpoint:'http://your-development.api.endpoint:3000'})
+//
+//;
 var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate','config']);
 
 console.log('this is the app starting up');
 
-app.config(function ($stateProvider) {
+app.config(function ($stateProvider,ENV) {
     $stateProvider
         .state('tabs', {
             templateUrl: 'views/tabs.html',
@@ -15,6 +22,7 @@ app.config(function ($stateProvider) {
             resolve: {
                 orderData: function (wipService, configService) {
                     console.log('resolve orderdata');
+                    console.log('orderdata name',ENV.name);
                     return orderMockData;
                     //return wipService.getData(configService.config('mock_orders').url);
                 },
@@ -56,7 +64,7 @@ app.run(function ($state,ENV) {
     console.log('run');
     $state.go('tabs');
 
-  console.log(ENV.apiEndPoint);
+  console.log('app.run ENV',ENV.apiEndpoint);
     //$state.go('orderDetail');
 });
 

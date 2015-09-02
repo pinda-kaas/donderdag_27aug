@@ -19,6 +19,8 @@ module.exports = function (grunt) {
     cdnify: 'grunt-google-cdn'
   });
 
+    grunt.loadNpmTasks('grunt-ng-constant');
+
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
@@ -431,12 +433,12 @@ module.exports = function (grunt) {
       options: {
         space: '  ',
         wrap: '"use strict";\n\n {%= __ngModule %}',
-        name: 'config',
+        name: 'config'
       },
       // Environment targets
       development: {
         options: {
-          dest: '/modules/config.js'
+          dest: '<%= yeoman.app %>/modules/config.js'
         },
         constants: {
           ENV: {
