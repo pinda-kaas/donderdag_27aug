@@ -18,24 +18,23 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   $scope.settlements = settlementsData;
   $scope.completeOrders = completeOrders;
 
+  $scope.advisers = ['Mark', 'Ed', 'Fred',''];
+
   $scope.onSelect = function ($item, $model, $label) {
     $scope.$item = $item;
     $scope.$model = $model;
     $scope.$label = $label;
 
-    console.log('id=',$item);
+    console.log('id=', $item);
 
     $state.go('orderDetail', {myParam: $item.account.accountId.key});
   };
 
 
-
-  $scope.resetFilter= function(){
-    console.log('reset filter',$scope.assetType);
-    $scope.assetType ='All';
+  $scope.resetFilter = function () {
+    console.log('reset filter', $scope.assetType);
+    $scope.assetType = 'All';
   }
-
-    $scope.advisers=['Mark','Ed'];
 
 
 });

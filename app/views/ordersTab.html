@@ -17,14 +17,12 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="account in accounts | filter: { 'adviser': account  } ">
-
-          <!--filter: { properties: { title: title_filter }-->
-        <td st-ratio="10" ><a ui-sref="orderDetail({myParam:account.account.accountId.key})"> {{account.account.accountId.key}}</a></td>
-        <td st-ratio="10" >{{account.account.accountName}}</td>
-        <td st-ratio="10" >{{account.account.adviser}}</td>
-        <td st-ratio="10" >{{account.account.productName}}</td>
-        <td st-ratio="10" >{{account.minOpenOrderState}}</td>
+      <tr ng-repeat="acc in accounts | filter : { 'account': account}:true ">
+        <td st-ratio="10" ><a ui-sref="orderDetail({myParam:account.account.accountId.key})"> {{acc.account.accountId.key}}</a></td>
+        <td st-ratio="10" >{{acc.account.accountName}}</td>
+        <td st-ratio="10" >{{acc.account.adviser}}</td>
+        <td st-ratio="10" >{{acc.account.productName}}</td>
+        <td st-ratio="10" >{{acc.minOpenOrderState}}</td>
       </tr>
       </tbody>
 
