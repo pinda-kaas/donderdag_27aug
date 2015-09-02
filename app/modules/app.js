@@ -3,14 +3,11 @@ underscore.factory('_', ['$window', function () {
     return $window._;
 }]);
 
-var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate']);
+var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate','config']);
 
 console.log('this is the app starting up');
 
 app.config(function ($stateProvider) {
-    // Now set up the states
-
-
     $stateProvider
         .state('tabs', {
             templateUrl: 'views/tabs.html',
@@ -55,9 +52,11 @@ app.config(function ($stateProvider) {
 
 });
 
-app.run(function ($state) {
+app.run(function ($state,ENV) {
     console.log('run');
     $state.go('tabs');
+
+  console.log(ENV.apiEndPoint);
     //$state.go('orderDetail');
 });
 
