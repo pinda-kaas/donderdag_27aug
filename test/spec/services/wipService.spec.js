@@ -29,12 +29,14 @@ describe('wipService', function () {
     expect(result).toEqual(returnData);
   });
 
-  it('should call wipservice.getdetail()', function (){
+  it('should call wipservice.getData()', function (){
     var returnData = {"id":"S2233","name":"Jack"};
+
     httpBackend.expectGET('api/accounts/accountId=S2233').respond(returnData);
+
     httpBackend.expectGET('views/tabs.html').respond('');
 
-    var returnedPromise = wipService.getDetail('api/accounts/accountId='+'S2233');
+    var returnedPromise = wipService.getData('api/accounts/accountId='+'S2233');
     var result;
     returnedPromise.then(function(response) {
       result = response;

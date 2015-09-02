@@ -15,7 +15,8 @@ module.exports = function (config) {
     //},
     //
     preprocessors: {
-      '**/*.html': ['ng-html2js']
+      '**/*.html': ['ng-html2js'],
+      'app/**/*.js': ['coverage']
     },
 
     reporters: ['progress', 'coverage'],

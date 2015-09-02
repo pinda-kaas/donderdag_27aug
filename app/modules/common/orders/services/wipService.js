@@ -19,7 +19,7 @@
 
 angular.module('WIP').factory('wipService', function($http) {
   return {
-    getDetail: function(url) {
+    getData: function(url) {
       return $http.get(url)
         .then(function(result) {
           return result.data;
