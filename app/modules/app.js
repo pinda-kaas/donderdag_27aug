@@ -20,14 +20,14 @@ app.config(function ($stateProvider) {
       templateUrl: 'views/tabs.html',
       controller: 'OrdersCtrl',
       resolve: {
-        orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
-
-          var url =configService.config(clientEndpoint, clientOrderEndpoint, clientDetailOrder);
+        orderData: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder)
+        {
+          var url =configService.config(clientEndpoint, clientOrderEndpoint, clientDetailOrder,'open');
 
           debugger;
-          console.log(url);
+          console.log('detail url',url);
 
-          return wipService.getData(url);
+          return wipService.getData(url.url);
 
         },
         settlementsData: function (wipService, configService) {

@@ -3,15 +3,14 @@ angular.module('WIP').factory('configService', function ($http) {
 
   return {
 
-    config: function (clientEndpoint, clientOrderEndpoint, clientDetailOrder) {
+    config: function (clientEndpoint, clientOrderEndpoint, clientDetailOrder,tabType) {
 
       console.log(clientEndpoint);
-
 
       debugger;
       if (clientEndpoint.prefix == 'mock') {
 
-        switch (clientEndpoint) {
+        switch (tabType) {
           case 'open':
             return {
               url: '/modules/common/orders/mock/ordersTabMockData.json'
@@ -20,12 +19,12 @@ angular.module('WIP').factory('configService', function ($http) {
             return {
               url: '/modules/common/orders/mock/settlementsTabMockData.json'
             };
-          case 'completeOrders':
+          case 'complete':
             return {
               url: '/modules/common/orders/mock/completeOrdersTabMockData.json'
             };
 
-          case 'orderDetail':
+          case 'detail':
             return {
               url: '/modules/common/orders/mock/orderDetailMock.json'
             };
