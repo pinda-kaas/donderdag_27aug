@@ -28,7 +28,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
     console.log('id=', $item);
 
-    $state.go('orderDetail', {myParam: $item.account.accountId.key});
+    $state.go('orderDetail', {accountId: $item.account.accountId.key});
   };
 
 

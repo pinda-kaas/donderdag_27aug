@@ -447,7 +447,7 @@ module.exports = function (grunt) {
           clientOrderEndpoint: {
             suffix: 'wealth/services/orders/wip/v1/account/'
           },
-          clientDetailOrderSuffix: {
+          clientDetailOrder: {
             suffix: '/orders'
           }
         }
@@ -462,7 +462,7 @@ module.exports = function (grunt) {
         clientOrderEndpoint: {
           suffix: 'wealth/services/orders/wip/v1/account/'
         },
-        clientDetailOrderSuffix: {
+        clientDetailOrder: {
           suffix: '/orders'
         }
       }

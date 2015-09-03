@@ -23,6 +23,7 @@ app.config(function ($stateProvider) {
         orderData: function (wipService, configService) {
           console.log('resolve orderdata');
           //return orderMockData;
+          debugger;
           return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
 
         },
@@ -34,26 +35,37 @@ app.config(function ($stateProvider) {
         ,
         completeOrders: function (wipService, configService) {
          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
-         // return completeOrdersMockData;
+         //return completeOrdersMockData;
         }
 
       }
     })
-
-
     .state('orderDetail', {
       templateUrl: 'views/detail.html',
       controller: 'OrderDetailCtrl',
-      url: '/detail/:myParam',
+      url: '/detail/:accountId',
 
       resolve: {
-        orderDetails: function (wipService, configService, $stateParams) {
-          var accountId = $stateParams.myParam;
+        orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
+
+
+          var accountId = $stateParams.accountId;
           // debugger;
           console.log('ACCOUNT ID', accountId);
+
+
           //return detailMockData;
+
           //debugger;
-          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
+          accountId='D00072';
+          var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
+          //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
+
+          //working:
+          //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
+
+          console.log('detail url from resolve=',url);
+          return wipService.getData(url);
           console.log('order details devserver');
         }
       }

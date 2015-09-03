@@ -2,14 +2,13 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
   $scope.orderDetails = orderDetails;
 
-
   //accountid
 
-  //console.log('orderdetail params',$stateParams)
+  console.log('orderdetail params',$stateParams)
   console.log('orderdetails from devserver:',orderDetails)
 
   //debugger;
-  //var referrer = $statePara   ms.myParam ;
+  //var referrer = $stateParams.myParam ;
   //
   //console.log('state', referrer);
 

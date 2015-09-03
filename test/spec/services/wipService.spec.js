@@ -29,7 +29,7 @@ describe('wipService', function () {
     expect(result).toEqual(returnData);
   });
 
-  xit('should call wipservice.getData()', function (){
+  it('should call wipservice.getData()', function (){
     var returnData = {"id":"S2233","name":"Jack"};
 
     httpBackend.expectGET('api/accounts/accountId=S2233').respond(returnData);
