@@ -30,6 +30,9 @@
 
 <table-filter></table-filter>
 
+
+  {{orderDetails}}
+
 <div>
     <table st-table="detailRows" class="table table-striped">
         <thead>
@@ -50,9 +53,9 @@
         </tr>
         </thead>
 
-      {[account}}
 
-        <tbody ng-repeat="account in orderDetails.orders">
+
+        <tbody ng-repeat="account in orderDetails">
 
         <tr>
             <td st-ratio="20">{{account.orderDate}}</td>

@@ -3,51 +3,72 @@ underscore.factory('_', ['$window', function () {
   return $window._;
 }]);
 
-var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate']);
+"use strict";
+
+//angular.module('config', [])
+//
+//    .constant('ENV', {name:'development',apiEndpoint:'http://your-development.api.endpoint:3000'})
+//
+//;
+var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate', 'config']);
 
 console.log('this is the app starting up');
 
 app.config(function ($stateProvider) {
-  // Now set up the states
-
-
   $stateProvider
     .state('tabs', {
       templateUrl: 'views/tabs.html',
       controller: 'OrdersCtrl',
       resolve: {
-        orderData: function (wipService, configService) {
-          console.log('resolve orderdata');
-          return orderMockData;
-          //return wipService.getData(configService.config('mock_orders').url);
+        orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
+
+          var url =configService.config(clientEndpoint, clientOrderEndpoint, clientDetailOrder);
+
+          debugger;
+          console.log(url);
+
+          return wipService.getData(url);
+
         },
         settlementsData: function (wipService, configService) {
           console.log('resolve settlementData');
-          return settlementsMockData;
-          //return wipService.getData(configService.config('mock_settlements').url);
+          //return settlementsMockData;
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
-          //return wipService.getData(configService.config('mock_complete_orders').url);
-          return completeOrdersMockData;
+         return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
+         //return completeOrdersMockData;
         }
 
       }
     })
-
-
     .state('orderDetail', {
       templateUrl: 'views/detail.html',
       controller: 'OrderDetailCtrl',
-      url: '/detail/:myParam',
+      url: '/detail/:accountId',
 
       resolve: {
-        orderDetails: function (wipService, configService, $stateParams) {
-          var accountId = $stateParams.myParam;
+        orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
+
+          var accountId = $stateParams.accountId;
           // debugger;
           console.log('ACCOUNT ID', accountId);
-          return detailMockData;
-          //return wipService.getDetail(configService.config('mock_order_detail').url + '?accountId=' + accountId);
+
+
+          //return detailMockData;
+
+          //debugger;
+          accountId='D00072';
+          var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
+          //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
+
+          //working:
+          //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
+
+          console.log('detail url from resolve=',url);
+          return wipService.getData(url);
+          console.log('order details devserver');
         }
       }
     });
@@ -244,7 +265,7 @@ var orderMockData = [
   }
 ];
 
-var settlementsMockData=[
+var settlementsMockData = [
   {
     "account": {
       "accountId": {
@@ -451,7 +472,7 @@ var settlementsMockData=[
   }
 ];
 
-var completeOrdersMockData =[
+var completeOrdersMockData = [
   {
     "account": {
       "accountId": {
@@ -2392,225 +2413,105 @@ var completeOrdersMockData =[
   }
 ];
 
-var detailMockData={
-  "accountId": "D1234",
-  "accountName": "Sherry Gates",
-  "accountType": "Investment Account",
-  "orders": [
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress",
-      "transactions":
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
+var detailMockData = {
+    "accountId": "D1234",
+    "accountName": "Sherry Gates",
+    "accountType": "Investment Account",
+    "orders": [
+      {
+        "orderDate": "12-06-2015",
+        "investment": "ANZ",
+        "type": "BUY",
+        "units": 100,
+        "filledUnits": 200,
+        "limitPrice": "$200",
+        "valid": "today only",
+        "fee": "$130.50",
+        "amount": "$1000",
+        "orderSource": "Transacting",
+        "status": "In progress",
+        "transactions": {
+          "reference": 1234567,
+          "orderTaker": 20000000,
           "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
+          "filledUnits": 950,
           "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"Transacting",
+          "amount": 111222.00,
+          "fundingPriority": "level 1",
           "status": "ON_MARKET",
-          "detailTransactions":[
+          "detailTransactions": [
+
             {
-              "reference":1234567,
-              "orderTaker":20000000,
+
               "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
+              "filledUnits": 950,
               "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
+              "amount": 111222.00,
+              "fundingPriority": "proceeds(1)",
               "status": "ON_MARKET"
             },
             {
-              "reference":1234567,
-              "orderTaker":20000000,
+
               "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
+              "filledUnits": 950,
               "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
+              "amount": 111222.00,
+              "fundingPriority": "proceeds(1)",
               "status": "ON_MARKET"
             }
             ,
             {
-              "reference":1234567,
-              "orderTaker":20000000,
+
               "lastUpdated": "02-09-2014 12:36 PM",
-              "filledUnits":950,
+              "filledUnits": 950,
               "price": 50922.47,
-              "amount":111222.00,
-              "fundingPriority":"proceeds(1)",
+              "amount": 111222.00,
+              "fundingPriority": "proceeds(1)",
               "status": "ON_MARKET"
             }
           ]
-        },
+        }
 
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    }
-  ],
-  "_id": "55d926a61cc52afc19e363de",
-  "index": 0,
-  "guid": "7f46ddc1-3e50-464c-b0fc-01c5e477ca29",
-  "isActive": false,
-  "balance": "$3,800.65",
-  "gender": "female",
-  "company": "SHEPARD",
-  "email": "sherrygates@shepard.com",
-  "phone": "+1 (852) 570-2571",
-  "address": "711 Bristol Street, Kempton, Florida, 7984",
-  "about": "Voluptate proident Lorem aute ut officia. Aliquip occaecat irure et pariatur ex aute et velit voluptate nostrud nostrud. Elit qui aliquip magna cillum tempor Lorem. Excepteur ea veniam occaecat adipisicing culpa irure consectetur ipsum labore duis.\r\n",
-  "registered": "2015-01-21T05:05:21 -11:00",
-  "latitude": 3.334665,
-  "longitude": -119.601154,
-  "tags": [
-    "aliqua",
-    "anim",
-    "esse",
-    "sunt",
-    "irure",
-    "esse",
-    "sint"
-  ],
-  "friends": [
-    {
-      "id": 0,
-      "name": "Concepcion Small"
-    },
-    {
-      "id": 1,
-      "name": "Mcdaniel West"
-    },
-    {
-      "id": 2,
-      "name": "Jayne Combs"
-    }
-  ],
-  "greeting": "Hello, undefined! You have 4 unread messages.",
-  "favoriteFruit": "apple"
-}
-;
+      }
+    ],
+    "_id": "55d926a61cc52afc19e363de",
+    "index": 0,
+    "guid": "7f46ddc1-3e50-464c-b0fc-01c5e477ca29",
+    "isActive": false,
+    "balance": "$3,800.65",
+    "gender": "female",
+    "company": "SHEPARD",
+    "email": "sherrygates@shepard.com",
+    "phone": "+1 (852) 570-2571",
+    "address": "711 Bristol Street, Kempton, Florida, 7984",
+    "about": "Voluptate proident Lorem aute ut officia. Aliquip occaecat irure et pariatur ex aute et velit voluptate nostrud nostrud. Elit qui aliquip magna cillum tempor Lorem. Excepteur ea veniam occaecat adipisicing culpa irure consectetur ipsum labore duis.\r\n",
+    "registered": "2015-01-21T05:05:21 -11:00",
+    "latitude": 3.334665,
+    "longitude": -119.601154,
+    "tags": [
+      "aliqua",
+      "anim",
+      "esse",
+      "sunt",
+      "irure",
+      "esse",
+      "sint"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Concepcion Small"
+      },
+      {
+        "id": 1,
+        "name": "Mcdaniel West"
+      },
+      {
+        "id": 2,
+        "name": "Jayne Combs"
+      }
+    ],
+    "greeting": "Hello, undefined! You have 4 unread messages.",
+    "favoriteFruit": "apple"
+  }
+  ;
