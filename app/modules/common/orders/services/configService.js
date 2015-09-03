@@ -3,7 +3,7 @@ angular.module('WIP').factory('configService', function ($http) {
 
   return {
 
-    config: function (clientEndpoint, clientOrderEndpoint, clientDetailOrder,tabType) {
+    config: function (clientEndpoint, clientOrderEndpoint, clientDetailOrder,tabType,accountId) {
 
       console.log(clientEndpoint);
 
