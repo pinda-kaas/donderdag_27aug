@@ -2,19 +2,16 @@
 
 describe('Constants', function () {
 
-  var config;
+  var clientEndpoint;
 
-  beforeEach(function () {
-    module('WIP');
-    module('config');
-  });
+  beforeEach(module('config'));
 
-  beforeEach( inject(function (_config_) {
-    config =_config_;
+  beforeEach( inject(function (_clientEndpoint_) {
+    clientEndpoint=_clientEndpoint_;
   }));
 
   it('should return devconfig settings',function(){
-    expect(config.constant('clientEndpoint').prefix).toEqual('https_hhh://itgsyddev252-vip1:8449/');
+    expect(clientEndpoint.prefix).toEqual('https://itgsyddev252-vip1:8449/');
   });
 
 });
