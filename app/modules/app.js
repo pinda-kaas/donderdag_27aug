@@ -14,7 +14,7 @@ var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'sma
 
 console.log('this is the app starting up');
 
-app.config(function ($stateProvider, ENV) {
+app.config(function ($stateProvider) {
   $stateProvider
     .state('tabs', {
       templateUrl: 'views/tabs.html',
@@ -22,20 +22,19 @@ app.config(function ($stateProvider, ENV) {
       resolve: {
         orderData: function (wipService, configService) {
           console.log('resolve orderdata');
-          console.log('orderdata name', ENV.name);
-          return orderMockData;
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
+          //return orderMockData;
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
 
         },
         settlementsData: function (wipService, configService) {
           console.log('resolve settlementData');
-          return settlementsMockData;
-          //return wipService.getData(configService.config('mock_settlements').url);
+          //return settlementsMockData;
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
-          //return wipService.getData(configService.config('mock_complete_orders').url);
-          return completeOrdersMockData;
+         return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
+         // return completeOrdersMockData;
         }
 
       }
@@ -52,10 +51,10 @@ app.config(function ($stateProvider, ENV) {
           var accountId = $stateParams.myParam;
           // debugger;
           console.log('ACCOUNT ID', accountId);
-          return detailMockData;
+          //return detailMockData;
           //debugger;
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
-          //console.log('wipservice called to devserver', accountId);
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
+          console.log('order details devserver');
         }
       }
     });
@@ -63,11 +62,9 @@ app.config(function ($stateProvider, ENV) {
 
 });
 
-app.run(function ($state, ENV) {
+app.run(function ($state) {
   console.log('run');
   $state.go('tabs');
-
-  console.log('app.run ENV', ENV.apiEndpoint);
   //$state.go('orderDetail');
 });
 

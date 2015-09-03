@@ -1,5 +1,6 @@
 app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
 
+  console.log('orderdata from devserver:',orderData);
   $scope.ordersTabActive = true;
   $scope.settlementsTabActive = false;
   $scope.completedTabActive = false;

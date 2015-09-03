@@ -5,7 +5,8 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
   //accountid
 
-  console.log('orderdetail params',$stateParams)
+  //console.log('orderdetail params',$stateParams)
+  console.log('orderdetails from devserver:',orderDetails)
 
   //debugger;
   //var referrer = $statePara   ms.myParam ;
@@ -16,6 +17,6 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   $scope.collapsedDetail=true;
 
   //$scope.detailRows= orderDetail.rows;
-  console.log('orderdetail ctrl', orderDetails);
+  //console.log('orderdetail ctrl', orderDetails);
 
 });
