@@ -25,20 +25,32 @@ app.config(function ($stateProvider) {
           var url =configService.config(clientEndpoint, clientOrderEndpoint, clientDetailOrder,'open');
 
           debugger;
-          console.log('detail url',url);
+          console.log('open url',url);
 
           return wipService.getData(url.url);
 
         },
-        settlementsData: function (wipService, configService) {
+        settlementsData: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder)
+        {
           console.log('resolve settlementData');
-          //return settlementsMockData;
-          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
+
+          debugger;
+          var url =configService.config(clientEndpoint, clientOrderEndpoint, clientDetailOrder,'settlements');
+          //
+          //debugger;
+          console.log('settlement url',url);
+          //
+          return wipService.getData(url.url);
+
+
+          return settlementsMockData;
+          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
-        completeOrders: function (wipService, configService) {
-         return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
-         //return completeOrdersMockData;
+        completeOrders: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder)
+        {
+         //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
+         return completeOrdersMockData;
         }
 
       }

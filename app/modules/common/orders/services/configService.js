@@ -28,8 +28,6 @@ angular.module('WIP').factory('configService', function ($http) {
             return {
               url: '/modules/common/orders/mock/orderDetailMock.json'
             };
-
-            return url;
         }
       }
       else {

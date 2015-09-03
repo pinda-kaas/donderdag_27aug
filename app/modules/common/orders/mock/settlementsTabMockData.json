@@ -2,9 +2,9 @@
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V80675"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "RAYJAY SUPERANNUATION FUND",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -13,32 +13,31 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "ETL0120AU"
       },
-      "name": "Pengana Property Securities",
+      "name": "EQT Wsale High Inc Fund",
       "type": "WHOLESALE_MANAGED_FUND"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
+    "settlementDate": "09-04-2013",
+    "tradeDate": "09-04-2013",
     "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "units": 22920,
     "price": {
       "currency": "AUD",
-      "value": 0.4162
+      "value": 0.0216000000000000000
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 494.8300
     },
     "orderState": "AWAITING SETTLEMENT"
   },
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V92004"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "NEIMANIS FAMILY SUPERANNUATION FUND",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -47,32 +46,31 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "ETL0120AU"
       },
-      "name": "Pengana Property Securities",
+      "name": "EQT Wsale High Inc Fund",
       "type": "WHOLESALE_MANAGED_FUND"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
+    "settlementDate": "09-04-2013",
+    "tradeDate": "09-04-2013",
     "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "units": 34908,
     "price": {
       "currency": "AUD",
-      "value": 0.4162
+      "value": 0.0216000000000000000
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 753.6300
     },
     "orderState": "AWAITING SETTLEMENT"
   },
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V04776"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "BARNES FAMILY SUPERANNUATION FUND",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -81,32 +79,31 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "AUS0037AU"
       },
-      "name": "Pengana Property Securities",
+      "name": "Aust Unity Healthcare Prop Trust A Units",
       "type": "WHOLESALE_MANAGED_FUND"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
+    "settlementDate": "30-06-2015",
+    "tradeDate": "30-06-2015",
     "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "units": 10061,
     "price": {
       "currency": "AUD",
-      "value": 0.4162
+      "value": 0.934800
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 9405.4800
     },
     "orderState": "AWAITING SETTLEMENT"
   },
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V06637"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "SHAW MARGARET JOAN",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -115,32 +112,31 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "AIO"
       },
-      "name": "Pengana Property Securities",
-      "type": "WHOLESALE_MANAGED_FUND"
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
-    "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
     "price": {
       "currency": "AUD",
-      "value": 0.4162
+      "value": 6.630000
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 504.0000
     },
     "orderState": "AWAITING SETTLEMENT"
   },
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V06637"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "SHAW MARGARET JOAN",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -149,32 +145,31 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "AIO"
       },
-      "name": "Pengana Property Securities",
-      "type": "WHOLESALE_MANAGED_FUND "
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
-    "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
     "price": {
       "currency": "AUD",
-      "value": 0.41623
+      "value": 6.630000
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 504.0000
     },
     "orderState": "AWAITING SETTLEMENT"
   },
   {
     "account": {
       "accountId": {
-        "key": "V00169"
+        "key": "V06637"
       },
-      "accountName": "ROBERG SUPERANNUATION",
+      "accountName": "SHAW MARGARET JOAN",
       "productName": "Investment Consolidator",
       "adviser": {
         "key": "PFALL"
@@ -183,23 +178,187 @@
     },
     "asset": {
       "id": {
-        "key": "PER0076AU"
+        "key": "AIO"
       },
-      "name": "Pengana Property Securities",
-      "type": "WHOLESALE_MANAGED_FUND"
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
     },
-    "settlementDate": "08-22-2015",
-    "tradeDate": "29-06-2009",
-    "orderType": "REDEMPTION",
-    "units": 24162,
-    "fee": "$100.00",
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
     "price": {
       "currency": "AUD",
-      "value": 0.4162
+      "value": 6.630000
     },
     "settlementValue": {
       "currency": "AUD",
-      "value": 10056.75
+      "value": 504.0000
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V06637"
+      },
+      "accountName": "SHAW MARGARET JOAN",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "AIO"
+      },
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
+    "price": {
+      "currency": "AUD",
+      "value": 6.630000
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 504.0000
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V06637"
+      },
+      "accountName": "SHAW MARGARET JOAN",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "AIO"
+      },
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
+    "price": {
+      "currency": "AUD",
+      "value": 6.630000
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 504.0000
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V06637"
+      },
+      "accountName": "SHAW MARGARET JOAN",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "AIO"
+      },
+      "name": "Asciano Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "settlementDate": "26-06-2015",
+    "tradeDate": "26-06-2015",
+    "orderType": "BUY",
+    "units": 80.00,
+    "price": {
+      "currency": "AUD",
+      "value": 6.630000
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 504.0000
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V03589"
+      },
+      "accountName": "GILL FAMILY SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "ANZ"
+      },
+      "name": "",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "settlementDate": "17-07-2015",
+    "tradeDate": "14-07-2015",
+    "orderType": "BUY",
+    "units": 101.00,
+    "price": {
+      "currency": "AUD",
+      "value": 20.95
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 1214.92
+    },
+    "orderState": "AWAITING SETTLEMENT"
+  },
+  {
+    "account": {
+      "accountId": {
+        "key": "V03589"
+      },
+      "accountName": "GILL FAMILY SUPERANNUATION FUND",
+      "productName": "Investment Consolidator",
+      "adviser": {
+        "key": "PFALL"
+      },
+      "accountServiceType": "INVESTMENT"
+    },
+    "asset": {
+      "id": {
+        "key": "AMP"
+      },
+      "name": "",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "settlementDate": "17-07-2015",
+    "tradeDate": "14-07-2015",
+    "orderType": "BUY",
+    "units": 483.00,
+    "price": {
+      "currency": "AUD",
+      "value": 6.5
+    },
+    "settlementValue": {
+      "currency": "AUD",
+      "value": 1733.92
     },
     "orderState": "AWAITING SETTLEMENT"
   }
