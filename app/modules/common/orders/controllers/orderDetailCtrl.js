@@ -4,7 +4,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
   //accountid
 
-  console.log('orderdetail params',$stateParams)
+  console.log('orderdetail params NOW',$stateParams)
   console.log('orderdetails from devserver:',orderDetails)
 
   //debugger;

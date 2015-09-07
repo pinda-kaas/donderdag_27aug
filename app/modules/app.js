@@ -17,6 +17,7 @@ console.log('this is the app starting up');
 app.config(function ($stateProvider) {
   $stateProvider
     .state('tabs', {
+      url:'/',
       templateUrl: 'views/tabs.html',
       controller: 'OrdersCtrl',
       resolve: {
@@ -43,30 +44,26 @@ app.config(function ($stateProvider) {
     .state('orderDetail', {
       templateUrl: 'views/detail.html',
       controller: 'OrderDetailCtrl',
-      url: '/detail/:accountId',
-
+      params:{'accountId':null},
       resolve: {
         orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
 
-
           var accountId = $stateParams.accountId;
-          // debugger;
+
           console.log('ACCOUNT ID', accountId);
+          // debugger;
 
+          return detailMockData;
 
-          //return detailMockData;
-
-          //debugger;
-          accountId='D00072';
-          var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
+          //var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
           //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
 
           //working:
           //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
 
-          console.log('detail url from resolve=',url);
-          return wipService.getData(url);
-          console.log('order details devserver');
+          //console.log('detail url from resolve=',url);
+          //return wipService.getData(url);
+          //console.log('order details devserver');
         }
       }
     });
