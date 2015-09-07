@@ -442,7 +442,10 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.app %>/modules/config.js'
         },
         constants: {
-          WIPServiceClient:'mock'
+          MOCK:{
+            name:"WIPServiceClient",
+            url:"mock"
+          }
         }
       },
 

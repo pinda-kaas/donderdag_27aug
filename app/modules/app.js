@@ -5,11 +5,6 @@ underscore.factory('_', ['$window', function () {
 
 "use strict";
 
-//angular.module('config', [])
-//
-//    .constant('ENV', {name:'development',apiEndpoint:'http://your-development.api.endpoint:3000'})
-//
-//;
 var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate', 'config']);
 
 console.log('this is the app starting up');
@@ -21,24 +16,25 @@ app.config(function ($stateProvider) {
       templateUrl: 'views/tabs.html',
       controller: 'OrdersCtrl',
       resolve: {
-        orderData: function (wipService, configService) {
+        orderData: function (wipService,configService) {
+          debugger;
           console.log('resolve orderdata');
+          debugger;
           //return orderMockData;
-          //debugger;
-          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
+          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
+          return wipService.getData(configService.config('open', ''));
 
         },
-        settlementsData: function (wipService, configService) {
+        settlementsData: function (wipService) {
           console.log('resolve settlementData');
           return settlementsMockData;
-          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
+          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
           //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
           return completeOrdersMockData;
         }
-
       }
     })
     .state('orderDetail', {
@@ -47,28 +43,11 @@ app.config(function ($stateProvider) {
       params:{'accountId':null},
       resolve: {
         orderDetails: function () {
-
           var accountId = $stateParams.accountId;
-
           console.log('ACCOUNT ID', accountId);
-          // debugger;
-
-          //return detailMockData;
-
-
+          return detailMockData;
           var url=  configService.config('details');
-
-            //configService.config(clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
-
-
-          //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
-
-          //working:
-          //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
-
-          //console.log('detail url from resolve=',url);
-          //return wipService.getData(url);
-          //console.log('order details devserver');
+          return url;
         }
       }
     });
@@ -78,8 +57,9 @@ app.config(function ($stateProvider) {
 
 app.run(function ($state) {
   console.log('run');
-  //$state.go('tabs');
-  $state.go('orderDetail');
+  debugger;
+  $state.go('tabs');
+  //$state.go('orderDetail');
 });
 
 var orderMockData = [

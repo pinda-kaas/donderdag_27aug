@@ -1,28 +1,21 @@
 //returns string url based on endpoint constants
-angular.module('WIP').factory('configService', function () {
+angular.module('WIP').factory('configService', function (MOCK) {
     return {
-      config: function (tabType, config,accountId) {
-
-        //console.log('clientEndpoint.prefix ',clientEndpoint.prefix);
+      config: function (tabType, accountId) {
         switch (tabType) {
           case 'open':
-            if (WIPServiceClient != 'mock') {
-              //WIPServiceClient, WIPServiceBusiness, businessId, adviserId, accountId,openOrdersSuffix,tabType
-
-              //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum
-              //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum
-              //var url=
-
-              console.log('hiero', url);
+            console.log(MOCK);
+            debugger;
+            if (MOCK.url != 'mock') {
+              var url = WIPServiceBusiness + config.businessId + '/advisers/' + config.adviserId + config.openOrdersSuffix;
               return url;
             }
             else {
-              return '/modules/common/orders/mock/ordersTabMockData.json'
+              return '/modules/common/orders/mock/ordersTabMockData.json';
             }
-            ;
 
           case 'settlements':
-            if (clientEndpoint.prefix != 'mock') {
+            if (MOCK.url != 'mock') {
               var url = clientEndpoint.prefix + clientOrderEndpoint.suffix + accountId + clientDetailOrder.suffix;
               console.log(url);
               return url;
@@ -32,8 +25,7 @@ angular.module('WIP').factory('configService', function () {
             }
 
           case 'complete':
-            if (clientEndpoint.prefix != 'mock') {
-              //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum
+            if (MOCK.url != 'mock') {
               var url = clientEndpoint.prefix + clientOrderEndpoint.suffix + accountId + clientDetailOrder.suffix;
               console.log(url);
               return url
@@ -43,19 +35,13 @@ angular.module('WIP').factory('configService', function () {
             }
 
           case 'detail':
-            if (tabType != 'mock') {
-
+            if (MOCK.url != 'mock') {
               var url = config.WIPServiceClient + accountId + "/orders";
-              //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders
-
               return url;
-
-              console.log(url);
             }
             else {
-              return {
-                url: '/modules/common/orders/mock/orderDetailMock.json'
-              };
+              return '/modules/common/orders/mock/orderDetailMock.json';
+
             }
         }
       }

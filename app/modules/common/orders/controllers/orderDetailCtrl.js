@@ -1,5 +1,6 @@
 app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams) {
 
+  debugger;
   $scope.orderDetails = orderDetails;
 
   //accountid
