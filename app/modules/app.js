@@ -23,20 +23,20 @@ app.config(function ($stateProvider) {
       resolve: {
         orderData: function (wipService, configService) {
           console.log('resolve orderdata');
-          return orderMockData;
+          //return orderMockData;
           //debugger;
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
 
         },
         settlementsData: function (wipService, configService) {
           console.log('resolve settlementData');
-          return settlementsMockData;
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
+          //return settlementsMockData;
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
-          return completeOrdersMockData;
+          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
+          //return completeOrdersMockData;
         }
 
       }
@@ -53,7 +53,7 @@ app.config(function ($stateProvider) {
           console.log('ACCOUNT ID', accountId);
           // debugger;
 
-          return detailMockData;
+          //return detailMockData;
 
           //var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
           //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
@@ -62,7 +62,7 @@ app.config(function ($stateProvider) {
           //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
 
           //console.log('detail url from resolve=',url);
-          //return wipService.getData(url);
+          return wipService.getData(url);
           //console.log('order details devserver');
         }
       }
