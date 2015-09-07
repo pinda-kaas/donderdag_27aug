@@ -1,11 +1,13 @@
 app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
 
-  console.log('orderdata from devserver:',orderData);
+  console.log('orderdata in controller:',orderData);
   $scope.ordersTabActive = true;
   $scope.settlementsTabActive = false;
   $scope.completedTabActive = false;
 
-  console.log('ordersctrk started');
+  debugger;
+
+  console.log('ordersctrl started');
 
   if (orderData.length == 0) {
     $scope.ordersTabActive = false;

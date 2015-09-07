@@ -1,275 +1,5619 @@
-{
-  "accountId": "D1234",
-  "accountName": "Sherry Gates",
-  "accountType": "Investment Account",
-  "orders": [
-    {
-      "orderDate": "08-25-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$1300.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress",
-      "transactions": [
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
+[
+  {
+    "orderDate": "02-09-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 50922,
+    "unitsFilled": 50922,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 50922.4700
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "02-09-2014 01:16 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 50922.4700
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "2299310"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "02-09-2014 12:36 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
         },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "02-09-2014 12:43 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
         },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-        ,
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-      ]
-    },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress",
-      "transactions": [
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "02-09-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
         },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "02-09-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
         },
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-      ,
-        {
-          "reference":1234567,
-          "orderTaker":20000000,
-          "lastUpdated": "02-09-2014 12:36 PM",
-          "filledUnits":950,
-          "price": 50922.47,
-          "amount":111222.00,
-          "fundingPriority":"proceeds(1)",
-          "status": "ON_MARKET"
-        }
-      ]
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "02-09-2014 12:37 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "02-09-2014 01:16 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50922.4700
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2299310",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "29-08-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "orderType": "SELL",
+    "totalUnits": 50000,
+    "unitsFilled": 50000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 50000.0000
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "02-09-2014 09:30 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 50000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2297970"
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "29-08-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "29-08-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "01-09-2014 12:03 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "01-09-2014 12:03 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "01-09-2014 12:06 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "02-09-2014 09:30 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2297970",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "19-08-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "orderType": "BUY",
+    "totalUnits": 10182,
+    "unitsFilled": 10182,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10182.4700
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "19-08-2014 01:29 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10182.4700
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "2289814"
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "19-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "19-08-2014 01:29 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "19-08-2014 12:56 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "19-08-2014 12:32 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "19-08-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "19-08-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10182.4700
+        },
+        "state": "AUTHORISED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2289814",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "15-08-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
     },
-    {
-      "orderDate": "12-06-2015",
-      "investment": "ANZ",
-      "type": "BUY",
-      "units": 100,
-      "filledUnits": 200,
-      "limitPrice": "$200",
-      "valid": "today only",
-      "fee": "$130.50",
-      "amount": "$1000",
-      "orderSource": "Transacting",
-      "status": "In progress"
-    }
-  ],
-  "_id": "55d926a61cc52afc19e363de",
-  "index": 0,
-  "guid": "7f46ddc1-3e50-464c-b0fc-01c5e477ca29",
-  "isActive": false,
-  "balance": "$3,800.65",
-  "gender": "female",
-  "company": "SHEPARD",
-  "email": "sherrygates@shepard.com",
-  "phone": "+1 (852) 570-2571",
-  "address": "711 Bristol Street, Kempton, Florida, 7984",
-  "about": "Voluptate proident Lorem aute ut officia. Aliquip occaecat irure et pariatur ex aute et velit voluptate nostrud nostrud. Elit qui aliquip magna cillum tempor Lorem. Excepteur ea veniam occaecat adipisicing culpa irure consectetur ipsum labore duis.\r\n",
-  "registered": "2015-01-21T05:05:21 -11:00",
-  "latitude": 3.334665,
-  "longitude": -119.601154,
-  "tags": [
-    "aliqua",
-    "anim",
-    "esse",
-    "sunt",
-    "irure",
-    "esse",
-    "sint"
-  ],
-  "friends": [
-    {
-      "id": 0,
-      "name": "Concepcion Small"
+    "orderType": "SELL",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
     },
-    {
-      "id": 1,
-      "name": "Mcdaniel West"
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
     },
-    {
-      "id": 2,
-      "name": "Jayne Combs"
-    }
-  ],
-  "greeting": "Hello, undefined! You have 4 unread messages.",
-  "favoriteFruit": "apple"
-}
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "19-08-2014 10:23 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2287325"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "15-08-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "15-08-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "18-08-2014 12:03 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "18-08-2014 12:04 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "18-08-2014 12:07 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "19-08-2014 10:23 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2287325",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "07-08-2014",
+    "asset": {
+      "id": {
+        "key": "WOW"
+      },
+      "name": "Woolworths Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 220.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 7966.2000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "07-08-2014 12:31 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 7966.2000
+      },
+      "state": null,
+      "totalUnits": 220.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "507857"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7966.2000
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 121.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7970.6000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7970.6000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7966.2000
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 220.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7966.2000
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 193.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "507857",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "07-08-2014",
+    "asset": {
+      "id": {
+        "key": "WOW"
+      },
+      "name": "Woolworths Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 220,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 7970.6000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "07-08-2014 12:33 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 7970.6000
+      },
+      "state": null,
+      "totalUnits": 220,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62370162",
+      "reference": "2282187"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7970.6000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "07-08-2014 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7970.6000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2282187",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "ANZ"
+      },
+      "name": "Australia & New Zealand Banking Group Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 248.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 7965.7600
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 7965.7600
+      },
+      "state": null,
+      "totalUnits": 248.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "BHP"
+      },
+      "name": "BHP Billiton Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 258.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9940.7400
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9940.7400
+      },
+      "state": null,
+      "totalUnits": 258.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "CBA"
+      },
+      "name": "Commonwealth Bank Of Australia",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 133.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9977.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9977.0000
+      },
+      "state": null,
+      "totalUnits": 133.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "NAB"
+      },
+      "name": "National Australia Bank Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 143.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4964.9600
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4964.9600
+      },
+      "state": null,
+      "totalUnits": 143.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "RIO"
+      },
+      "name": "Rio Tinto Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 73.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4915.8200
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4915.8200
+      },
+      "state": null,
+      "totalUnits": 73.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "TLS"
+      },
+      "name": "Telstra Corporation Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 985.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4998.8800
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4998.8800
+      },
+      "state": null,
+      "totalUnits": 985.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WES"
+      },
+      "name": "Wesfarmers Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 117.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4982.4500
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4982.4500
+      },
+      "state": null,
+      "totalUnits": 117.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WBC"
+      },
+      "name": "Westpac Banking Corporation",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 297.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9946.5300
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9946.5300
+      },
+      "state": null,
+      "totalUnits": 297.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WOW"
+      },
+      "name": "Woolworths Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 194.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 6976.2400
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:45 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 6976.2400
+      },
+      "state": null,
+      "totalUnits": 194.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "417421"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:48 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9957.7100
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 133.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9976.9950
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:48 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:48 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9976.9950
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:48 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9946.5300
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9946.5300
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9931.6800
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 181.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9931.6800
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 297.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9940.7400
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9933.0000
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 258.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9940.7400
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7965.7600
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7955.8400
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 248.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7965.7600
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6980.1200
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 194.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6980.1200
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 36.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6976.2400
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6976.2400
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4998.8750
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4993.9500
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 360.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4998.8750
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4993.9500
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 985.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4982.4450
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4993.5600
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": {
+          "currency": "AUD",
+          "value": 42.6800
+        },
+        "unitsFilled": 117.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4993.5600
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": {
+          "currency": "AUD",
+          "value": 42.6800
+        },
+        "unitsFilled": 99.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4993.5600
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 61.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4982.4450
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4964.9600
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4960.6700
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 22.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4960.6700
+        },
+        "state": "PARTIAL_EXECUTION",
+        "price": null,
+        "unitsFilled": 110.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4964.9600
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4960.6700
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 143.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0.0000
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4915.8200
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4915.8200
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4880.7800
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 73.00
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "417421",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 0.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 50000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:47 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 50000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "417424"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "01-03-2014 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "03-03-2014 02:06 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:38 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "417424",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "CBA"
+      },
+      "name": "Commonwealth Bank Of Australia",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 133,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9976.9950
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:48 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9976.9950
+      },
+      "state": null,
+      "totalUnits": 133,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174392"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9976.9950
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:48 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9976.9950
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174392",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WBC"
+      },
+      "name": "Westpac Banking Corporation",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 297,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9946.5300
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:49 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9946.5300
+      },
+      "state": null,
+      "totalUnits": 297,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174393"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9946.5300
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9946.5300
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174393",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "BHP"
+      },
+      "name": "BHP Billiton Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 258,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9940.7400
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:50 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9940.7400
+      },
+      "state": null,
+      "totalUnits": 258,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174394"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9940.7400
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9940.7400
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174394",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "ANZ"
+      },
+      "name": "Australia & New Zealand Banking Group Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 248,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 7965.7600
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:50 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 7965.7600
+      },
+      "state": null,
+      "totalUnits": 248,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174395"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7965.7600
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 7965.7600
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174395",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WOW"
+      },
+      "name": "Woolworths Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 194,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 6976.2400
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:51 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 6976.2400
+      },
+      "state": null,
+      "totalUnits": 194,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174396"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6976.2400
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6976.2400
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174396",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "TLS"
+      },
+      "name": "Telstra Corporation Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 985,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4998.8750
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:51 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4998.8750
+      },
+      "state": null,
+      "totalUnits": 985,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174397"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4998.8750
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4998.8750
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174397",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "WES"
+      },
+      "name": "Wesfarmers Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 117,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 42.6800
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4982.4450
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:57 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4982.4450
+      },
+      "state": null,
+      "totalUnits": 117,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 42.6800
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174398"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:51 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4982.4450
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4982.4450
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174398",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "NAB"
+      },
+      "name": "National Australia Bank Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 143,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4964.9600
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:52 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4964.9600
+      },
+      "state": null,
+      "totalUnits": 143,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174399"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4964.9600
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4964.9600
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174399",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "RIO"
+      },
+      "name": "Rio Tinto Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 73,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 4915.8200
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2014 02:52 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 4915.8200
+      },
+      "state": null,
+      "totalUnits": 73,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "62396036",
+      "reference": "2174400"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4915.8200
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 4915.8200
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174400",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 50000,
+    "unitsFilled": 50000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 50000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "03-03-2014 02:06 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 50000.0000
+      },
+      "state": null,
+      "orderTaker": "62396036",
+      "reference": "2174401"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2014 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "28-02-2014 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "01-03-2014 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "03-03-2014 02:06 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:38 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "03-03-2014 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 50000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2174401",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "24-02-2014",
+    "asset": {
+      "id": {
+        "key": "N6290813Z"
+      },
+      "name": "MBL TD 06mth maturity 25/02/14",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "26-02-2014 09:32 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2171890"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "24-02-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "24-02-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "25-02-2014 09:22 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "25-02-2014 09:10 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "25-02-2014 09:10 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "25-02-2014 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "26-02-2014 09:32 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2171890",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "19-02-2014",
+    "asset": {
+      "id": {
+        "key": "MBL06MTHZ"
+      },
+      "name": "Macquarie TD 06mth",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "19-02-2014 03:01 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "2168203"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "19-02-2014 12:32 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "19-02-2014 12:45 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "19-02-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "19-02-2014 11:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "19-02-2014 03:01 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "19-02-2014 12:35 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2168203",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-02-2014",
+    "asset": {
+      "id": {
+        "key": "N6220813Z"
+      },
+      "name": "MBL TD 06mth maturity 18/02/14",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "19-02-2014 09:32 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2167175"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-02-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "17-02-2014 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "18-02-2014 09:18 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "18-02-2014 09:22 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "18-02-2014 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "18-02-2014 09:19 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "19-02-2014 09:32 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2167175",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "27-08-2013",
+    "asset": {
+      "id": {
+        "key": "N6290813Z"
+      },
+      "name": "MBL TD 06mth maturity 25/02/14",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "30-08-2013 09:38 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "2063252"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "27-08-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "27-08-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "29-08-2013 12:38 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "29-08-2013 12:39 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "29-08-2013 12:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "29-08-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "30-08-2013 09:38 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2063252",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "26-08-2013",
+    "asset": {
+      "id": {
+        "key": "N6280213Z"
+      },
+      "name": "MBL TD 06mth maturity 27/08/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "27-08-2013 12:05 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2062793"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "26-08-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "26-08-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "27-08-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "27-08-2013 12:05 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "27-08-2013 09:49 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "27-08-2013 09:43 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "27-08-2013 09:43 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2062793",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "20-08-2013",
+    "asset": {
+      "id": {
+        "key": "N6220813Z"
+      },
+      "name": "MBL TD 06mth maturity 18/02/14",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "23-08-2013 11:11 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "2057967"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "20-08-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "20-08-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "22-08-2013 12:55 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "22-08-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "22-08-2013 12:46 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "22-08-2013 12:46 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "23-08-2013 11:11 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2057967",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "19-08-2013",
+    "asset": {
+      "id": {
+        "key": "N6210213Z"
+      },
+      "name": "MBL TD 06mth maturity 20/08/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "20-08-2013 02:01 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "2056491"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "19-08-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "19-08-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "20-08-2013 02:01 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "20-08-2013 08:01 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "20-08-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "20-08-2013 08:03 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "20-08-2013 08:08 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "2056491",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "26-02-2013",
+    "asset": {
+      "id": {
+        "key": "N6280213Z"
+      },
+      "name": "MBL TD 06mth maturity 27/08/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "01-03-2013 09:48 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "1955173"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "26-02-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "26-02-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "28-02-2013 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "28-02-2013 12:49 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "28-02-2013 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "28-02-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "01-03-2013 09:48 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1955173",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "25-02-2013",
+    "asset": {
+      "id": {
+        "key": "N6300812Z"
+      },
+      "name": "MBL TD 06mth maturity 26/02/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "26-02-2013 11:34 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "1954772"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "25-02-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "25-02-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "26-02-2013 10:30 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "26-02-2013 10:31 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "26-02-2013 10:34 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "26-02-2013 11:34 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "26-02-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1954772",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "19-02-2013",
+    "asset": {
+      "id": {
+        "key": "N6210213Z"
+      },
+      "name": "MBL TD 06mth maturity 20/08/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "22-02-2013 11:57 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "1951727"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "19-02-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "19-02-2013 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "21-02-2013 12:40 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "21-02-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "21-02-2013 12:39 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "21-02-2013 12:50 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "22-02-2013 11:57 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1951727",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "18-02-2013",
+    "asset": {
+      "id": {
+        "key": "N6230812Z"
+      },
+      "name": "MBL TD 06mth maturity 19/02/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "19-02-2013 11:44 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "1950831"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "18-02-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "18-02-2013 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "19-02-2013 09:35 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "19-02-2013 11:44 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "19-02-2013 09:45 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "19-02-2013 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "19-02-2013 09:39 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1950831",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "CBA"
+      },
+      "name": "Commonwealth Bank Of Australia",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 34.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 1966.9000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:14 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 1966.9000
+      },
+      "state": null,
+      "totalUnits": 34.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "194884"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "194884",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "TLS"
+      },
+      "name": "Telstra Corporation Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 2853.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 11996.8700
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:14 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 11996.8700
+      },
+      "state": null,
+      "totalUnits": 2853.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "194884"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "194884",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "WBC"
+      },
+      "name": "Westpac Banking Corporation",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 81.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 1992.2000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:14 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 1992.2000
+      },
+      "state": null,
+      "totalUnits": 81.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "194884"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11996.8650
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 12011.1300
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 2853.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11996.8650
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1992.1950
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1991.7900
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 81.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1992.1950
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1966.9000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1966.9000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1966.5600
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 34.00
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "194884",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "TLS"
+      },
+      "name": "Telstra Corporation Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 2853,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 11996.8650
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:15 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 11996.8650
+      },
+      "state": null,
+      "totalUnits": 2853,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1916693"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11996.8650
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11996.8650
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1916693",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "WBC"
+      },
+      "name": "Westpac Banking Corporation",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 81,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 1992.1950
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:15 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 1992.1950
+      },
+      "state": null,
+      "totalUnits": 81,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1916694"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1992.1950
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1992.1950
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1916694",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "21-11-2012",
+    "asset": {
+      "id": {
+        "key": "CBA"
+      },
+      "name": "Commonwealth Bank Of Australia",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 34,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 1966.9000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "21-11-2012 03:15 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 1966.9000
+      },
+      "state": null,
+      "totalUnits": 34,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1916695"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "21-11-2012 03:14 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1966.9000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "21-11-2012 03:15 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 1966.9000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1916695",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "15-11-2012",
+    "asset": {
+      "id": {
+        "key": "AGK"
+      },
+      "name": "AGL Energy Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "SELL",
+    "totalUnits": 455.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 6247.1500
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "15-11-2012 03:57 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 6247.1500
+      },
+      "state": null,
+      "totalUnits": 455.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "190127"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [],
+    "orderState": "CANCELLED",
+    "reference": "190127",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "15-11-2012",
+    "asset": {
+      "id": {
+        "key": "WPL"
+      },
+      "name": "Woodside Petroleum Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "SELL",
+    "totalUnits": 295.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9870.7000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "15-11-2012 03:57 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9870.7000
+      },
+      "state": null,
+      "totalUnits": 295.0000,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0.000000
+      },
+      "fundingType": "CASH",
+      "priority": 0,
+      "orderTaker": "",
+      "reference": "190127"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6247.1500
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6251.7000
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 455.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6247.1500
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "ON_MARKET",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9870.7000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9855.9500
+        },
+        "state": "EXECUTION_COMPLETE",
+        "price": null,
+        "unitsFilled": 295.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9870.7000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 0
+        },
+        "state": "AWAITING_PROCESSING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "190127",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "15-11-2012",
+    "asset": {
+      "id": {
+        "key": "AGK"
+      },
+      "name": "AGL Energy Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "SELL",
+    "totalUnits": 455,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 6247.1500
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "15-11-2012 03:57 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 6247.1500
+      },
+      "state": null,
+      "totalUnits": 455,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1913201"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6247.1500
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 6247.1500
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1913201",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "15-11-2012",
+    "asset": {
+      "id": {
+        "key": "WPL"
+      },
+      "name": "Woodside Petroleum Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "SELL",
+    "totalUnits": 295,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 9870.7000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "15-11-2012 03:57 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 9870.7000
+      },
+      "state": null,
+      "totalUnits": 295,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1913202"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9870.7000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "15-11-2012 03:57 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 9870.7000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1913202",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-08-2012",
+    "asset": {
+      "id": {
+        "key": "N6300812Z"
+      },
+      "name": "MBL TD 06mth maturity 26/02/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "31-08-2012 12:09 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "1877627"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-08-2012 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "28-08-2012 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "30-08-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "30-08-2012 12:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "30-08-2012 12:59 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "30-08-2012 12:52 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "31-08-2012 12:09 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1877627",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "27-08-2012",
+    "asset": {
+      "id": {
+        "key": "N6010312Z"
+      },
+      "name": "MBL TD 06mth maturity 28/08/12",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-08-2012 11:13 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "1877221"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "27-08-2012 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "27-08-2012 10:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "28-08-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "28-08-2012 10:58 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "28-08-2012 10:55 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "28-08-2012 11:13 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "28-08-2012 10:56 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1877221",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "22-08-2012",
+    "asset": {
+      "id": {
+        "key": "N6230812Z"
+      },
+      "name": "MBL TD 06mth maturity 19/02/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 0.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "22-08-2012 03:08 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "158366"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "22-08-2012 03:09 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "22-08-2012 03:08 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "23-08-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:25 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:26 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "24-08-2012 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "158366",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "22-08-2012",
+    "asset": {
+      "id": {
+        "key": "N6230812Z"
+      },
+      "name": "MBL TD 06mth maturity 19/02/13",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 10000,
+    "unitsFilled": 10000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "24-08-2012 02:47 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10000.0000
+      },
+      "state": null,
+      "orderTaker": "35926104",
+      "reference": "1875471"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "22-08-2012 03:09 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "22-08-2012 03:08 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "23-08-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:25 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "23-08-2012 12:26 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "24-08-2012 02:47 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1875471",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "28-02-2012",
+    "asset": {
+      "id": {
+        "key": "N6010312Z"
+      },
+      "name": "MBL TD 06mth maturity 28/08/12",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "02-03-2012 12:29 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "System",
+      "reference": "1804580"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "28-02-2012 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "28-02-2012 02:00 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "01-03-2012 12:29 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "01-03-2012 12:38 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "01-03-2012 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "01-03-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "02-03-2012 12:29 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1804580",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "27-02-2012",
+    "asset": {
+      "id": {
+        "key": "N6010911Z"
+      },
+      "name": "MBL TD 06mth maturity 28/02/2012",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "SELL",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "28-02-2012 11:09 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "1804338"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "27-02-2012 10:04 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "27-02-2012 10:04 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "28-02-2012 09:40 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "28-02-2012 09:41 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "28-02-2012 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "28-02-2012 11:09 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      },
+      {
+        "transactionDateTime": "28-02-2012 09:54 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1804338",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "29-08-2011",
+    "asset": {
+      "id": {
+        "key": "N6010911Z"
+      },
+      "name": "MBL TD 06mth maturity 28/02/2012",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 0.0000,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0.000000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "29-08-2011 05:01 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "",
+      "reference": "24263"
+    },
+    "dataSource": "REBALANCE",
+    "transactions": [
+      {
+        "transactionDateTime": "29-08-2011 05:02 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "29-08-2011 05:01 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:34 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:42 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "02-09-2011 11:30 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "CANCELLED",
+    "reference": "24263",
+    "orderSource": "Portfolio Transacting",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "29-08-2011",
+    "asset": {
+      "id": {
+        "key": "N6010911Z"
+      },
+      "name": "MBL TD 06mth maturity 28/02/2012",
+      "type": "TERM_DEPOSIT"
+    },
+    "orderType": "BUY",
+    "totalUnits": 100000,
+    "unitsFilled": 100000,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 1.0000
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 100000.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "02-09-2011 11:30 AM",
+      "amount": {
+        "currency": "AUD",
+        "value": 100000.0000
+      },
+      "state": null,
+      "orderTaker": "35926104",
+      "reference": "1731610"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "29-08-2011 05:02 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AWAITING_PROCESSING"
+      },
+      {
+        "transactionDateTime": "29-08-2011 05:01 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PENDING"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "VALIDATED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 03:00 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "AUTHORISED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:34 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "PROCESSED"
+      },
+      {
+        "transactionDateTime": "01-09-2011 12:42 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "ON_MARKET"
+      },
+      {
+        "transactionDateTime": "02-09-2011 11:30 AM",
+        "amount": {
+          "currency": "AUD",
+          "value": 100000.0000
+        },
+        "state": "EXECUTION_COMPLETE"
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1731610",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "BHP"
+      },
+      "name": "BHP Billiton Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 500,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 19765.0000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:11 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 19765.0000
+      },
+      "state": null,
+      "totalUnits": 500,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726549"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:09 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 19765.0000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:11 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 19765.0000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726549",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "RIO"
+      },
+      "name": "Rio Tinto Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 149,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 11036.4300
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:13 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 11036.4300
+      },
+      "state": null,
+      "totalUnits": 149,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726551"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:13 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11036.4300
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:13 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11036.4300
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726551",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "WPL"
+      },
+      "name": "Woodside Petroleum Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 295,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 10959.2500
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:18 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 10959.2500
+      },
+      "state": null,
+      "totalUnits": 295,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726552"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:17 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10959.2500
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:18 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 10959.2500
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726552",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "WBC"
+      },
+      "name": "Westpac Banking Corporation",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 538,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 11018.2400
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:21 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 11018.2400
+      },
+      "state": null,
+      "totalUnits": 538,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726555"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:21 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11018.2400
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:19 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11018.2400
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726555",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "CBA"
+      },
+      "name": "Commonwealth Bank Of Australia",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 235,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 11028.5500
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:24 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 11028.5500
+      },
+      "state": null,
+      "totalUnits": 235,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726556"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:22 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11028.5500
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:24 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 11028.5500
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726556",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "NAB"
+      },
+      "name": "National Australia Bank Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 377,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 8806.7200
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:26 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 8806.7200
+      },
+      "state": null,
+      "totalUnits": 377,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726557"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:26 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8806.7200
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:25 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8806.7200
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726557",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "ANZ"
+      },
+      "name": "Australia & New Zealand Banking Group Ltd",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 431,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 8826.8800
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:29 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 8826.8800
+      },
+      "state": null,
+      "totalUnits": 431,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726558"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:28 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8826.8800
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:29 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8826.8800
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726558",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "WES"
+      },
+      "name": "Wesfarmers Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 293,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 8839.8100
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:31 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 8839.8100
+      },
+      "state": null,
+      "totalUnits": 293,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726561"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:31 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8839.8100
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:30 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8839.8100
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726561",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "WOW"
+      },
+      "name": "Woolworths Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 329,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 8840.2300
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:34 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 8840.2300
+      },
+      "state": null,
+      "totalUnits": 329,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726562"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:34 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8840.2300
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:33 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 8840.2300
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726562",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "CCL"
+      },
+      "name": "Coca-Cola Amatil Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 482,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 5533.3600
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:36 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 5533.3600
+      },
+      "state": null,
+      "totalUnits": 482,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726563"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:36 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 5533.3600
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:35 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 5533.3600
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726563",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  },
+  {
+    "orderDate": "17-08-2011",
+    "asset": {
+      "id": {
+        "key": "AGK"
+      },
+      "name": "AGL Energy Limited",
+      "type": "AUSTRALIAN_EQUITY"
+    },
+    "orderType": "BUY",
+    "totalUnits": 390,
+    "unitsFilled": 0,
+    "limitPrice": {
+      "currency": "AUD",
+      "value": 0
+    },
+    "internationalEquity": false,
+    "amount": {
+      "currency": "AUD",
+      "value": 5514.6000
+    },
+    "orderTransactionSummary": {
+      "lastUpdatedDateTime": "17-08-2011 12:39 PM",
+      "amount": {
+        "currency": "AUD",
+        "value": 5514.6000
+      },
+      "state": null,
+      "totalUnits": 390,
+      "unitsFilled": 0,
+      "price": {
+        "currency": "AUD",
+        "value": 0
+      },
+      "fundingType": " ",
+      "priority": 0,
+      "orderTaker": "35926104",
+      "reference": "1726564"
+    },
+    "dataSource": "INVESTMENT",
+    "transactions": [
+      {
+        "transactionDateTime": "17-08-2011 12:38 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 5514.6000
+        },
+        "state": "PENDING",
+        "price": null,
+        "unitsFilled": 0.00
+      },
+      {
+        "transactionDateTime": "17-08-2011 12:39 PM",
+        "amount": {
+          "currency": "AUD",
+          "value": 5514.6000
+        },
+        "state": "AUTHORISED",
+        "price": null,
+        "unitsFilled": 0.00
+      }
+    ],
+    "orderState": "AWAITING SETTLEMENT",
+    "reference": "1726564",
+    "orderSource": "Model Portfolios",
+    "expiryMethod": "until cancelled"
+  }
+]

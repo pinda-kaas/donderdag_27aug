@@ -22,6 +22,7 @@ angular.module('WIP').factory('wipService', function($http) {
     getData: function(url) {
       return $http.get(url)
         .then(function(result) {
+          console.log('WIPSERVICE MOCK OR WHAT??',url);
           return result.data;
         });
     }
