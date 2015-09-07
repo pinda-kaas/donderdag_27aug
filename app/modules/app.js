@@ -30,13 +30,13 @@ app.config(function ($stateProvider) {
         },
         settlementsData: function (wipService, configService) {
           console.log('resolve settlementData');
-          //return settlementsMockData;
+          return settlementsMockData;
           return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
-          return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
-          //return completeOrdersMockData;
+          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
+          return completeOrdersMockData;
         }
 
       }
@@ -46,7 +46,7 @@ app.config(function ($stateProvider) {
       controller: 'OrderDetailCtrl',
       params:{'accountId':null},
       resolve: {
-        orderDetails: function (wipService, configService, $stateParams,clientOrderEndpoint,clientEndpoint,clientDetailOrder) {
+        orderDetails: function () {
 
           var accountId = $stateParams.accountId;
 
@@ -55,14 +55,19 @@ app.config(function ($stateProvider) {
 
           //return detailMockData;
 
-          //var url=clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
+
+          var url=  configService.config('details');
+
+            //configService.config(clientEndpoint.prefix+clientOrderEndpoint.suffix+accountId+clientDetailOrder.suffix;
+
+
           //     https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/V04776/orders
 
           //working:
           //url='https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders';
 
           //console.log('detail url from resolve=',url);
-          return wipService.getData(url);
+          //return wipService.getData(url);
           //console.log('order details devserver');
         }
       }
@@ -73,8 +78,8 @@ app.config(function ($stateProvider) {
 
 app.run(function ($state) {
   console.log('run');
-  $state.go('tabs');
-  //$state.go('orderDetail');
+  //$state.go('tabs');
+  $state.go('orderDetail');
 });
 
 var orderMockData = [

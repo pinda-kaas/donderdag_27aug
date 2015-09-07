@@ -9,30 +9,39 @@ describe('configService', function () {
 
   });
 
-  it('MOCK should return open url', function () {
-    var WIPServiceClient = 'mock';
-    var WIPServiceBusiness = '';
-    var businessId = '';
-    var adviserId = '';
-    var openOrdersSuffix = '';
+  xit('MOCK should return open url', function () {
+    //var WIPServiceClient = 'mock';
+    //var WIPServiceBusiness = '';
+    //var businessId = '';
+    //var adviserId = '';
+    //var openOrdersSuffix = '';
     var tabType = 'open';
     var accountId = 'A18182'
-    var result = configService.config(WIPServiceClient, WIPServiceBusiness, businessId, adviserId, accountId, openOrdersSuffix, tabType)
+    //var result = configService.config(WIPServiceClient, WIPServiceBusiness, businessId, adviserId, accountId, openOrdersSuffix, tabType)
 
     expect(result).equals('/modules/common/orders/mock/ordersTabMockData.json');
   });
 
-  it('DEVELOPMENT should return open url', function () {
-    var WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
-    var WIPServiceBusiness = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/';
-    var businessId = 'MPMSWP';
-    var adviserId = 'PFALsL';
-    var openOrdersSuffix = '/orders/statuses/open/minimum';
-    var tabType = 'open';
-    var accountId = 'A18182'
-    var result = configService.config(WIPServiceClient, WIPServiceBusiness, businessId, adviserId, accountId, openOrdersSuffix, tabType)
+  it('development details url', function () {
+    var config = {};
 
-    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
+    config.bla =4;
+
+    config.WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
+    config.WIPServiceBusiness = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/';
+    config.businessId = 'MPMSWP';
+    config.adviserId = 'PFALsL';
+    config.openOrdersSuffix = '/orders/statuses/open/minimum';
+    var tabType = 'open';
+    var accountId = 'D00072'
+
+      //var result = configService.config(WIPServiceClient, WIPServiceBusiness, businessId, adviserId, accountId, openOrdersSuffix, tabType)
+
+    var result = configService.config('detail',config,accountId);
+    console.log('result',config);
+
+      expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
+    //expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
   });
 
 
