@@ -11,14 +11,15 @@ describe('configService', function () {
 
   it('MOCK should return open url', function () {
     var config = {};
-    config.WIPServiceClient = 'mock';
+    config.DATA={};
+    config.DATA.enviroment= 'mock';
     var tabType = 'open';
     var accountId = 'A18182'
     var result = configService.config('open', config, accountId);
     expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
   });
 
-  xit('should return development details url', function () {
+  it('should return development details url', function () {
     var config = {};
     config.WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
     config.WIPServiceBusiness = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/';
@@ -33,7 +34,7 @@ describe('configService', function () {
   });
 
   //
- xit('should return development open url', function () {
+ it('should return development open url', function () {
     var config = {};
     config.WIPServiceBusiness = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/';
     config.businessId = 'MPMSWP';

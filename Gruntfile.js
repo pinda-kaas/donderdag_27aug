@@ -442,9 +442,10 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.app %>/modules/config.js'
         },
         constants: {
-          MOCK:{
+          DATA:{
             name:"WIPServiceClient",
-            url:"mock"
+            url:"mock",
+            enviroment:"mock"
           }
         }
       },
@@ -453,14 +454,19 @@ module.exports = function (grunt) {
         options: {
           dest: '<%= yeoman.app %>/modules/config.js'
         },
-        constants: {
-          WIPServiceClient:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/',
-          WIPServiceBusiness:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/',
-          businessId:'MPMSWP',
-          adviserId:'PFALL',
-          openOrdersSuffix:'/orders/statuses/open/minimum',
-          awaitingSettlementsSuffix:'orders/statuses/awaitingsettlement',
-          completedOrdersSuffix:'orders/statuses/complete'
+        constants:
+        {
+          DATA:
+          {
+            WIPServiceClient:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/',
+            WIPServiceBusiness:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/',
+            businessId:'MPMSWP',
+            adviserId:'PFALL',
+            openOrdersSuffix:'/orders/statuses/open/minimum',
+            awaitingSettlementsSuffix:'orders/statuses/awaitingsettlement',
+            completedOrdersSuffix:'orders/statuses/complete'
+          }
+
         }
       },
       production: {

@@ -1,13 +1,13 @@
 //returns string url based on endpoint constants
-angular.module('WIP').factory('configService', function (MOCK) {
+angular.module('WIP').factory('configService', function (DATA) {
     return {
       config: function (tabType, accountId) {
         switch (tabType) {
           case 'open':
-            console.log(MOCK);
+            console.log('data envr',DATA);
             debugger;
-            if (MOCK.url != 'mock') {
-              var url = WIPServiceBusiness + config.businessId + '/advisers/' + config.adviserId + config.openOrdersSuffix;
+            if (DATA.enviroment != 'mock') {
+              var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
               return url;
             }
             else {
@@ -16,7 +16,7 @@ angular.module('WIP').factory('configService', function (MOCK) {
 
           case 'settlements':
             if (MOCK.url != 'mock') {
-              var url = clientEndpoint.prefix + clientOrderEndpoint.suffix + accountId + clientDetailOrder.suffix;
+              var url = WIPServiceBusiness + config.businessId + '/advisers/' + config.adviserId + config.openOrdersSuffix;
               console.log(url);
               return url;
             }
@@ -26,7 +26,7 @@ angular.module('WIP').factory('configService', function (MOCK) {
 
           case 'complete':
             if (MOCK.url != 'mock') {
-              var url = clientEndpoint.prefix + clientOrderEndpoint.suffix + accountId + clientDetailOrder.suffix;
+              var url = WIPServiceBusiness + config.businessId + '/advisers/' + config.adviserId + config.openOrdersSuffix;
               console.log(url);
               return url
             }
@@ -36,7 +36,7 @@ angular.module('WIP').factory('configService', function (MOCK) {
 
           case 'detail':
             if (MOCK.url != 'mock') {
-              var url = config.WIPServiceClient + accountId + "/orders";
+              var url = DEVELOPMENT.WIPServiceClient + accountId + "/orders";
               return url;
             }
             else {
