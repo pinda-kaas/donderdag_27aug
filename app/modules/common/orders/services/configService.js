@@ -40,9 +40,9 @@ angular.module('WIP').factory('configService', function (DATA) {
             //console.log('env:',DATA.enviroment );
             if (DATA.enviroment != 'mock') {
               debugger;
-              //console.log('ACC',id);
+              console.log('ACC',id);
               var url = DATA.WIPServiceClient + id + "/orders";
-              //console.log('DETAIL url from configservice',url);
+              console.log('DETAIL url from configservice',url);
               return url;
             }
             else {

@@ -4,7 +4,6 @@ underscore.factory('_', ['$window', function () {
 }]);
 
 "use strict";
-
 var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate', 'config']);
 
 console.log('this is the app starting up');
@@ -17,13 +16,16 @@ app.config(function ($stateProvider) {
       controller: 'OrdersCtrl',
       resolve: {
         orderData: function (wipService,configService) {
+          //return orderMockData;
           return wipService.getData(configService.config('open', ''));
         },
         settlementsData: function (wipService,configService) {
+          //return settlementsMockData;
           return wipService.getData(configService.config('settlements', ''));
         }
         ,
         completeOrders: function (wipService, configService) {
+          //return completeOrdersMockData;
           return wipService.getData(configService.config('complete', ''));
         }
       }
@@ -34,12 +36,11 @@ app.config(function ($stateProvider) {
       params:{'accountId':null},
       resolve: {
         orderDetails: function (configService,$stateParams) {
-          debugger;
+          //debugger;
           var accountId = $stateParams.accountId;
-          console.log('ACCOUNT ID', accountId);
-          return detailMockData;
-          var url=  configService.config('details',accountId);
-          return url;
+          //return detailMockData;
+          return wipService.getData(configService.config('detail',accountId));
+
         }
       }
     });
@@ -48,9 +49,7 @@ app.config(function ($stateProvider) {
 });
 
 app.run(function ($state,configService) {
-  //console.log('run');
   $state.go('tabs');
-
  //$state.go('orderDetail');
 });
 

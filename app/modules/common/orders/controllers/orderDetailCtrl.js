@@ -5,8 +5,8 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
   //accountid
 
-  console.log('orderdetail params NOW',$stateParams)
-  console.log('orderdetails from devserver:',orderDetails)
+  console.log('orderdetails in ctrl params NOW',$stateParams)
+  console.log('data from resolve orderdetails in ctrl :',orderDetails)
 
   //debugger;
   //var referrer = $stateParams.myParam ;
