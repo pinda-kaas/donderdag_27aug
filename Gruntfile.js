@@ -445,7 +445,7 @@ module.exports = function (grunt) {
           DATA:{
             name:"WIPServiceClient",
             url:"mock",
-            enviroment:"mock"
+            environment:"mock"
           }
         }
       },

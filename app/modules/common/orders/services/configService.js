@@ -4,7 +4,7 @@ angular.module('WIP').factory('configService', function (DATA) {
       config: function (tabType, id) {
         switch (tabType) {
           case 'open':
-            console.log('DATA environment:',DATA.environment);
+            console.log('DATA environment:',DATA.enviroment);
             debugger;
             if (DATA.enviroment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;

@@ -25,6 +25,22 @@ app.directive('tableFilter', function ($filter) {
         'REDEMPTION',
         'Switches',
         'All'];
+
+      $scope.orderSourceTypes = [
+        'All',
+        'Portfolio transacting',
+        'Transacting',
+        'Off-platform (new)',
+        'Bulked managed investments',
+        'Automatic cash management',
+        'Model portfolios',
+        'Dollar cost averaging',
+        'Low cash auto sell',
+        'Manual orders',
+        'Bulked managed investment and TDs',
+        'Funds transfer',
+        'Exercise/assignments (new)'
+      ];
     },
     link: function ($scope) {
 
