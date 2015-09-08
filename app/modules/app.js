@@ -35,8 +35,8 @@ app.config(function ($stateProvider) {
       controller: 'OrderDetailCtrl',
       params:{'accountId':null},
       resolve: {
-        orderDetails: function (configService,$stateParams) {
-          //debugger;
+        orderDetails: function (wipService,configService,$stateParams) {
+          debugger;
           var accountId = $stateParams.accountId;
           //return detailMockData;
           return wipService.getData(configService.config('detail',accountId));
