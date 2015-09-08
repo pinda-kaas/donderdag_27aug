@@ -458,6 +458,7 @@ module.exports = function (grunt) {
         {
           DATA:
           {
+            environment:'development',
             WIPServiceClient:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/',
             WIPServiceBusiness:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/',
             businessId:'MPMSWP',
