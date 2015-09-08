@@ -469,21 +469,8 @@ module.exports = function (grunt) {
           }
 
         }
-      },
-      production: {
-        options: {
-          dest: '<%= yeoman.app %>/modules/config.js'
-        },
-        clientEndpoint:{
-          prefix:'https://someproductionurl'
-        },
-        clientOrderEndpoint: {
-          suffix: 'wealth/services/orders/wip/v1/account/'
-        },
-        clientDetailOrder: {
-          suffix: '/orders'
-        }
       }
+
     }
   });
 

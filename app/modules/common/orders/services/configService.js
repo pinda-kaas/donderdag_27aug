@@ -4,11 +4,11 @@ angular.module('WIP').factory('configService', function (DATA) {
       config: function (tabType, id) {
         switch (tabType) {
           case 'open':
-            console.log('data envr',DATA);
+            console.log('DATA environment:',DATA.environment);
             debugger;
             if (DATA.enviroment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
-              console.log('url from configservice',url);
+              //console.log('url from configservice',url);
               return url;
             }
             else {
@@ -16,9 +16,10 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'settlements':
+            //console.log('settlements switch');
             if (DATA.enviroment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.awaitingSettlementsSuffix;
-              console.log('url from configservice',url);
+              //console.log('settlements url from configservice',url);
               return url;
             }
             else {
@@ -28,7 +29,7 @@ angular.module('WIP').factory('configService', function (DATA) {
           case 'complete':
             if (DATA.enviroment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.completedOrdersSuffix
-              console.log('url from configservice',url);
+              //console.log('url from configservice',url);
               return url;
             }
             else {
@@ -36,12 +37,12 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'detail':
-            console.log('env:',DATA.enviroment );
+            //console.log('env:',DATA.enviroment );
             if (DATA.enviroment != 'mock') {
               debugger;
-              console.log('ACC',id);
+              //console.log('ACC',id);
               var url = DATA.WIPServiceClient + id + "/orders";
-              console.log('DETAIL url from configservice',url);
+              //console.log('DETAIL url from configservice',url);
               return url;
             }
             else {

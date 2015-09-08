@@ -17,30 +17,14 @@ app.config(function ($stateProvider) {
       controller: 'OrdersCtrl',
       resolve: {
         orderData: function (wipService,configService) {
-
-          //var tabType = 'detail';
-          //var accountId = 'D00072'
-          //var result = configService.config(tabType, accountId);
-
-          debugger;
-          console.log('resolve orderdata');
-          debugger;
-          //return orderMockData;
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
           return wipService.getData(configService.config('open', ''));
-
         },
-        settlementsData: function (wipService) {
-          console.log('resolve settlementData');
-          return settlementsMockData;
-          //return wipService.getData(configService.config('settlements', ''));
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
+        settlementsData: function (wipService,configService) {
+          return wipService.getData(configService.config('settlements', ''));
         }
         ,
         completeOrders: function (wipService, configService) {
-          //return wipService.getData(configService.config('complete', 'j'));
-          //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
-          return completeOrdersMockData;
+          return wipService.getData(configService.config('complete', ''));
         }
       }
     })
@@ -49,14 +33,13 @@ app.config(function ($stateProvider) {
       controller: 'OrderDetailCtrl',
       params:{'accountId':null},
       resolve: {
-        orderDetails: function () {
+        orderDetails: function (configService,$stateParams) {
+          debugger;
           var accountId = $stateParams.accountId;
           console.log('ACCOUNT ID', accountId);
           return detailMockData;
-          //var url=  configService.config('details');
-
-          //return wipService.getData(configService.config('details', accountId));
-          //return url;
+          var url=  configService.config('details',accountId);
+          return url;
         }
       }
     });
@@ -65,8 +48,7 @@ app.config(function ($stateProvider) {
 });
 
 app.run(function ($state,configService) {
-  console.log('run');
-  debugger;
+  //console.log('run');
   $state.go('tabs');
 
  //$state.go('orderDetail');
