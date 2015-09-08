@@ -17,6 +17,11 @@ app.config(function ($stateProvider) {
       controller: 'OrdersCtrl',
       resolve: {
         orderData: function (wipService,configService) {
+
+          //var tabType = 'detail';
+          //var accountId = 'D00072'
+          //var result = configService.config(tabType, accountId);
+
           debugger;
           console.log('resolve orderdata');
           debugger;
@@ -28,10 +33,12 @@ app.config(function ($stateProvider) {
         settlementsData: function (wipService) {
           console.log('resolve settlementData');
           return settlementsMockData;
+          //return wipService.getData(configService.config('settlements', ''));
           //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/awaitingsettlement');
         }
         ,
         completeOrders: function (wipService, configService) {
+          //return wipService.getData(configService.config('complete', 'j'));
           //return wipService.getData('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/complete');
           return completeOrdersMockData;
         }
@@ -46,8 +53,10 @@ app.config(function ($stateProvider) {
           var accountId = $stateParams.accountId;
           console.log('ACCOUNT ID', accountId);
           return detailMockData;
-          var url=  configService.config('details');
-          return url;
+          //var url=  configService.config('details');
+
+          //return wipService.getData(configService.config('details', accountId));
+          //return url;
         }
       }
     });
@@ -55,11 +64,12 @@ app.config(function ($stateProvider) {
 
 });
 
-app.run(function ($state) {
+app.run(function ($state,configService) {
   console.log('run');
   debugger;
   $state.go('tabs');
-  //$state.go('orderDetail');
+
+ //$state.go('orderDetail');
 });
 
 var orderMockData = [

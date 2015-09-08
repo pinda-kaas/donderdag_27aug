@@ -3,6 +3,7 @@ describe('configService', function () {
 
   beforeEach(function () {
     module('WIP');
+   // module('config');
     inject(function (_configService_) {
       configService = _configService_;
     });
@@ -19,21 +20,18 @@ describe('configService', function () {
     expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
   });
 
-  //it('should return development details url', function () {
-  //  var config = {};
-  //
-  //  config.DATA={};
-  //  config.DATA.enviroment= 'development';
-  //
-  //  config.WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
-  //
-  //  config.openOrdersSuffix = '/orders/statuses/open/minimum';
-  //  var tabType = 'open';
-  //  var accountId = 'D00072'
-  //  var result = configService.config('detail', config, accountId);
-  //  console.log('result', config);
-  //  expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
-  //});
+  it('should return development details url', function () {
+    var config = {};
+    //DATA={};
+    //DATA.enviroment= 'development';
+    //DATA.WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
+    //config. = '/orders/statuses/open/minimum';
+    var tabType = 'detail';
+    var accountId = 'D00072'
+    var result = configService.config(tabType,  accountId);
+    console.log('result', config);
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
+  });
 
 
  it('should return development open url', function () {
@@ -44,7 +42,7 @@ describe('configService', function () {
     config.openOrdersSuffix = '/orders/statuses/open/minimum';
     var tabType = 'open';
     var accountId = ''
-    var result = configService.config(tabType, config, accountId);
+    var result = configService.config(tabType, accountId);
     console.log('result', config);
     expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/MPMSWP/advisers/PFALL/orders/statuses/open/minimum');
   });

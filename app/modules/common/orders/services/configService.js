@@ -1,7 +1,7 @@
 //returns string url based on endpoint constants
 angular.module('WIP').factory('configService', function (DATA) {
     return {
-      config: function (tabType, accountId) {
+      config: function (tabType, id) {
         switch (tabType) {
           case 'open':
             console.log('data envr',DATA);
@@ -36,9 +36,12 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'detail':
-            if (MOCK.url != 'mock') {
-              var url = DEVELOPMENT.WIPServiceClient + accountId + "/orders";
-              console.log('url from configservice',url);
+            console.log('env:',DATA.enviroment );
+            if (DATA.enviroment != 'mock') {
+              debugger;
+              console.log('ACC',id);
+              var url = DATA.WIPServiceClient + id + "/orders";
+              console.log('DETAIL url from configservice',url);
               return url;
             }
             else {
