@@ -3,6 +3,8 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   debugger;
   $scope.orderDetails = orderDetails;
 
+  //$scope.showAdvancedSearch=false;
+
   //accountid
 
   console.log('orderdetails in ctrl params NOW',$stateParams)

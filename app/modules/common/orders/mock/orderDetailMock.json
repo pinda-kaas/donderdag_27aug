@@ -83,7 +83,7 @@
     ],
     "orderState": "AWAITING SETTLEMENT",
     "reference": "2299310",
-    "orderSource": "Model Portfolios",
+    "orderSource": "Transacting",
     "expiryMethod": "until cancelled"
   },
   {
