@@ -11,12 +11,9 @@ describe('configService', function () {
   });
 
   xit('MOCK should return open url', function () {
-    var config = {};
-    config.DATA={};
-    config.DATA.enviroment= 'mock';
     var tabType = 'open';
     var accountId = 'A18182'
-    var result = configService.config('open', config, accountId);
+    var result = configService.config('open', accountId);
     expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
   });
 
