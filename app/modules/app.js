@@ -49,7 +49,7 @@ app.config(function ($stateProvider) {
 
 app.run(function ($state) {
   debugger;
- // $state.go('tabs');
+ //$state.go('tabs');
  $state.go('orderDetail');
 });
 
