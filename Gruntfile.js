@@ -20,6 +20,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-ng-constant');
+  grunt.loadNpmTasks("grunt-remove-logging");
 
   // Configurable paths for the application
   var appConfig = {
@@ -471,6 +472,11 @@ module.exports = function (grunt) {
         }
       }
 
+    },
+    removelogging: {
+      dist: {
+        src: ".tmp/concat/scripts/*.js" // Each file will be overwritten with the output!
+      }
     }
   });
 
@@ -515,6 +521,7 @@ module.exports = function (grunt) {
     //'autoprefixer',
     'ngtemplates',
     'concat',
+    'removelogging',
     'ngAnnotate',
     'copy:dist',
     //'cdnify',
@@ -531,8 +538,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 
-  grunt.registerTask('bef', [
-    'clean:dist',
-    'copy:dist'
-  ]);
 };
