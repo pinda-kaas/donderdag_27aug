@@ -1,19 +1,20 @@
-app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams,searchFilterService,DATA) {
+app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams,wipService,DATA) {
 
   debugger;
   $scope.orderDetails = orderDetails;
 
   //$scope.showAdvancedSearch=false;
 
-  //accountid
-
   console.log('orderdetails in ctrl params NOW',$stateParams)
   console.log('data from resolve orderdetails in ctrl :',orderDetails)
+
+  $scope.accountId = $stateParams.accountId;
+  $scope.accountName =$stateParams.accountName;
 
   //debugger;
   //var referrer = $stateParams.myParam ;
   //
-  //console.log('state', referrer);
+  console.log('state', $stateParams);
 
   $scope.collapsed = true;
   $scope.collapsedDetail=true;

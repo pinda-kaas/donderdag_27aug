@@ -4,11 +4,11 @@
   <div class="row form-inline">
     <div class="col-sm-4">
       <label>Account</label>
-      <span>{{orderDetails.accountId}}</span>
+      <span>{{accountId}}</span>
     </div>
     <div class="col-sm-4">
       <label>Accounttype</label>
-      <span>{{orderDetails.accountType}}</span>
+      <span>??</span>
     </div>
   </div>
 
@@ -17,7 +17,7 @@
   <div class="row form-inline">
     <div class="col-sm-6">
       <label>Accountname</label>
-      <span>{{orderDetails.accountName}}</span>
+      <span>{{accountName}}</span>
     </div>
   </div>
 
@@ -113,118 +113,20 @@
         <td>${{transaction.price}}</td>
       </tr>
 
+      <tfoot>
+      <tr>
+        <td colspan="11" class="text-center">
+          <div st-items-by-page="10" st-pagination="10"
+               st-template="views/pagination.custom.html"></div>
+        </td>
+
+      </tr>
+      </tfoot>
+
     </table>
   </div>
 
 
-  <!--todo remove this-->
   <a ui-sref="tabs">back</a>
-
-  <!--<table>-->
-  <!--<tr>-->
-  <!--<th></th>-->
-  <!--<th></th>-->
-  <!--<th st-ratio="7" st-sort="transaction.reference">REF</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.orderTaker">TAKER</th>-->
-  <!--<th st-ratio="23" st-sort="transaction.lastUpdated">UPDATED</th>-->
-  <!--<th st-ratio="5" st-sort="transaction.filledUnits">FILLED</th>-->
-  <!--<th st-ratio="5" st-sort="transaction.price">PRICE</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.amount">AMOUNT</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.fundingPriority">PRIORITY</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.status">STATUS</th>-->
-  <!--</tr>-->
-  <!--</table>-->
-
-
-  <!--<tr collapse="collapsed">-->
-  <!--<td st-ratio="2"></td>-->
-  <!--<td st-ratio="5"></td>-->
-  <!--<td st-ratio="100" colspan="18">-->
-
-  <!--<table st-ratio="100" class="table table-striped">-->
-  <!--<thead>-->
-
-  <!--<tr>-->
-  <!--<td></td>-->
-  <!--<td></td>-->
-  <!--<td colspan="16" class="transactionDetails">-->
-  <!--<h5>Transaction Details</h5>-->
-  <!--</td>-->
-  <!--</tr>-->
-
-  <!--<tr>-->
-  <!--<th></th>-->
-  <!--<th></th>-->
-  <!--<th st-ratio="7" st-sort="transaction.reference">REF</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.orderTaker">TAKER</th>-->
-  <!--<th st-ratio="23" st-sort="transaction.lastUpdated">UPDATED</th>-->
-  <!--<th st-ratio="5" st-sort="transaction.filledUnits">FILLED</th>-->
-  <!--<th st-ratio="5" st-sort="transaction.price">PRICE</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.amount">AMOUNT</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.fundingPriority">PRIORITY</th>-->
-  <!--<th st-ratio="10" st-sort="transaction.status">STATUS</th>-->
-  <!--</tr>-->
-  <!--</thead>-->
-  <!--<tbody>-->
-
-  <!--<table st-ratio="100" class="table table-striped">-->
-  <!--<tr ng-repeat="transaction in account.transactions">-->
-  <!--<td>-->
-
-  <!--</td>-->
-  <!--<td></td>-->
-  <!--<td st-ratio="7">-->
-  <!--<span ng-show="transaction.fundingPriority=!'Transacting'">{{transaction.reference}}</span>-->
-  <!--<span ng-hide="transaction.fundingPriority=!'Transacting'"><a-->
-  <!--ng-click="collapseddetail=!collapseddetail">{{transaction.reference}}</a> </span>-->
-  <!--</td>-->
-  <!--<td st-ratio="10">-->
-  <!--{{transaction.orderTaker}}-->
-  <!--</td>-->
-  <!--<td st-ratio="23">-->
-  <!--{{transaction.lastUpdated}}-->
-  <!--</td>-->
-  <!--<td st-ratio="5">-->
-  <!--{{transaction.filledUnits}}-->
-  <!--</td>-->
-  <!--<td st-ratio="5">-->
-  <!--${{transaction.price}}-->
-  <!--</td>-->
-  <!--<td st-ratio="10">-->
-  <!--${{transaction.amount}}-->
-  <!--</td>-->
-  <!--<td st-ratio="10">-->
-  <!--{{transaction.fundingPriority}}-->
-  <!--</td>-->
-  <!--<td st-ratio="10">-->
-  <!--{{transaction.status}}-->
-  <!--</td>-->
-  <!--</tr>-->
-
-
-  <!--&lt;!&ndash;<tr collapse="collapseddetail" ng-repeat="transactions in transaction.detailTransactions">&ndash;&gt;-->
-  <!--&lt;!&ndash;<td>testing detaillll</td>&ndash;&gt;-->
-  <!--&lt;!&ndash;{{transactions}}&ndash;&gt;-->
-  <!--&lt;!&ndash;</tr>&ndash;&gt;-->
-
-
-  <!--</table>-->
-  <!--</td>-->
-  <!--<td></td>-->
-  <!--</tr>-->
-
-  <!--</tbody>-->
-  <!--<tfoot>-->
-  <!--<tr>-->
-  <!--<td colspan="11" id="text-center">-->
-  <!--<div st-items-by-page="10" st-pagination="10"-->
-  <!--st-template="views/pagination.custom.html"></div>-->
-  <!--</td>-->
-  <!--</tr>-->
-  <!--</tfoot>-->
-  <!--</table>-->
-
-  <!--</td>-->
-  <!--</tr>-->
 
 </div>

@@ -33,7 +33,7 @@ app.config(function ($stateProvider) {
     .state('orderDetail', {
       templateUrl: 'views/detail.html',
       controller: 'OrderDetailCtrl',
-      params:{'accountId':null},
+      params:{'accountId':null,'accountName':null},
       resolve: {
         orderDetails: function (wipService,configService,$stateParams) {
           debugger;
@@ -49,8 +49,8 @@ app.config(function ($stateProvider) {
 
 app.run(function ($state) {
   debugger;
-  $state.go('tabs');
- //$state.go('orderDetail');
+ // $state.go('tabs');
+ $state.go('orderDetail');
 });
 
 

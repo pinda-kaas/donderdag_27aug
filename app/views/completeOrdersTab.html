@@ -23,10 +23,10 @@
       <tbody>
 
       <tr ng-repeat="account in completeOrders ">
-        <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName}}</a> </td>
+        <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName | limitTo:30}}</a> </td>
         <td st-ratio="5">{{account.tradeDate}}</td>
         <td st-ratio="5">{{account.orderType}}</td>
-        <td st-ratio="25">{{account.asset.name}}</td>
+        <td st-ratio="25">{{account.asset.name }}</td>
         <td st-ratio="5">{{account.units}}</td>
         <td st-ratio="5">{{account.price.value | showCurrency:account.price.currency}}</td>
         <td st-ratio="5">{{account.fee}}</td>
