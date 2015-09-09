@@ -36,12 +36,12 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     console.log('src',$scope.orderSource);
 
 
-    var url = DATA.WIPServiceClient + accountId + "/orders/search?orderSource="
-      + $scope.orderSource
-      + '&orderStatus='+ $scope.orderStatus
-      + '&orderType='+$scope.orderType
-      + '&fromDate='+$scope.fromDate
-      + '&toDate=' +$scope.toDate
+    var url = DATA.WIPServiceClient + accountId
+      + "/orders/search?orderSource="+ $scope.orderSource.code
+      + '&orderStatus='+ $scope.orderStatus.code
+      + '&orderType='+$scope.tradeTypes.code
+      + '&fromDate='+'2015-01-01'
+      + '&toDate=' +'2016-01-01'
       + '&security='+$scope.security;
 
     console.log('searchfilter url',url);

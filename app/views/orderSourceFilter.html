@@ -1,21 +1,14 @@
 <div class="col-sm-2">
   <label for="">Order source</label>
-  {{orderSource}}
-  <select ng-model="orderSource" ng-options="source for source in orderSourceTypes" class="form-control">
+
+  <select ng-model="orderSource" ng-options="source.name for source in orderSourceTypes" class="form-control">
   </select>
+
 </div>
 
 <div class="col-sm-2">
   <label for="">Status</label>
-  <select ng-model="orderStatus" class="form-control">
-    <option value="">Complete</option>
-    <option value="">In progress</option>
-    <option value="">Awaiting settlement</option>
-    <option value="">Pending</option>
-    <option value="">Complete</option>
-    <option value="">Cancelled</option>
-    <option value="">Execute failed</option>
-
+  <select ng-model="orderStatus" ng-options="status.name for status in orderStatuses" class="form-control">
   </select>
 </div>
 
