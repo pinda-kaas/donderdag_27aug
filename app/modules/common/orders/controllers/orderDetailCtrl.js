@@ -3,7 +3,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
   debugger;
   $scope.orderDetails = orderDetails;
 
-  //$scope.showAdvancedSearch=false;
+  $scope.showAdvancedSearch=true;
 
   console.log('orderdetails in ctrl params NOW',$stateParams)
   console.log('data from resolve orderdetails in ctrl :',orderDetails)
@@ -50,12 +50,11 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     //  '&orderStatus='+'&orderType='+'&fromDate=13-01-2000&toDate=12-06-2015&security=';
     //
 
-    searchFilterService.filter(url).then(function(data){
+    wipService.getData(url).then(function(data){
       $scope.orderDetails =data;
-
     });
 
-    console.log($scope.orderDetails );
+    console.log('success  ???',$scope.orderDetails.length >0 );
 
   }
 

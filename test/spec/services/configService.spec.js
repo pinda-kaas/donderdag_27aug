@@ -10,12 +10,6 @@ describe('configService', function () {
 
   });
 
-  xit('MOCK should return open url', function () {
-    var tabType = 'open';
-    var accountId = 'A18182'
-    var result = configService.config('open', accountId);
-    expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
-  });
 
   it('should return development details url', function () {
     //var config = {};
@@ -74,6 +68,12 @@ describe('configService', function () {
     //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/%7bbusinessId%7d/advisers/%7badviserId%7d/orders/statuses/awaitingsettlement
   });
 
+  xit('MOCK should return open url', function () {
+    var tabType = 'open';
+    var accountId = 'A18182'
+    var result = configService.config('open', accountId);
+    expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
+  });
 
 
 

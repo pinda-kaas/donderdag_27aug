@@ -36,20 +36,20 @@
       <thead>
       <tr>
         <th st-ratio="10" st-sort="account.orderDate">ORDER DATE</th>
-        <th st-ratio="25" st-sort="account.asset.name">INVESTMENT</th>
-        <th st-ratio="15" st-sort="account.asset.type">TYPE</th>
+        <th st-ratio="15" st-sort="account.asset.name">INVESTMENT</th>
+        <th st-ratio="10" st-sort="account.asset.type">TYPE</th>
 
-        <th st-ratio="10" st-sort="account.totalUnits">UNITS</th>
-        <th st-ratio="10" st-sort="account.unitsFilled">FILLED</th>
+        <th st-ratio="7" st-sort="account.totalUnits">UNITS</th>
+        <th st-ratio="7" st-sort="account.unitsFilled">FILLED</th>
         <th st-ratio="5" st-sort="account.orderTransactionSummary.amount.value">PRICE</th>
 
-        <th st-ratio="10" st-sort="account.valid">VALID</th>
+        <th st-ratio="5" st-sort="account.valid">VALID</th>
 
         <th st-ratio="5" st-sort="account.fee">FEE</th>
 
         <th st-ratio="5" st-sort="account.value">AMOUNT</th>
         <th st-ratio="5" st-sort="account.dataSource">SOURCE</th>
-        <th st-ratio="10" st-sort="account.transactions.state">STATUS</th>
+        <th st-ratio="15" st-sort="account.transactions.state">STATUS</th>
         <th st-ratio="5" st-sort="account.detail"></th>
 
       </tr>
@@ -60,22 +60,22 @@
 
       <tr>
         <td st-ratio="10">{{account.orderDate}}</td>
-        <td st-ratio="25">{{account.asset.name | limitTo:30 }}{{account.asset.name.length >= 30 ? '...' : ''}}</td>
-        <td st-ratio="15">{{account.asset.type| removeUnderscore }}</td>
+        <td st-ratio="15">{{account.asset.name | limitTo:30 }}{{account.asset.name.length >= 30 ? '...' : ''}}</td>
+        <td st-ratio="10">{{account.asset.type| removeUnderscore | limitTo:10 }}{{account.asset.type.length >= 10 ? '...' : ''}}</td>
 
-        <td st-ratio="">{{account.totalUnits}}</td>
-        <td st-ratio="5">{{account.unitsFilled}}</td>
-        <td st-ratio="10">{{account.orderTransactionSummary.amount.value|currency}}</td>
+        <td st-ratio="7">{{account.totalUnits}}</td>
+        <td st-ratio="7">{{account.unitsFilled}}</td>
+        <td st-ratio="5">{{account.orderTransactionSummary.amount.value|currency}}</td>
 
-        <td>valid??</td>
+        <td st-ratio="5">valid??</td>
 
         <td st-ratio="5">{{account.limitPrice.value| currency}}</td>
 
         <td st-ratio="5">{{account.value}}</td>
         <td st-ratio="5">{{account.dataSource}}</td>
-        <td st-ratio="10">{{account.orderState}}</td>
+        <td st-ratio="15">{{account.orderState}}</td>
 
-        <td><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]" ng-click="collapsed = !collapsed"></a>
+        <td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]" ng-click="collapsed = !collapsed"></a>
         </td>
 
       </tr>
