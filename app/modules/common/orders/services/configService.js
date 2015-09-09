@@ -4,9 +4,9 @@ angular.module('WIP').factory('configService', function (DATA) {
       config: function (tabType, id) {
         switch (tabType) {
           case 'open':
-            console.log('DATA environment:',DATA.enviroment);
+            console.log('DATA environment:',DATA.environment);
             debugger;
-            if (DATA.enviroment != 'mock') {
+            if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
               //console.log('url from configservice',url);
               return url;
@@ -17,7 +17,7 @@ angular.module('WIP').factory('configService', function (DATA) {
 
           case 'settlements':
             //console.log('settlements switch');
-            if (DATA.enviroment != 'mock') {
+            if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.awaitingSettlementsSuffix;
               //console.log('settlements url from configservice',url);
               return url;
@@ -27,7 +27,7 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'complete':
-            if (DATA.enviroment != 'mock') {
+            if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.completedOrdersSuffix
               //console.log('url from configservice',url);
               return url;
@@ -37,8 +37,8 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'detail':
-            //console.log('env:',DATA.enviroment );
-            if (DATA.enviroment != 'mock') {
+            //console.log('env:',DATA.environment );
+            if (DATA.environment != 'mock') {
               debugger;
               console.log('ACC',id);
               var url = DATA.WIPServiceClient + id + "/orders";
