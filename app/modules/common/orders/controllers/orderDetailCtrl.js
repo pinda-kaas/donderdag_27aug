@@ -32,9 +32,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
     var accountId='D00072'
 
-
     console.log('src',$scope.orderSource);
-
 
     var url = DATA.WIPServiceClient + accountId
       + "/orders/search?orderSource="+ $scope.orderSource.code
@@ -55,7 +53,6 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     });
 
     console.log('success  ???',$scope.orderDetails.length >0 );
-
   }
 
 });

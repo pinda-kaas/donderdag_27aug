@@ -10,17 +10,18 @@ describe('configService', function () {
 
   });
 
+  xit('MOCK should return open url', function () {
+    var tabType = 'open';
+    var accountId = 'A18182'
+    var result = configService.config('open', accountId);
+    expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
+  });
 
+  //tab pages
   it('should return development details url', function () {
-    //var config = {};
-    //DATA={};
-    //DATA.enviroment= 'development';
-    //DATA.WIPServiceClient = 'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/';
-    //config. = '/orders/statuses/open/minimum';
     var tabType = 'detail';
     var accountId = 'D00072'
     var result = configService.config(tabType,  accountId);
-    //console.log('result', config);
     expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/D00072/orders');
   });
 
@@ -68,12 +69,19 @@ describe('configService', function () {
     //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/%7bbusinessId%7d/advisers/%7badviserId%7d/orders/statuses/awaitingsettlement
   });
 
-  xit('MOCK should return open url', function () {
-    var tabType = 'open';
-    var accountId = 'A18182'
-    var result = configService.config('open', accountId);
-    expect(result).toEqual('/modules/common/orders/mock/ordersTabMockData.json');
+
+
+
+  //combos
+
+  it('should return development assettype url', function () {
+    var tabType = 'assetType';
+    var accountId = ''
+    var result = configService.config(tabType, accountId);
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/assettypes');
+    //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/
   });
+
 
 
 

@@ -4,7 +4,7 @@ angular.module('WIP').factory('configService', function (DATA) {
       config: function (tabType, id) {
         switch (tabType) {
           case 'open':
-            console.log('DATA environment:',DATA.environment);
+            console.log('DATA environment:', DATA.environment);
             debugger;
             if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
@@ -18,7 +18,7 @@ angular.module('WIP').factory('configService', function (DATA) {
           case 'settlements':
             //console.log('settlements switch');
             if (DATA.environment != 'mock') {
-              var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.awaitingSettlementsSuffix;
+              var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + '/' + DATA.awaitingSettlementsSuffix;
               //console.log('settlements url from configservice',url);
               return url;
             }
@@ -28,7 +28,7 @@ angular.module('WIP').factory('configService', function (DATA) {
 
           case 'complete':
             if (DATA.environment != 'mock') {
-              var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId +'/'+ DATA.completedOrdersSuffix
+              var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + '/' + DATA.completedOrdersSuffix
               //console.log('url from configservice',url);
               return url;
             }
@@ -37,17 +37,24 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'detail':
-            //console.log('env:',DATA.environment );
             if (DATA.environment != 'mock') {
               debugger;
-              console.log('ACC',id);
-              var url = DATA.WIPServiceClient + id + "/orders";
-              console.log('DETAIL url from configservice',url);
+              console.log('ACC', id);
+              var url = DATA.WIPServiceClient +DATA.detailsSuffix+ id + "/orders";
+              console.log('DETAIL url from configservice', url);
               return url;
             }
             else {
               return '/modules/common/orders/mock/orderDetailMock.json';
+            }
 
+          case 'assetType':
+            if (DATA.environment != 'mock') {
+              var url = DATA.WIPServiceClient +DATA.assetTypesSuffix;
+              return url;
+            }
+            else {
+              return '/modules/common/orders/mock/assetType.json';
             }
         }
       }

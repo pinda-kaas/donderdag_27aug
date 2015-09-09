@@ -3,7 +3,8 @@ app.directive('tableFilter', function ($filter) {
     restrict: 'E',
     //scope:{security:"=security"},
     templateUrl: 'views/tableFilter.html',
-    controller: function ($scope) {
+    controller: function ($scope)
+    {
       $scope.assetTypes = [{
         "code": "AUSTRALIAN_EQUITY",
         "name": "Australian Equities",
