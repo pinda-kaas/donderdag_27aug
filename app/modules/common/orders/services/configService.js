@@ -56,6 +56,34 @@ angular.module('WIP').factory('configService', function (DATA) {
             else {
               return '/modules/common/orders/mock/assetType.json';
             }
+
+          case 'orderType':
+            if (DATA.environment != 'mock') {
+              var url = DATA.WIPServiceClient +DATA.orderTypesSuffix;
+              return url;
+            }
+            else {
+              return '/modules/common/orders/mock/orderType.json';
+            }
+
+          case 'orderStatus':
+            if (DATA.environment != 'mock') {
+              var url = DATA.WIPServiceClient +DATA.orderStatussesSuffix;
+              return url;
+            }
+            else {
+              return '/modules/common/orders/mock/orderStatusses.json';
+            }
+
+          case 'orderSource':
+            if (DATA.environment != 'mock') {
+              var url = DATA.WIPServiceClient +DATA.orderSourcesSuffix;
+              return url;
+            }
+            else {
+              return '/modules/common/orders/mock/orderSource.json';
+            }
+
         }
       }
     }

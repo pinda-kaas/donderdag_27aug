@@ -6,7 +6,7 @@ underscore.factory('_', ['$window', function () {
 "use strict";
 var app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate', 'config']);
 
-console.log('IS THIS CLEANED??? SHOULD NOT BEthis is the app starting up');/*RemoveLogging:skip*/
+console.log('IS THIS CLEANED??? SHOULD NOT BEthis is the app starting up');
 
 app.config(function ($stateProvider) {
   $stateProvider

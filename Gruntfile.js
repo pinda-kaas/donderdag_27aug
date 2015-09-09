@@ -475,7 +475,7 @@ module.exports = function (grunt) {
             completedOrdersSuffix:'orders/statuses/complete',
             assetTypesSuffix:'assettypes',
             orderTypesSuffix:'ordertypes',
-            orderStatussesSuffix:'orderstatuses',
+            orderStatussesSuffix:'orderstatusses',
             orderSourcesSuffix:'ordersources'
           }
 
@@ -487,6 +487,7 @@ module.exports = function (grunt) {
       dist: {
         src: ".tmp/concat/scripts/*.js" // Each file will be overwritten with the output!
       }
+
     }
   });
 
@@ -503,6 +504,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
+
       //'test',
       'watch'
     ]);
@@ -531,7 +533,7 @@ module.exports = function (grunt) {
     //'autoprefixer',
     'ngtemplates',
     'concat',
-    'removelogging',
+    'removelogging:dist',
     'ngAnnotate',
     'copy:dist',
     //'cdnify',

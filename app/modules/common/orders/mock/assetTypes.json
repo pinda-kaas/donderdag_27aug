@@ -1,0 +1,36 @@
+[{
+  "code": "AUSTRALIAN_EQUITY",
+  "name": "Australian Equities",
+  "type": "E",
+  "subtype": "EA",
+  "classtype": null,
+  "internationalSecurity": false
+}, {
+  "code": "INTERNATIONAL_EQUITY",
+  "name": "International Equities",
+  "type": "E",
+  "subtype": "EI",
+  "classtype": null,
+  "internationalSecurity": true
+}, {
+  "code": "WHOLESALE_MANAGED_FUND",
+  "name": "Wholesale Managed Funds",
+  "type": "W",
+  "subtype": null,
+  "classtype": null,
+  "internationalSecurity": false
+}, {
+  "code": "RETAIL_MANAGED_FUND",
+  "name": "Retail Managed Funds",
+  "type": "R",
+  "subtype": null,
+  "classtype": null,
+  "internationalSecurity": false
+}, {
+  "code": "TERM_DEPOSIT",
+  "name": "Term Deposits",
+  "type": "W",
+  "subtype": null,
+  "classtype": "TDS",
+  "internationalSecurity": false
+}]

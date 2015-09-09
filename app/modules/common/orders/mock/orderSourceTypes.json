@@ -1,0 +1,19 @@
+[{
+  "code": "PORTFOLIO_TRANSACTING",
+  "name": "Portfolio Transacting"
+}, {
+  "code": "BULK_MANAGED_INVESTMENTS",
+  "name": "Bulked Managed Investments"
+}, {"code": "AUTOMATIC_CASH_MANAGEMENT", "name": "Automatic Cash Management"}, {
+  "code": "MODEL_PORTFOLIOS",
+  "name": "Model Portfolios"
+}, {"code": "DOLLAR_COST_AVERAGING", "name": "Dollar Cost Averaging"}, {
+  "code": "LOW_CASH_AUTO_SELL",
+  "name": "Low Cash Auto Sell"
+}, {"code": "MANUAL_ORDERS", "name": "Manual Orders"}, {
+  "code": "BULK_MANAGED_EQUITY_AND_TD",
+  "name": "Bulked Managed Equity and TD"
+}, {"code": "FUNDS_TRANSFER", "name": "Funds Transfer"}, {
+  "code": "OFF_PLATFORM",
+  "name": "Off Platform"
+}, {"code": "EXERCISE_ASSIGNMENT", "name": "Exercise Assignment"}]

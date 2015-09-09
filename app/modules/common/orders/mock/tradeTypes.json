@@ -1,0 +1,18 @@
+[
+  {
+    "code": "BUY",
+    "name": "BUY"
+  },
+  {
+    "code": "SELL",
+    "name": "SELL"
+  },
+  {
+    "code": "APPLICATION",
+    "name": "APP"
+  },
+  {
+    "code": "REDEMPTION",
+    "name": "RED"
+  }
+]

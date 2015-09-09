@@ -84,5 +84,33 @@ describe('configService', function () {
 
 
 
+  it('should return development orderSources url', function () {
+    var tabType = 'orderSource';
+    var accountId = ''
+    var result = configService.config(tabType, accountId);
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/ordersources');
+    //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/ordersources
+  });
+
+
+  it('should return development orderstatusses url', function () {
+    var tabType = 'orderStatus';
+    var accountId = ''
+    var result = configService.config(tabType, accountId);
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/orderstatusses');
+    //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/orderstatusses
+  });
+
+  it('should return development ordertypes url', function () {
+    var tabType = 'orderType';
+    var accountId = ''
+    var result = configService.config(tabType, accountId);
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/ordertypes');
+    //https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/ordertypes
+  });
+
+
+
+
 
 });
