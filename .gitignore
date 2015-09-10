@@ -3,3 +3,5 @@
 vcs.xml
 encodings.xml
 workspace.xml
+bower_components
+node_modules
