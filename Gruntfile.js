@@ -20,7 +20,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-ng-constant');
-  grunt.loadNpmTasks("grunt-remove-logging");
+  grunt.loadNpmTasks('grunt-remove-logging');
 
   // Configurable paths for the application
   var appConfig = {
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         tasks: ['wiredep']
       },
       js: {
-        files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+        files: ['app/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
         options: {
           livereload: '<%= connect.options.livereload %>'
@@ -63,10 +63,10 @@ module.exports = function (grunt) {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
-          '<%= yeoman.app %>/{,*/}*.html',
+          'app/{,*/}*.html',
           '.tmp/styles/{,*/}*.css',
           'app/styles/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+          'app/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
           'app/modules/**/*.js'
         ]
       }
@@ -132,7 +132,7 @@ module.exports = function (grunt) {
       all: {
         src: [
           'Gruntfile.js',
-          '<%= yeoman.app %>/scripts/{,*/}*.js'
+          'app/modules/**/*.js'
         ]
       },
       test: {
@@ -187,7 +187,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the app
     wiredep: {
       app: {
-        src: ['<%= yeoman.app %>/index.html'],
+        src: ['app/index.html'],
         ignorePath: /\.\.\//
       },
       test: {
@@ -224,7 +224,7 @@ module.exports = function (grunt) {
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
-      html: '<%= yeoman.app %>/index.html',
+      html: 'app/index.html',
       options: {
         dest: '<%= yeoman.dist %>',
         flow: {
@@ -291,7 +291,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: 'app/images',
           src: '{,*/}*.{png,jpg,jpeg,gif}',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -302,7 +302,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/images',
+          cwd: 'app/images',
           src: '{,*/}*.svg',
           dest: '<%= yeoman.dist %>/images'
         }]
@@ -334,7 +334,7 @@ module.exports = function (grunt) {
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
-        cwd: '<%= yeoman.app %>',
+        cwd: 'app',
         src: 'views/{,*/}*.html',
         dest: '.tmp/templateCache.js'
       }
@@ -367,7 +367,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             dot: true,
-            cwd: '<%= yeoman.app %>',
+            cwd: 'app',
             dest: '<%= yeoman.dist %>',
             src: [
               '*.{ico,png,txt}',
@@ -397,11 +397,10 @@ module.exports = function (grunt) {
             dest: '<%= yeoman.dist %>'
           }
         ]
-      }
-      ,
+      },
       styles: {
         expand: true,
-        cwd: '<%= yeoman.app %>/styles',
+        cwd: 'app/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
       }
@@ -440,7 +439,7 @@ module.exports = function (grunt) {
 
       mock: {
         options: {
-          dest: '<%= yeoman.app %>/modules/config.js'
+          dest: 'app/modules/config.js'
         },
         constants: {
           DATA:{
@@ -462,7 +461,7 @@ module.exports = function (grunt) {
 
       development: {
         options: {
-          dest: '<%= yeoman.app %>/modules/config.js'
+          dest: 'app/modules/config.js'
         },
         constants:
         {
@@ -508,7 +507,7 @@ module.exports = function (grunt) {
       'concurrent:server',
       'autoprefixer:server',
       'connect:livereload',
-
+      'jshint',
       //'test',
       'watch'
     ]);

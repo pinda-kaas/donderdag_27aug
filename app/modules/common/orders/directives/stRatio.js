@@ -1,3 +1,5 @@
+'use strict';
+
 app.directive('stRatio',function(){
     return {
         link:function(scope, element, attr){

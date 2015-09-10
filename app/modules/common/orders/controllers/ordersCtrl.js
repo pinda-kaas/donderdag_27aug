@@ -1,3 +1,5 @@
+'use strict';
+
 app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
 
   console.log('orderdata in controller:',orderData);
