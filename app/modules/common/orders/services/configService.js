@@ -5,7 +5,6 @@ angular.module('WIP').factory('configService', function (DATA) {
         switch (tabType) {
           case 'open':
             console.log('DATA environment:', DATA.environment);
-            debugger;
             if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
               //console.log('url from configservice',url);
@@ -15,7 +14,7 @@ angular.module('WIP').factory('configService', function (DATA) {
               return '/modules/common/orders/mock/ordersTabMockData.json';
             }
 
-          case 'settlements':
+          case 'settlement':
             //console.log('settlements switch');
             if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceBusiness + DATA.businessId + '/advisers/' + DATA.adviserId + '/' + DATA.awaitingSettlementsSuffix;
@@ -38,7 +37,6 @@ angular.module('WIP').factory('configService', function (DATA) {
 
           case 'detail':
             if (DATA.environment != 'mock') {
-              debugger;
               console.log('ACC', id);
               var url = DATA.WIPServiceClient +DATA.detailsSuffix+ id + "/orders";
               console.log('DETAIL url from configservice', url);
@@ -49,40 +47,40 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
 
           case 'assetType':
-            if (DATA.environment != 'mock') {
+           // if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceClient +DATA.assetTypesSuffix;
               return url;
-            }
-            else {
-              return '/modules/common/orders/mock/assetType.json';
-            }
+            //}
+            //else {
+            //  return '/modules/common/orders/mock/assetType.json';
+            //}
 
           case 'orderType':
-            if (DATA.environment != 'mock') {
+            //if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceClient +DATA.orderTypesSuffix;
               return url;
-            }
-            else {
-              return '/modules/common/orders/mock/orderType.json';
-            }
+            //}
+            //else {
+            //  return '/modules/common/orders/mock/orderType.json';
+            //}
 
           case 'orderStatus':
-            if (DATA.environment != 'mock') {
+            //if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceClient +DATA.orderStatussesSuffix;
               return url;
-            }
-            else {
-              return '/modules/common/orders/mock/orderStatusses.json';
-            }
+            //}
+            //else {
+            //  return '/modules/common/orders/mock/orderStatusses.json';
+            //}
 
-          case 'orderSource':
-            if (DATA.environment != 'mock') {
+          case 'orderSourceType':
+           // if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceClient +DATA.orderSourcesSuffix;
               return url;
-            }
-            else {
-              return '/modules/common/orders/mock/orderSource.json';
-            }
+            //}
+            //else {
+            //  return '/modules/common/orders/mock/orderSource.json';
+            //}
 
         }
       }

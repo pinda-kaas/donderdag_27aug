@@ -21,7 +21,7 @@ app.config(function ($stateProvider) {
         },
         settlementsData: function (wipService,configService) {
           //return settlementsMockData;
-          return wipService.getData(configService.config('settlements', ''));
+          return wipService.getData(configService.config('settlement', ''));
         }
         ,
         completeOrders: function (wipService, configService) {
@@ -36,7 +36,6 @@ app.config(function ($stateProvider) {
       params:{'accountId':null,'accountName':null},
       resolve: {
         orderDetails: function (wipService,configService,$stateParams) {
-          debugger;
           var accountId = $stateParams.accountId;
           //return detailMockData;
           return wipService.getData(configService.config('detail',accountId));
@@ -48,7 +47,6 @@ app.config(function ($stateProvider) {
 });
 
 app.run(function ($state) {
-  debugger;
  $state.go('tabs');
  //$state.go('orderDetail');
 });

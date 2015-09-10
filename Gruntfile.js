@@ -445,13 +445,17 @@ module.exports = function (grunt) {
         constants: {
           DATA:{
             environment:"mock",
-            WIPServiceClient:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/account/',
+            WIPServiceClient:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/',
             WIPServiceBusiness:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/',
             businessId:'MPMSWP',
             adviserId:'PFALL',
             openOrdersSuffix:'/orders/statuses/open/minimum',
             awaitingSettlementsSuffix:'orders/statuses/awaitingsettlement',
-            completedOrdersSuffix:'orders/statuses/complete'
+            completedOrdersSuffix:'orders/statuses/complete',
+            assetTypesSuffix:'assettypes',
+            orderTypesSuffix:'ordertypes',
+            orderStatussesSuffix:'orderstatusses',
+            orderSourcesSuffix:'ordersources'
           }
         }
       },

@@ -1,6 +1,5 @@
 app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams,wipService,DATA) {
 
-  debugger;
   $scope.orderDetails = orderDetails;
 
   $scope.showAdvancedSearch=true;
@@ -24,10 +23,6 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
   $scope.refresh= function(){
     console.log('refresh');
-
-    debugger;
-   // var accountId =$stateParams.accountId;
-
     console.log($stateParams);
 
     var accountId='D00072'
@@ -37,7 +32,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     var url = DATA.WIPServiceClient + accountId
       + "/orders/search?orderSource="+ $scope.orderSource.code
       + '&orderStatus='+ $scope.orderStatus.code
-      + '&orderType='+$scope.tradeTypes.code
+      + '&orderType='+$scope.tradeType.code
       + '&fromDate='+'2015-01-01'
       + '&toDate=' +'2016-01-01'
       + '&security='+$scope.security;

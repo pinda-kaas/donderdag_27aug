@@ -5,9 +5,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   $scope.settlementsTabActive = false;
   $scope.completedTabActive = false;
 
-  debugger;
-
-  console.log('ordersctrl started');
+   console.log('ordersctrl started');
 
   if (orderData.length == 0) {
     $scope.ordersTabActive = false;
