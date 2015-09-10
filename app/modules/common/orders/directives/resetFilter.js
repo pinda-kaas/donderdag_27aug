@@ -6,7 +6,7 @@ app.directive('resetFilter', function () {
     controller:function($scope){
       $scope.resetFilter= function(){
         console.log('resetfilter');
-      }
+      };
     }
   };
 });

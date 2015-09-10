@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state, $http) {
+app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state) {
 
   console.log('orderdata in controller:',orderData);
   $scope.ordersTabActive = true;
@@ -9,7 +9,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
    console.log('ordersctrl started');
 
-  if (orderData.length == 0) {
+  if (orderData.length === 0) {
     $scope.ordersTabActive = false;
     $scope.settlementsTabActive = true;
   }
@@ -28,16 +28,12 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $scope.$model = $model;
     $scope.$label = $label;
 
-    console.log('id=', $item);
-
     $state.go('orderDetail', {accountId: $item.account.accountId.key});
   };
-
 
   $scope.resetFilter = function () {
     console.log('reset filter', $scope.assetType);
     $scope.assetType = 'All';
-  }
-
+  };
 
 });

@@ -32,18 +32,11 @@ app.directive('tableFilter', function (wipService,configService) {
         $scope.dt = null;
       };
 
-      // Disable weekend selection
-      //$scope.disabled = function(date, mode) {
-      //  return ( mode === 'day' && ( date.getDay() === 0 || date.getDay() === 6 ) );
-      //};
-
       $scope.toggleMin = function () {
         $scope.minDate = $scope.minDate ? null : new Date();
       };
       $scope.toggleMin();
 
-
-      debugger;
       $scope.open = function ($event) {
         $event.preventDefault();
         $event.stopPropagation();
@@ -51,10 +44,6 @@ app.directive('tableFilter', function (wipService,configService) {
 
         $scope.opened = true;
       };
-
-      //$scope.open = function ($event) {
-      //    $scope.status.opened = true;
-      //};
 
       $scope.dateOptions = {
         formatYear: 'yy',
@@ -99,11 +88,6 @@ app.directive('tableFilter', function (wipService,configService) {
 
         return '';
       };
-    },
-
-    link: function ($scope) {
-
-
     }
   };
 });

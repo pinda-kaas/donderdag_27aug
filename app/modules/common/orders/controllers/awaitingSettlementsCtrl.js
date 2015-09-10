@@ -4,9 +4,8 @@ app.controller('AwaitingSettlementsCtrl', function ($scope, $filter, $location,c
 
   console.log('awaiting settlements ctrl started');
 
-  $scope.settlements=  settlementData
+  $scope.settlements=  settlementData;
 
   console.log('settlementdata in ctrl',settlementData);
-
 
 });

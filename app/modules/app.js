@@ -5,7 +5,7 @@ underscore.factory('_', ['$window', function () {
   return $window._;
 }]);
 
-var app
+var app;
 app = angular.module('WIP', ['ui.router', 'underscore', 'ui.bootstrap', 'smart-table', 'ngAnimate', 'config']);
 
 console.log('IS THIS CLEANED??? SHOULD NOT BEthis is the app starting up');
@@ -18,15 +18,12 @@ app.config(function ($stateProvider) {
       controller: 'OrdersCtrl',
       resolve: {
         orderData: function (wipService, configService) {
-          //return orderMockData;
           return wipService.getData(configService.config('open', ''));
         },
         settlementsData: function (wipService, configService) {
-          //return settlementsMockData;
           return wipService.getData(configService.config('settlement', ''));
         },
         completeOrders: function (wipService, configService) {
-          //return completeOrdersMockData;
           return wipService.getData(configService.config('complete', ''));
         }
       }
@@ -38,7 +35,6 @@ app.config(function ($stateProvider) {
       resolve: {
         orderDetails: function (wipService, configService, $stateParams) {
           var accountId = $stateParams.accountId;
-          //return detailMockData;
           return wipService.getData(configService.config('detail', accountId));
         }
       }
@@ -51,5 +47,3 @@ app.run(function ($state) {
   $state.go('tabs');
   //$state.go('orderDetail');
 });
-
-
