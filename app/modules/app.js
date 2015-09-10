@@ -47,8 +47,8 @@ app.config(function ($stateProvider) {
 });
 
 app.run(function ($state) {
- $state.go('tabs');
- //$state.go('orderDetail');
+ //$state.go('tabs');
+ $state.go('orderDetail');
 });
 
 

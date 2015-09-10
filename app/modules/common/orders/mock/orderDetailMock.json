@@ -48,6 +48,10 @@
         },
         "state": "ON_MARKET"
       },
+
+
+
+
       {
         "transactionDateTime": "02-09-2014 11:00 AM",
         "amount": {
@@ -56,6 +60,9 @@
         },
         "state": "PENDING"
       },
+
+
+
       {
         "transactionDateTime": "02-09-2014 11:00 AM",
         "amount": {

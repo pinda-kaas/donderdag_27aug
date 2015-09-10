@@ -41,7 +41,7 @@
         <th st-ratio="7" st-sort="account.unitsFilled">FILLED</th>
         <th st-ratio="5" st-sort="account.orderTransactionSummary.amount.value">PRICE</th>
         <th st-ratio="5" st-sort="account.valid">VALID</th>
-        <th st-ratio="5" st-sort="account.fee">FEE</th>
+        <th st-ratio="5" st-sort="account.applyAdviserFee">FEE</th>
         <th st-ratio="5" st-sort="account.value">AMOUNT</th>
         <th st-ratio="5" st-sort="account.dataSource">SOURCE</th>
         <th st-ratio="15" st-sort="account.transactions.state">STATUS</th>
@@ -51,38 +51,45 @@
 
       <tbody ng-repeat="account in displayedRows">
 
+
+      <!--highest level row-->
       <tr>
         <td st-ratio="10">{{account.orderDate}}</td>
         <td st-ratio="15">{{account.asset.name | limitTo:30 }}{{account.asset.name.length >= 30 ? '...' : ''}}</td>
         <td st-ratio="10">{{account.asset.type| removeUnderscore | limitTo:10 }}{{account.asset.type.length >= 10 ? '...' : ''}}</td>
+
         <td st-ratio="7">{{account.totalUnits}}</td>
         <td st-ratio="7">{{account.unitsFilled}}</td>
-        <td st-ratio="5">{{account.orderTransactionSummary.amount.value|currency}}</td>
-        <td st-ratio="5">--</td>
-        <td st-ratio="5">{{account.limitPrice.value| currency}}</td>
-        <td st-ratio="5">{{account.value}}</td>
+        <td st-ratio="5">{{account.limitPrice.currency}}&nbsp{{account.limitPrice.value|currency}}</td>
+        <td st-ratio="5">{{account.expiryMethod}}</td>
+        <td st-ratio="5">{{account.limitPrice.currency}}&nbsp{{account.applyAdviserFee| currency}}</td>
+        <td st-ratio="5">{{account.orderTransactionSummary.amount.currency}}&nbsp{{account.orderTransactionSummary.amount.value|currency}}</td>
         <td st-ratio="5">{{account.dataSource}}</td>
-        <td st-ratio="15">{{account.orderState}}</td>
+        <td st-ratio="10">{{account.orderState}}</td>
         <td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]" ng-click="collapsed = !collapsed"></a>
         </td>
       </tr>
 
+
       <tr collapse="collapsed">
         <th></th>
         <th></th>
+        <th></th>
         <th st-ratio="7" st-sort="transaction.reference">REF</th>
-        <th st-ratio="10" st-sort="transaction.orderTaker">TAKER</th>
-        <th st-ratio="23" st-sort="transaction.lastUpdated">UPDATED</th>
+        <th st-ratio="7" st-sort="transaction.orderTaker">TAKER</th>
+        <th st-ratio="20" st-sort="transaction.lastUpdated">UPDATED</th>
         <th st-ratio="5" st-sort="transaction.filledUnits">FILLED</th>
         <th st-ratio="5" st-sort="transaction.price">PRICE</th>
-        <th st-ratio="10" st-sort="transaction.amount">AMOUNT</th>
-        <th st-ratio="10" st-sort="transaction.fundingPriority">PRIORITY</th>
+        <th st-ratio="5" st-sort="transaction.amount">AMOUNT</th>
+        <th st-ratio="5" st-sort="transaction.fundingPriority">PRIORITY</th>
         <th st-ratio="10" st-sort="transaction.status">STATUS</th>
       </tr>
 
 
 
+      <!--1st level detail-->
       <tr collapse="collapsed">
+        <td></td>
         <td></td>
         <td></td>
         <td><span ng-show="account.transactions.fundingPriority=!'Transacting'">{{transaction.reference}}</span>
@@ -92,35 +99,34 @@
         </td>
         <td> {{account.orderTransactionSummary.orderTaker}}</td>
         <td> {{account.orderTransactionSummary.lastUpdatedDateTime}}</td>
-        <td> {{account.unitsFilled}}</td>
+        <td> {{account.orderTransactionSummary.unitsFilled}}</td>
 
-
-        <td> --</td>
-
-
-        <td> ${{account.orderTransactionSummary.amount.value|currency}}</td>
-        <td> {{account.orderTransactionSummary.priority}}</td>
-        <td> {{account.orderTransactionSummary.status}}</td>
+        <td> {{account.orderTransactionSummary.price.currency}}&nbsp{{account.orderTransactionSummary.price.value|currency}}</td>
+        <td> {{account.orderTransactionSummary.amount.currency}}&nbsp{{account.orderTransactionSummary.amount.value|currency}}</td>
+        <td> {{account.orderTransactionSummary.fundingMethod}}</td>
+        <td> {{account.orderTransactionSummary.state}}</td>
       </tr>
 
 
 
-
-
-
-
-
-
-
-
+      <!--2nd level detail-->
       <tr collapse="collapsedDetail" ng-repeat="transaction in account.transactions">
         <td></td>
         <td></td>
         <td></td>
         <td></td>
+        <td></td>
         <td>{{transaction.transactionDateTime}}</td>
-        <td>{{transaction.amount.value|currency}}</td>
-        <td>${{transaction.price}}</td>
+        <td>{{transaction.filledUnits}}</td>
+
+        <td>{{transaction.price.currency}}{{transaction.price.value|currency}}</td>
+
+
+        <td>{{transaction.amount.currency}} {{transaction.amount.value|currency}}</td>
+
+
+        <td>{{transaction.priority}} </td>
+        <td>{{transaction.state}} </td>
       </tr>
 
       <tfoot>
