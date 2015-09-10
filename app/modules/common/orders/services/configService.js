@@ -55,7 +55,7 @@ angular.module('WIP').factory('configService', function (DATA) {
             //  return '/modules/common/orders/mock/assetType.json';
             //}
 
-          case 'orderType':
+          case 'tradeType':
             //if (DATA.environment != 'mock') {
               var url = DATA.WIPServiceClient +DATA.orderTypesSuffix;
               return url;

@@ -29,12 +29,14 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
 
     console.log('src',$scope.orderSource);
 
+    console.log('datefrom',$scope.dateFrom);
+
     var url = DATA.WIPServiceClient + accountId
       + "/orders/search?orderSource="+ $scope.orderSource.code
       + '&orderStatus='+ $scope.orderStatus.code
       + '&orderType='+$scope.tradeType.code
-      + '&fromDate='+'2015-01-01'
-      + '&toDate=' +'2016-01-01'
+      + '&fromDate='+$scope.dateFrom
+      + '&toDate=' +$scope.dateTo
       + '&security='+$scope.security;
 
     console.log('searchfilter url',url);

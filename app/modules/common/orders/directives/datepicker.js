@@ -43,7 +43,7 @@ app.directive('datePicker', function ($compile, $timeout) {
             };
 
             $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-            $scope.format = $scope.formats[2];
+            $scope.format = $scope.formats[0];
 
             $scope.status = {
                 opened: false
@@ -83,3 +83,15 @@ app.directive('datePicker', function ($compile, $timeout) {
         }
     };
 });
+
+app.directive('datepickerPopup', function (){
+    return {
+      restrict: 'EAC',
+      require: 'ngModel',
+      link: function(scope, element, attr, controller) {
+        //remove the default formatter from the input directive to prevent conflict
+        console.log('hello');
+        controller.$formatters.shift();
+      }
+    }
+  });

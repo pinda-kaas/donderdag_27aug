@@ -11,8 +11,6 @@ app.directive('tableFilter', function (wipService,configService) {
         $scope.assetTypes =data;
       });
 
-
-
       wipService.getData(configService.config('tradeType','')).then(function(data){
         $scope.tradeTypes=data;
       });
