@@ -22,13 +22,13 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     console.log(' $scope.tradeType.code ', $scope.tradeType );
     console.log('$scope.security;',$scope.security);
 
-    var dtFrom=$filter('date')($scope.dateFrom, 'YYYY-MM-DD');
-    var dtTo=$filter('date')($scope.dateTo, 'YYYY-MM-DD');
+    var dtFrom=$filter('date')($scope.dateFrom, 'yyyy-mm-dd');
+    var dtTo=$filter('date')($scope.dateTo, 'yyyy-mm-dd');
 
     console.log('datefrom', dtFrom);
     console.log('dateto', dtTo);
 
-    var url = DATA.WIPServiceClient + $scope.accountId + '/orders/search?orderSource=' + $scope.orderSource.code + '&orderStatus=' + $scope.orderStatus.code + '&orderType=' + $scope.tradeType.code + '&fromDate=' + dtFrom + '&toDate=' + dtTo + '&security=' + $scope.security;
+    var url = DATA.WIPServiceClient +DATA.detailsSuffix + $scope.accountId + '/orders/search?orderSource=' + $scope.orderSource.code + '&orderStatus=' + $scope.orderStatus.code + '&orderType=' + $scope.tradeType.code + '&fromDate=' + dtFrom + '&toDate=' + dtTo + '&security=' + $scope.security;
 
     console.log('searchfilter url', url);
 

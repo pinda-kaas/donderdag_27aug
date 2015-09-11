@@ -448,6 +448,7 @@ module.exports = function (grunt) {
             WIPServiceBusiness:'https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/businesses/',
             businessId:'MPMSWP',
             adviserId:'PFALL',
+            detailsSuffix:'account/',
             openOrdersSuffix:'/orders/statuses/open/minimum',
             awaitingSettlementsSuffix:'orders/statuses/awaitingsettlement',
             completedOrdersSuffix:'orders/statuses/complete',
