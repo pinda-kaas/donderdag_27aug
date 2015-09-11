@@ -453,7 +453,7 @@ module.exports = function (grunt) {
             completedOrdersSuffix:'orders/statuses/complete',
             assetTypesSuffix:'assettypes',
             orderTypesSuffix:'ordertypes',
-            orderStatussesSuffix:'orderstatusses',
+            orderStatussesSuffix:'orderstatuses',
             orderSourcesSuffix:'ordersources'
           }
         }
@@ -478,7 +478,7 @@ module.exports = function (grunt) {
             completedOrdersSuffix:'orders/statuses/complete',
             assetTypesSuffix:'assettypes',
             orderTypesSuffix:'ordertypes',
-            orderStatussesSuffix:'orderstatusses',
+            orderStatussesSuffix:'orderstatuses',
             orderSourcesSuffix:'ordersources'
           }
 

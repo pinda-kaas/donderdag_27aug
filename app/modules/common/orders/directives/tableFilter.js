@@ -16,9 +16,13 @@ app.directive('tableFilter', function (wipService,configService) {
         $scope.tradeTypes=data;
       });
 
-      debugger;
       wipService.getData(configService.config('orderSourceType','')).then(function(data){
         $scope.orderSourceTypes=data;
+      });
+
+      debugger;
+      wipService.getData(configService.config('orderStatus','')).then(function(data){
+        $scope.orderStatuses=data;
       });
 
       //datestuff

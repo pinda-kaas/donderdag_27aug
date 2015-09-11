@@ -39,8 +39,6 @@ app.config(function ($stateProvider) {
         }
       }
     });
-
-
 });
 
 app.run(function ($state) {

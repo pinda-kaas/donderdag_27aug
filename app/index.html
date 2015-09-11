@@ -43,13 +43,18 @@
   </div>
 
   <div class="wrap">
-    <div ui-view=""></div>
+    <!--<div id='test'>-->
+      <!--hier-->
+    <!--</div>-->
   </div>
 
   <div class="footer">
   </div>
 
 </div>
+
+
+
 
 
 <!-- build:js(.) scripts/vendor.js -->
@@ -94,6 +99,12 @@
 <script src="modules/common/orders/filters/removeUnderscoreFilter.js"></script>
 
 <!-- endbuild -->
+
+
+<script>
+  $('.wrap').attr('ui-view', ' ');
+</script>
+
 
 </body>
 </html>

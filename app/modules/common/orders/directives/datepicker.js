@@ -36,8 +36,8 @@ app.directive('datePicker', function () {
         startingDay: 1
       };
 
-      $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
-      $scope.format = $scope.formats[0];
+      $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd-MMM-YYYY', 'shortDate'];
+      $scope.format = $scope.formats[2];
 
       $scope.status = {
         opened: false

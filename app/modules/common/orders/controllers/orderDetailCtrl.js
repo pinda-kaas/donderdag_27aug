@@ -1,35 +1,39 @@
 'use strict';
 
-app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails,$stateParams,wipService,DATA) {
+app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configService, orderDetails, $stateParams, wipService, DATA) {
   $scope.orderDetails = orderDetails;
-  $scope.showAdvancedSearch=true;
-  console.log('orderdetails in ctrl params NOW',$stateParams);
-  console.log('data from resolve orderdetails in ctrl :',orderDetails);
+  $scope.showAdvancedSearch = true;
+  console.log('orderdetails in ctrl params NOW', $stateParams);
+  console.log('data from resolve orderdetails in ctrl :', orderDetails);
 
   $scope.accountId = $stateParams.accountId;
-  $scope.accountName =$stateParams.accountName;
+  $scope.accountName = $stateParams.accountName;
 
   console.log('state', $stateParams);
 
   $scope.collapsed = true;
-  $scope.collapsedDetail=true;
+  $scope.collapsedDetail = true;
 
-  $scope.refresh= function(){
+  $scope.refresh = function () {
     console.log('refresh');
     console.log($stateParams);
-    console.log('src',$scope.orderSource);
-    console.log('datefrom',$scope.dateFrom);
+    console.log('src', $scope.orderSource);
 
-    var testing = $filter('date')($scope.dateFrom, $scope.format);
+    console.log(' $scope.tradeType.code ', $scope.tradeType );
+    console.log('$scope.security;',$scope.security);
 
-console.log('date:',testing);
+    var dtFrom=$filter('date')($scope.dateFrom, 'YYYY-MM-DD');
+    var dtTo=$filter('date')($scope.dateTo, 'YYYY-MM-DD');
 
-    var url = DATA.WIPServiceClient + $scope.accountId + '/orders/search?orderSource='+ $scope.orderSource.code+ '&orderStatus='+ $scope.orderStatus.code+ '&orderType='+$scope.tradeType.code + '&fromDate='+$scope.dateFrom + '&toDate=' +$scope.dateTo + '&security='+$scope.security;
+    console.log('datefrom', dtFrom);
+    console.log('dateto', dtTo);
 
-    console.log('searchfilter url',url);
+    var url = DATA.WIPServiceClient + $scope.accountId + '/orders/search?orderSource=' + $scope.orderSource.code + '&orderStatus=' + $scope.orderStatus.code + '&orderType=' + $scope.tradeType.code + '&fromDate=' + dtFrom + '&toDate=' + dtTo + '&security=' + $scope.security;
 
-    wipService.getData(url).then(function(data){
-      $scope.orderDetails =data;
+    console.log('searchfilter url', url);
+
+    wipService.getData(url).then(function (data) {
+      $scope.orderDetails = data;
     });
 
   };
