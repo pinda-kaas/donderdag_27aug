@@ -26,6 +26,7 @@ app.config(function ($stateProvider) {
         completeOrders: function (wipService, configService) {
           return wipService.getData(configService.config('complete', ''));
         }
+
       }
     })
     .state('orderDetail', {

@@ -7,6 +7,8 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   $scope.settlementsTabActive = false;
   $scope.completedTabActive = false;
 
+  $scope.showAdvancedSearch=true;
+
    console.log('ordersctrl started');
 
   if (orderData.length === 0) {
@@ -15,7 +17,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   }
   else {
     $scope.displayedRows = orderData;
-    $scope.accounts = orderData;
+    $scope.accounts = orderData;//typeAheadAccounts;
   }
 
   $scope.settlements = settlementsData;

@@ -43,6 +43,12 @@ angular.module('WIP').factory('configService', function (DATA) {
             }
             break;
 
+          case 'auto':
+            if (DATA.environment !== 'mock') {
+              return DATA.WIPTypeAheadServicePrefix +id + DATA.WIPTypeAheadServiceSuffix;
+            }
+            break;
+
           case 'assetType':
             return DATA.WIPServiceClient + DATA.assetTypesSuffix;
 

@@ -31,8 +31,8 @@ module.exports = function (config) {
     files: [
 
       'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js',
-      'bower_components/angular-animate/angular-animate.js',
       'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-mocks.js',
+      'bower_components/angular-animate/angular-animate.js',
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-bootstrap/ui-bootstrap.js',
       'bower_components/angular-smart-table/dist/smart-table.min.js',
