@@ -20,16 +20,17 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     console.log('src',$scope.orderSource);
     console.log('datefrom',$scope.dateFrom);
 
+    var testing = $filter('date')($scope.dateFrom, $scope.format);
+
+console.log('date:',testing);
 
     var url = DATA.WIPServiceClient + $scope.accountId + '/orders/search?orderSource='+ $scope.orderSource.code+ '&orderStatus='+ $scope.orderStatus.code+ '&orderType='+$scope.tradeType.code + '&fromDate='+$scope.dateFrom + '&toDate=' +$scope.dateTo + '&security='+$scope.security;
 
     console.log('searchfilter url',url);
 
-
     wipService.getData(url).then(function(data){
       $scope.orderDetails =data;
     });
 
-    console.log('success  ???',$scope.orderDetails.length >0 );
   };
 });

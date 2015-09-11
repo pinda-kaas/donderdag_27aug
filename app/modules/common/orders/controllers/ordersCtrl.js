@@ -11,7 +11,7 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
   if (orderData.length === 0) {
     $scope.ordersTabActive = false;
-    $scope.settlementsTabActive = true;
+    $scope.settlementsTabActive = true;;
   }
   else {
     $scope.displayedRows = orderData;

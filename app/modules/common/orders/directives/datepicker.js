@@ -8,6 +8,7 @@ app.directive('datePicker', function () {
     scope: {dt: '=par1'},
     controller: function ($scope) {
       console.log('datepicker controller');
+      debugger;
       $scope.today = function () {
         $scope.dt = new Date();
       };
@@ -76,14 +77,28 @@ app.directive('datePicker', function () {
   };
 });
 
-//app.directive('datepickerPopup', function () {
-//  return {
-//    restrict: 'EAC',
-//    require: 'ngModel',
-//    link: function (scope, element, attr, controller) {
-//      //remove the default formatter from the input directive to prevent conflict
-//      console.log('daetpicker extra popup');
-//      controller.$formatters.shift();
+//angular.module('WIP').directive('myDate',function(dateFilter,$parse){
+//  return{
+//    restrict:'EAC',
+//    require:'?ngModel',
+//    link:function(scope,element,attrs,ngModel,ctrl){
+//      ngModel.$parsers.push(function(viewValue){
+//        console.log('hiero');
+//        return dateFilter(viewValue,'yyyy-MM-dd');
+//      });
 //    }
-//  };
+//  }
 //});
+
+//angular.module('WIP')
+//  .directive('datepickerPopup', function (){
+//    return {
+//      restrict: 'EAC',
+//      require: 'ngModel',
+//      link: function(scope, element, attr, controller) {
+//        //remove the default formatter from the input directive to prevent conflict
+//        console.log('hiero');
+//        controller.$formatters.shift();
+//      }
+//    }
+//  });

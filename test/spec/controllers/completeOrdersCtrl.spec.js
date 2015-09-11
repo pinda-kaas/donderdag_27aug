@@ -12,7 +12,7 @@ describe('', function () {
     inject(function ($controller,$rootScope) {
         $scope = $rootScope.$new();
 
-        ctrl = $controller('AwaitingSettlementsCtrl', {
+        ctrl = $controller('CompleteOrdersCtrl', {
           $scope: $scope,
           settlementData:data
         });
