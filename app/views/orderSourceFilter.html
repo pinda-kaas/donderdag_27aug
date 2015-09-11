@@ -2,6 +2,7 @@
   <label for="">Order source</label>
 
   <select ng-model="orderSource" ng-options="source.name for source in orderSourceTypes" class="form-control">
+    <option value="">-</option>
   </select>
 
 </div>
@@ -9,6 +10,7 @@
 <div class="col-sm-2">
   <label for="">Status</label>
   <select ng-model="orderStatus" ng-options="status.name for status in orderStatuses" class="form-control">
+    <option value="">-</option>
   </select>
 </div>
 

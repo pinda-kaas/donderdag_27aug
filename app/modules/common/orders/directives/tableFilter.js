@@ -8,6 +8,16 @@ app.directive('tableFilter', function (wipService,configService) {
     {
       console.log('tablefilter staer');
 
+      $scope.assetType={};
+      $scope.assetType.code='';
+      $scope.tradeType={};
+      $scope.tradeType.code='';
+      $scope.orderSource={};
+      $scope.orderSource.code='';
+      $scope.orderStatus={};
+      $scope.orderStatus.code='';
+      $scope.security='';
+
       wipService.getData(configService.config('assetType','')).then(function(data){
         $scope.assetTypes =data;
       });

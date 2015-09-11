@@ -8,7 +8,6 @@ app.directive('datePicker', function () {
     scope: {dt: '=par1'},
     controller: function ($scope) {
       console.log('datepicker controller');
-      debugger;
       $scope.today = function () {
         $scope.dt = new Date();
       };
@@ -36,8 +35,8 @@ app.directive('datePicker', function () {
         startingDay: 1
       };
 
-      $scope.formats = ['dd-MMMM-yyyy', 'yyyy/mm/dd', 'dd-MMM-YYYY', 'shortDate'];
-      $scope.format = $scope.formats[1];
+      $scope.formats = ['dd-MMMM-yyyy', 'yyyy/MM/dd', 'dd.MM.yyyy', 'shortDate'];
+      $scope.format = $scope.formats[2];
 
       $scope.status = {
         opened: false
@@ -77,28 +76,14 @@ app.directive('datePicker', function () {
   };
 });
 
-//angular.module('WIP').directive('myDate',function(dateFilter,$parse){
-//  return{
-//    restrict:'EAC',
-//    require:'?ngModel',
-//    link:function(scope,element,attrs,ngModel,ctrl){
-//      ngModel.$parsers.push(function(viewValue){
-//        console.log('hiero');
-//        return dateFilter(viewValue,'yyyy-MM-dd');
-//      });
-//    }
-//  }
-//});
-
-//angular.module('WIP')
-//  .directive('datepickerPopup', function (){
-//    return {
-//      restrict: 'EAC',
-//      require: 'ngModel',
-//      link: function(scope, element, attr, controller) {
-//        //remove the default formatter from the input directive to prevent conflict
-//        console.log('hiero');
-//        controller.$formatters.shift();
-//      }
-//    }
-//  });
+app.directive('datepickerPopup', function () {
+  return {
+    restrict: 'EAC',
+    require: 'ngModel',
+    link: function (scope, element, attr, controller) {
+      //remove the default formatter from the input directive to prevent conflict
+      console.log('daetpicker extra popup');
+      controller.$formatters.shift();
+    }
+  };
+});
