@@ -10,21 +10,23 @@ app.directive('tableFilter', function (wipService,configService) {
 
       console.log('account obj',$scope.account);
 
-      //$scope.assetType={};
-      //$scope.assetType.code='';
-      //$scope.orderType={};
-      //$scope.orderType.code='';
-      //$scope.orderSource={};
-      //$scope.orderSource.code='';
-      //$scope.orderStatus={};
-      //$scope.orderStatus.code='';
-      //$scope.security='';
+      $scope.assetType={};
+      $scope.assetType.code='';
+      $scope.orderType={};
+      $scope.orderType.code='';
+      $scope.orderSource={};
+      $scope.orderSource.code='';
+      $scope.orderStatus={};
+      $scope.orderStatus.code='';
+      $scope.security='';
 
       wipService.getData(configService.config('assetType','')).then(function(data){
         $scope.assetTypes =data;
       });
 
       wipService.getData(configService.config('orderType','')).then(function(data){
+        console.log('ordertype:',data);
+        debugger;
         $scope.orderTypes=data;
       });
 
