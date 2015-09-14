@@ -514,7 +514,7 @@ module.exports = function (grunt) {
       'autoprefixer:server',
       'connect:livereload',
       'jshint',
-      'test',
+      //'test',
       'watch'
     ]);
   });

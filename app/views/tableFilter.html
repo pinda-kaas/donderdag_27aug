@@ -4,21 +4,25 @@
       <label for="">Asset type</label>
 
       <select class="form-control" name="" ng-model="assetType" ng-options="item.name for item in assetTypes">
-        <option value="">-</option>
+        <option value="">empty</option>
       </select>
     </div>
 
     <div class="col-sm-2">
       <label for="">Security</label>
-      <input class="form-control" ng-model="security" type="text"/>
+      <input class="form-control" ng-model="account.account.accountName" type="text"/>
     </div>
 
+
     <div class="col-sm-2">
-      <label for="">Trade type</label>
-      <select class="form-control"  ng-model="tradeType" ng-options="item.name for item in tradeTypes">
+      <label for="">Trade type</label> account:{{account}}
+      <select class="form-control"  ng-model="account.tradeType" ng-options="item.name for item in tradeTypes">
         <option value="">-</option>
       </select>
     </div>
+
+
+
 
 
     <div class="col-sm-2">

@@ -8,6 +8,8 @@ app.directive('tableFilter', function (wipService,configService) {
     {
       console.log('tablefilter staer');
 
+      console.log('account obj',$scope.account);
+
       $scope.assetType={};
       $scope.assetType.code='';
       $scope.tradeType={};
