@@ -34,8 +34,8 @@
     </div>
 
     <div class="col-sm-2">
-      <label for="">Period</label>
-      <select class="form-control" ng-options="item for item in periodTypes">
+      <label for="">Period</label>{{period}}
+      <select class="form-control" ng-model="period" ng-options="item for item in periodTypes" ng-click="changePeriod(period)">
 
       </select>
     </div>

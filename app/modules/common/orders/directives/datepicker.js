@@ -23,9 +23,9 @@ app.directive('datePicker', function () {
       if (attrs.par1=='dateTo')
       {
         var today = new Date();
-
         scope.dt = today;
         //console.log('month ago',scope.dt);
+
       }
     },
     controller: function ($scope) {
@@ -37,8 +37,6 @@ app.directive('datePicker', function () {
 
 
       //$scope.today();
-
-
       console.log('datepicker controller');
 
       $scope.clear = function () {
@@ -49,7 +47,6 @@ app.directive('datePicker', function () {
         $scope.minDate = $scope.minDate ? null : new Date();
       };
       $scope.toggleMin();
-
 
       $scope.open = function ($event) {
         $event.preventDefault();
@@ -100,8 +97,6 @@ app.directive('datePicker', function () {
         }
         return '';
       };
-
-
     }
 
   //

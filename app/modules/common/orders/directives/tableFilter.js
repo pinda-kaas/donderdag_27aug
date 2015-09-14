@@ -38,6 +38,40 @@ app.directive('tableFilter', function (wipService, configService) {
         $scope.orderStatuses = data;
       });
 
+      $scope.periodTypes=['today','lastWeek','lastMonth'];
+
+      $scope.changePeriod = function(){
+
+        switch ($scope.period) {
+          case 'today':
+            debugger;
+            $scope.dateFrom = new Date();
+            $scope.dateTo = new Date();
+            //$scope.dateFrom.setDate($scope.dateFrom.getDate() - 7);
+            console.log('chanegeperiod',$scope.period);
+            break;
+
+          case 'lastWeek':
+            debugger;
+            $scope.dateFrom = new Date();
+            $scope.dateFrom.setDate($scope.dateFrom.getDate() - 7);
+            console.log('chanegeperiod',$scope.period);
+            break;
+
+          case 'lastMonth':
+            debugger;
+            $scope.dateFrom = new Date();
+            $scope.dateFrom.setDate($scope.dateFrom.getDate() - 30);
+            console.log('chanegeperiod',$scope.period);
+            break;
+
+        }
+
+
+
+      }
+
+
       //datestuff
       console.log('datepicker controller');
       $scope.today = function () {
@@ -102,9 +136,10 @@ app.directive('tableFilter', function (wipService, configService) {
             }
           }
         }
-
         return '';
       };
+
+
 
       //$scope.resetFilter = function () {
       //  console.log('resetfilter in tablefilters!!!!');
