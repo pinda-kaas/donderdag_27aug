@@ -20,8 +20,6 @@
 
       <div class="col-sm-4">
 
-
-
           <label for="">Adviser:</label>
 
           <select id="selectadviser" class="form-control" name="" id="" ng-options="adviser for adviser in advisers"
@@ -34,7 +32,12 @@
   </div>
 
 
-  <div reset-filter=""></div>
+  <!--<div reset-filter></div>-->
+
+
+  <reset-filter reset-hello="resetHello()"></reset-filter>
+  name: {{hello}}
+  <input type="text" ng-model='hello'  />
 
   <div class="orders">
     <div>

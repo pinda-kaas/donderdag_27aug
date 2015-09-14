@@ -7,9 +7,16 @@ app.directive('datePicker', function () {
     templateUrl: 'views/datepicker.html',
     scope: {dt: '=par1'},
     controller: function ($scope) {
+
       console.log('datepicker controller');
       $scope.today = function () {
-        $scope.dt = new Date();
+
+
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() -30);
+
+        $scope.dt = tomorrow;
+
       };
       $scope.today();
 
@@ -72,7 +79,11 @@ app.directive('datePicker', function () {
         }
         return '';
       };
+
+
     }
+
+  //
   };
 });
 

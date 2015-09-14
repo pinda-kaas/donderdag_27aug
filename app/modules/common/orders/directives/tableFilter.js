@@ -1,42 +1,41 @@
 'use strict';
 
-app.directive('tableFilter', function (wipService,configService) {
+app.directive('tableFilter', function (wipService, configService) {
   return {
     restrict: 'E',
     templateUrl: 'views/tableFilter.html',
-    controller: function ($scope)
-    {
+    controller: function ($scope) {
       console.log('tablefilter staer');
 
-      console.log('account obj',$scope.account);
+      console.log('account obj', $scope.account);
 
-      $scope.assetType={};
-      $scope.assetType.code='';
-      $scope.orderType={};
-      $scope.orderType.code='';
-      $scope.orderSource={};
-      $scope.orderSource.code='';
-      $scope.orderStatus={};
-      $scope.orderStatus.code='';
-      $scope.security='';
+      $scope.assetType = {};
+      $scope.assetType.code = '';
+      $scope.orderType = {};
+      $scope.orderType.code = '';
+      $scope.orderSource = {};
+      $scope.orderSource.code = '';
+      $scope.orderStatus = {};
+      $scope.orderStatus.code = '';
+      $scope.accountName = '';
 
-      wipService.getData(configService.config('assetType','')).then(function(data){
-        $scope.assetTypes =data;
+      wipService.getData(configService.config('assetType', '')).then(function (data) {
+        $scope.assetTypes = data;
       });
 
-      wipService.getData(configService.config('orderType','')).then(function(data){
-        console.log('ordertype:',data);
+      wipService.getData(configService.config('orderType', '')).then(function (data) {
+        console.log('ordertype:', data);
         debugger;
-        $scope.orderTypes=data;
+        $scope.orderTypes = data;
       });
 
-      wipService.getData(configService.config('orderSourceType','')).then(function(data){
-        $scope.orderSourceTypes=data;
+      wipService.getData(configService.config('orderSourceType', '')).then(function (data) {
+        $scope.orderSourceTypes = data;
       });
 
       debugger;
-      wipService.getData(configService.config('orderStatus','')).then(function(data){
-        $scope.orderStatuses=data;
+      wipService.getData(configService.config('orderStatus', '')).then(function (data) {
+        $scope.orderStatuses = data;
       });
 
       //datestuff
@@ -106,6 +105,21 @@ app.directive('tableFilter', function (wipService,configService) {
 
         return '';
       };
+
+      //$scope.resetFilter = function () {
+      //  console.log('resetfilter in tablefilters!!!!');
+      //   $scope.assetType = {};
+      //  $scope.assetType.code = '';
+      //  $scope.orderType = {};
+      //  $scope.orderType.code = '';
+      //  $scope.orderSource = {};
+      //  $scope.orderSource.code = '';
+      //  $scope.orderStatus = {};
+      //  $scope.orderStatus.code = '';
+      //  debugger;
+      //  $scope.accountName = '';
+      //};
+
     }
   };
 });

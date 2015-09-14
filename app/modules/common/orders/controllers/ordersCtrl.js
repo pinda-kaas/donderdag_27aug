@@ -33,9 +33,15 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
     $state.go('orderDetail', {accountId: $item.account.accountId.key});
   };
 
-  $scope.resetFilter = function () {
-    console.log('reset filter', $scope.assetType);
-    account.asset.name = '';
+
+
+  $scope.hello = 'hi therskfdjskje';
+  $scope.resetHello = function() {
+    console.log('reset');
+    $scope.hello = '';
+    $scope.accountName='';
   };
+
+
 
 });
