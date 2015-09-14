@@ -25,7 +25,7 @@ app.directive('tableFilter', function (wipService, configService) {
 
       wipService.getData(configService.config('orderType', '')).then(function (data) {
         console.log('ordertype:', data);
-        debugger;
+        //debugger;
         $scope.orderTypes = data;
       });
 
@@ -33,7 +33,7 @@ app.directive('tableFilter', function (wipService, configService) {
         $scope.orderSourceTypes = data;
       });
 
-      debugger;
+      //debugger;
       wipService.getData(configService.config('orderStatus', '')).then(function (data) {
         $scope.orderStatuses = data;
       });

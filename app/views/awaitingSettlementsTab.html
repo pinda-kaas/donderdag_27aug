@@ -21,11 +21,7 @@
       <tbody>
 
 
-
-      dateFrom {{dateFrom}}
-      dateTo {{dateTo}}
-
-      {{accountName}}
+      accname{{accountName}}
 
 
       <tr ng-repeat="account in settlements | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:accountName ">

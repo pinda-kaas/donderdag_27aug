@@ -6,19 +6,40 @@ app.directive('datePicker', function () {
     restrict: 'E',
     templateUrl: 'views/datepicker.html',
     scope: {dt: '=par1'},
+    link: function (scope, element, attrs) {
+
+      debugger;
+      console.log('attrs',attrs);
+
+      if (attrs.par1=='dateFrom')
+      {
+        var today = new Date();
+        var monthAgo = new Date();
+        monthAgo.setDate(today.getDate() -30);
+        scope.dt = monthAgo;
+        console.log('month ago',scope.dt);
+      }
+
+      if (attrs.par1=='dateTo')
+      {
+        var today = new Date();
+
+        scope.dt = today;
+        //console.log('month ago',scope.dt);
+      }
+    },
     controller: function ($scope) {
+      $scope.today = function () {
+        var tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() +1);
+        $scope.dt = tomorrow;
+      };
+
+
+      //$scope.today();
+
 
       console.log('datepicker controller');
-      $scope.today = function () {
-
-
-        var tomorrow = new Date();
-        tomorrow.setDate(tomorrow.getDate() -30);
-
-        $scope.dt = tomorrow;
-
-      };
-      $scope.today();
 
       $scope.clear = function () {
         $scope.dt = null;
@@ -87,14 +108,14 @@ app.directive('datePicker', function () {
   };
 });
 
-app.directive('datepickerPopup', function () {
-  return {
-    restrict: 'EAC',
-    require: 'ngModel',
-    link: function (scope, element, attr, controller) {
-      //remove the default formatter from the input directive to prevent conflict
-      console.log('daetpicker extra popup');
-      controller.$formatters.shift();
-    }
-  };
-});
+//app.directive('datepickerPopup', function () {
+//  return {
+//    restrict: 'EAC',
+//    require: 'ngModel',
+//    link: function (scope, element, attr, controller) {
+//      //remove the default formatter from the input directive to prevent conflict
+//      console.log('daetpicker extra popup');
+//      controller.$formatters.shift();
+//    }
+//  };
+//});

@@ -36,11 +36,17 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
 
 
   $scope.hello = 'hi therskfdjskje';
+
   $scope.resetHello = function() {
     console.log('reset');
     $scope.hello = '';
-    $scope.accountName='';
   };
+
+  //$scope.resetFilter = function() {
+  //  console.log('reset');
+  // // $scope.hello = '';
+  //  $scope.accountName='';
+  //};
 
 
 
