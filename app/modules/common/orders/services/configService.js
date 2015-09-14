@@ -52,14 +52,22 @@ angular.module('WIP').factory('configService', function (DATA) {
           case 'assetType':
             return DATA.WIPServiceClient + DATA.assetTypesSuffix;
 
-          case 'tradeType':
+          case 'orderType':
             return DATA.WIPServiceClient + DATA.orderTypesSuffix;
 
           case 'orderStatus':
             return DATA.WIPServiceClient + DATA.orderStatussesSuffix;
 
           case 'orderSourceType':
-            return DATA.WIPServiceClient + DATA.orderSourcesSuffix;
+            if (DATA.environment !== 'mock') {
+              return DATA.WIPServiceClient + DATA.orderSourcesSuffix;
+            }
+                else {
+              console.log('monday');
+              return '/modules/common/orders/mock/orderSourceTypes.json';
+
+            }
+
         }
       }
     };

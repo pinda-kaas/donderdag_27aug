@@ -3,44 +3,43 @@
     <div class="col-sm-2">
       <label for="">Asset type</label>
 
-      <select class="form-control" name="" ng-model="assetType" ng-options="item.name for item in assetTypes">
-        <option value="">empty</option>
-      </select>
+      <!--assettype:{{assetType}}-->
+      <!--<select class="form-control" name="" ng-model="account.assetType" ng-options="item.name for item in assetTypes">-->
+        <!--<option value=""></option>-->
+      <!--</select>-->
+
     </div>
 
-    <div class="col-sm-2">
-      <label for="">Security</label>
-      <input class="form-control" ng-model="account.account.accountName" type="text"/>
-    </div>
+    <!--<div class="col-sm-2">-->
+      <!--<label for="">Security</label>-->
+      <!--<input class="form-control" ng-model="account.account.accountName" type="text"/>-->
+    <!--</div>-->
 
 
     <div class="col-sm-2">
       <label for="">Trade type</label> account:{{account}}
-      <select class="form-control"  ng-model="account.tradeType" ng-options="item.name for item in tradeTypes">
+      <select class="form-control"  ng-model="account.orderType" ng-options="item.name for item in orderTypes">
         <option value="">-</option>
       </select>
     </div>
 
 
+    <!--<div class="col-sm-2">-->
+      <!--<label for="">Date from:</label>-->
+      <!--<date-picker par1="dateFrom"></date-picker>-->
+    <!--</div>-->
 
+    <!--<div class="col-sm-2">-->
+      <!--<label for="">Date to:</label>-->
+      <!--<date-picker par1="dateTo"></date-picker>-->
+    <!--</div>-->
 
+    <!--<div class="col-sm-2">-->
+      <!--<label for="">Period</label>-->
+      <!--<select class="form-control" ng-options="item for item in periodTypes">-->
 
-    <div class="col-sm-2">
-      <label for="">Date from:</label>
-      <date-picker par1="dateFrom"></date-picker>
-    </div>
-
-    <div class="col-sm-2">
-      <label for="">Date to:</label>
-      <date-picker par1="dateTo"></date-picker>
-    </div>
-
-    <div class="col-sm-2">
-      <label for="">Period</label>
-      <select class="form-control" ng-options="item for item in periodTypes">
-
-      </select>
-    </div>
+      <!--</select>-->
+    <!--</div>-->
 
   </div>
 

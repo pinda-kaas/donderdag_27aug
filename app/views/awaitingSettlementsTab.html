@@ -20,10 +20,23 @@
       </thead>
       <tbody>
 
-      <tr ng-repeat="account in settlements | filter : { 'account': account}:true | dateRange:dateFrom:dateTo:'settlementDate' ">
 
-        <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName | limitTo:30}}</a>
+
+
+      <!--<tr ng-repeat="account in settlements | filter : account.asset.name}   ">-->
+
+      <tr ng-repeat="account in settlements | filter:account.orderType.code  ">
+
+        <td> code:{{account.orderType.code}}</td>
+
+        <td st-ratio="5">      orderdtype<input type="text" ng-model="account.orderType.code"/></td>
+
+        <!--<tr ng-repeat="account in settlements | filter : { 'account': account}:true | dateRange:dateFrom:dateTo:'settlementDate' ">-->
+
+        <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName
+          | limitTo:30}}</a>
         </td>
+
         <td st-ratio="5">{{account.tradeDate}}</td>
         <td st-ratio="5">{{account.orderType}}</td>
         <td st-ratio="25">{{account.asset.name }}</td>
