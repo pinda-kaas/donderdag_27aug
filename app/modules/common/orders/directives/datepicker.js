@@ -8,7 +8,7 @@ app.directive('datePicker', function () {
     scope: {dt: '=par1'},
     link: function (scope, element, attrs) {
 
-      debugger;
+      //debugger;
       console.log('attrs',attrs);
 
       if (attrs.par1=='dateFrom')

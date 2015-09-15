@@ -2,6 +2,8 @@
 
 app.controller('OrdersCtrl', function ($scope, $filter, $location, configService, orderData, settlementsData, completeOrders, $state) {
 
+  $scope.accountName='';
+
   console.log('orderdata in controller:',orderData);
   $scope.ordersTabActive = true;
   $scope.settlementsTabActive = false;
@@ -34,19 +36,14 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   };
 
 
+  $scope.resetFilter = function() {
+//    debugger;
 
-  $scope.hello = 'hi therskfdjskje';
+    console.log('accountname:', $scope.$$childTail.$$childHead.accountName);
+    $scope.$$childTail.$$childHead.accountName='';
 
-  $scope.resetHello = function() {
-    console.log('reset');
-    $scope.hello = '';
+
   };
-
-  //$scope.resetFilter = function() {
-  //  console.log('reset');
-  // // $scope.hello = '';
-  //  $scope.accountName='';
-  //};
 
 
 

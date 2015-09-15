@@ -40,6 +40,10 @@ module.exports = function (config) {
       'app/modules/**/*.js',
       'app/modules/app.js',
       'app/modules/config.js',
+      'app/modules/common/orders/services/configService.js',
+      'app/modules/common/orders/filters/removeUnderscoreFilter.js',
+        'app/modules/common/orders/filters/dateRangeFilter.js',
+
       //'../app/scripts_old/**/*.js',
       //  'test/mock/**/*.js',
       'test/spec/**/*.spec.js'

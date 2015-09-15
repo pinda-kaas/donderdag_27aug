@@ -24,9 +24,6 @@
 app.directive('resetFilter', function () {
   return {
     restrict:'E',
-    scope: {
-      resetHello: '&'
-    },
     templateUrl: 'views/resetFilter.html',
     controller:function(){
     }

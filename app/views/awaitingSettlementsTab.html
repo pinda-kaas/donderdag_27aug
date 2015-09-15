@@ -20,10 +20,6 @@
       </thead>
       <tbody>
 
-
-      accname{{accountName}}
-
-
       <tr ng-repeat="account in settlements | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:accountName ">
 
         <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName

@@ -23,7 +23,7 @@
       <tbody>
 
       <tr
-        ng-repeat="account in completeOrders  | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:account.accountName ">
+        ng-repeat="account in completeOrders  | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:accountName ">
         <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName
           | limitTo:30}}</a></td>
         <td st-ratio="5">{{account.tradeDate}}</td>
