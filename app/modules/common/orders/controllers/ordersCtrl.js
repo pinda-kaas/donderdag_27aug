@@ -36,18 +36,4 @@ app.controller('OrdersCtrl', function ($scope, $filter, $location, configService
   };
 
 
-  $scope.resetFilter = function() {
-
-   // console.log('datfrom:', $scope.$$childTail.$$childHead.account.dateFrom);
-    $scope.$$childTail.$$childHead.accountName='';
-
-    debugger;
-    $scope.$$childTail.$$childHead.account.assetType={};
-    $scope.$$childTail.$$childHead.account.orderType={};
-    $scope.$$childTail.$$childHead.dateFrom=new Date();
-    $scope.$$childTail.$$childHead.dateTo=new Date();
-
-
-  };
-
 });

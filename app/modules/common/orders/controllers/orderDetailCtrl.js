@@ -22,25 +22,25 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     console.log(' $scope.tradeType.code ', $scope.tradeType );
     console.log('$scope.security;',$scope.security);
 
-    //var dtFrom=$filter('date')($scope.dateFrom, 'yyyy-mm-dd');
-    //var dtTo=$filter('date')($scope.dateTo, 'dd-mm-yy');
+    debugger;
 
-    var dtFrom='';
-    var dtTo='';
+    var dtFrom=$filter('date')($scope.dateFrom, 'yyyy-mm-dd');
+    var dtTo=$filter('date')($scope.dateTo, 'dd-mm-yy');
+
 
     console.log('datefrom', dtFrom);
     console.log('dateto', dtTo);
 
     console.log('$scope.orderSource.code ',$scope.orderSource.code );
     console.log('$scope.orderStatus.code',$scope.orderStatus.code);
-    console.log('$scope.tradeType.code',$scope.tradeType.code);
+    console.log('$scope.orderType.code',$scope.orderType.code);
     console.log('$scope.assetType.code',$scope.assetType.code);
-    console.log('$scope.security',$scope.security);
+    console.log('$scope.security',$scope.accountName);
 
 
     var url = DATA.WIPServiceClient +DATA.detailsSuffix + $scope.accountId + '/orders/search?orderSource=' +
-      $scope.orderSource.code + '&status=' + $scope.orderStatus.code + '&orderType=' + $scope.tradeType.code
-      + '&fromDate=2014-03-01' + dtFrom + '&toDate=2015-03-01' + dtTo + '&security=' + $scope.security+ '&securityType=' +$scope.assetType.code;
+      $scope.orderSource.code + '&status=' + $scope.orderStatus.code + '&orderType=' + $scope.orderType.code
+      + '&fromDate=' + dtFrom + '&toDate=' + dtTo + '&security=' + $scope.accountName+ '&securityType=' +$scope.assetType.code;
 
     console.log('searchfilter url', url);
 
