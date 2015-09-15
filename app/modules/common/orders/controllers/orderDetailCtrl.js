@@ -37,6 +37,7 @@ app.controller('OrderDetailCtrl', function ($scope, $filter, $location, configSe
     console.log('$scope.assetType.code',$scope.assetType.code);
     console.log('$scope.security',$scope.accountName);
 
+//    var url = DATA.WIPServiceClient +DATA.detailsSuffix + $scope.accountId + '/orders/search?orderType=\'SELL\'' ;
 
     var url = DATA.WIPServiceClient +DATA.detailsSuffix + $scope.accountId + '/orders/search?orderSource=' +
       $scope.orderSource.code + '&status=' + $scope.orderStatus.code + '&orderType=' + $scope.orderType.code
