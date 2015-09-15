@@ -63,11 +63,11 @@ describe('configService', function () {
     var tabType = 'orderStatus';
     var accountId = '';
     var result = configService.config(tabType, accountId);
-    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/orderstatusses');
+    expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/orderstatuses');
   });
 
   it('should return development ordertypes url', function () {
-    var tabType = 'tradeType';
+    var tabType = 'orderType';
     var accountId = '';
     var result = configService.config(tabType, accountId);
     expect(result).toEqual('https://itgsyddev252-vip1:8449/wealth/services/orders/wip/v1/ordertypes');

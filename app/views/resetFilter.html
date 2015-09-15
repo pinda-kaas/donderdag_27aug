@@ -1,15 +1,6 @@
-
-
-<div>
-  This is the filter:s
+<div class="resetFilter">
   <a href="#" ng-click="resetFilter()">Reset Filter</a>
+  &nbsp<a ng-click="refresh()" href="#">Refresh</a> <i class="fa fa-file-excel-o"></i>
+  <a ng-mousedown="csv.generate()" ng-href="{{ csv.link() }}" download="test.csv">Export to CSV</a>
+  <i class="fa fa-print"></i> </i><a href="#">Print</a>
 </div>
-
-<!--{{accountName}}-->
-
-<!--<div class="resetFilter">-->
-  <!--<a href="#" ng-click="resetFilter()">Reset Filter</a>-->
-  <!--&nbsp<a ng-click="refresh()" href="#">Refresh</a> <i class="fa fa-file-excel-o"></i>-->
-  <!--<a ng-mousedown="csv.generate()" ng-href="{{ csv.link() }}" download="test.csv">Export to CSV</a>-->
-  <!--<i class="fa fa-print"></i> </i><a href="#">Print</a>-->
-<!--</div>-->

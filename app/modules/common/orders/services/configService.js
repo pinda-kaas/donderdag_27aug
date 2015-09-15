@@ -50,20 +50,38 @@ angular.module('WIP').factory('configService', function (DATA) {
             break;
 
           case 'assetType':
-            return DATA.WIPServiceClient + DATA.assetTypesSuffix;
+            if (DATA.environment !== 'mock') {
+              return DATA.WIPServiceClient + DATA.assetTypesSuffix;
+            }
+                else
+            {
+              return '/modules/common/orders/mock/assetTypes.json';
+            }
+
 
           case 'orderType':
-            return DATA.WIPServiceClient + DATA.orderTypesSuffix;
+            if (DATA.environment !== 'mock') {
+              return DATA.WIPServiceClient + DATA.orderTypesSuffix;
+            }
+                else
+            {
+              return '/modules/common/orders/mock/tradeTypes.json';
+            }
 
           case 'orderStatus':
-            return DATA.WIPServiceClient + DATA.orderStatussesSuffix;
+            if (DATA.environment !== 'mock') {
+              return DATA.WIPServiceClient + DATA.orderStatussesSuffix;
+            }
+                else
+            {
+              return '/modules/common/orders/mock/orderStatus.json';
+            }
 
           case 'orderSourceType':
             if (DATA.environment !== 'mock') {
               return DATA.WIPServiceClient + DATA.orderSourcesSuffix;
             }
                 else {
-              console.log('monday');
               return '/modules/common/orders/mock/orderSourceTypes.json';
 
             }
