@@ -32,6 +32,7 @@
     "grunt-wiredep": "^1.7.0",
     "inflight": "^1.0.4",
     "inherits": "^2.0.1",
+    "jasmine": "^2.3.2",
     "jasmine-core": "^2.3.4",
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^0.2.0",

@@ -35,6 +35,7 @@ app.config(function ($stateProvider) {
       params: {'accountId': null, 'accountName': null},
       resolve: {
         orderDetails: function (wipService, configService, $stateParams) {
+          debugger;
           var accountId = $stateParams.accountId;
           return wipService.getData(configService.config('detail', accountId));
         }
