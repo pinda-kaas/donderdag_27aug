@@ -5,8 +5,8 @@ var prefix='';
 angular.module('WIP').factory('configService', function (DATA,$location) {
     return {
       config: function (tabType, id) {
-        //var host=$location.absUrl();
-        var host='www-masdev.macquarie.com.au';
+        var host=$location.absUrl();
+        //var host='www-masdev.macquarie.com.au';
 
         console.log('location.absUrl',host);
 

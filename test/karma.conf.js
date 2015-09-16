@@ -32,6 +32,8 @@ module.exports = function (config) {
 
             'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.js',
             'https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular-mocks.js',
+            '//cdn.jsdelivr.net/jasmine/1.3.1/jasmine-html.js',
+            '//cdn.jsdelivr.net/jasmine/1.3.1/jasmine.js',
             'bower_components/angular-animate/angular-animate.js',
             'bower_components/angular-ui-router/release/angular-ui-router.js',
             'bower_components/angular-bootstrap/ui-bootstrap.js',

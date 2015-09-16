@@ -1,10 +1,10 @@
 <div>
 
-  {{completeOrders.length}} results match your search selection.
+  {{displayedRows.length}} results match your search selection.
 
   <div>
 
-    <table st-table="completeOrders" class="table table-striped">
+    <table st-table="displayedRows"  st-safe-src="completeOrders" class="table table-striped">
       <thead>
       <tr>
         <th st-ratio="25" st-sort="account.accountName">Account</th>
