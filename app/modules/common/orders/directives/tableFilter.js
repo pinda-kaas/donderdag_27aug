@@ -137,3 +137,6 @@ app.directive('tableFilter', function (wipService, configService) {
         }
     };
 });
+
+
+
