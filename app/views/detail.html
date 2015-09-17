@@ -66,8 +66,10 @@
         <td st-ratio="5">{{account.orderTransactionSummary.amount.currency}}&nbsp{{account.orderTransactionSummary.amount.value|currency}}</td>
         <td st-ratio="5">{{account.dataSource}}</td>
         <td st-ratio="10">{{account.orderState}}</td>
-        <td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]" ng-click="collapsed = !collapsed"></a>
+        <td st-ratio="5"><a ng-click="collapsed = !collapsed">details</a>
         </td>
+        <!--<td st-ratio="5"><a ng-class="{true:'fa fa-plus', false:'fa fa-minus'}[collapsed]" ng-click="collapsed = !collapsed"></a>-->
+        <!--</td>-->
       </tr>
 
 
@@ -142,6 +144,6 @@
     </table>
   </div>
 
-  <a ui-sref="tabs">back</a>
+  <button class="btn floatRight" ui-sref="tabs">Close</button>
 
 </div>

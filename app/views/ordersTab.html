@@ -3,7 +3,7 @@
   <div>
 
     <span class="results">
-    {{accounts.length}} results match your search selection.
+    <!--{{accounts.length}} results match your search selection.-->
       </span>
 
     <table st-ratio="100"  st-table="displayedRows"  st-safe-src="accounts" class="table table-striped">
@@ -17,8 +17,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="acc in accounts">
-
+      <tr ng-repeat="acc in accounts | filter:adviser">
         <td st-ratio="10" ><a ui-sref="orderDetail({accountId:acc.account.accountId.key,accountName:acc.account.accountName})"> {{acc.account.accountId.key}}</a></td>
         <td st-ratio="10" >{{acc.account.accountName | limitTo:30}}</td>
         <td st-ratio="10" >{{acc.account.adviser.key}}</td>

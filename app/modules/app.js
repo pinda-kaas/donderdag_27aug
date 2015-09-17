@@ -15,19 +15,19 @@ app.config(function ($stateProvider) {
     .state('tabs', {
       url: '/',
       templateUrl: 'views/tabs.html',
-      controller: 'OrdersCtrl',
-      resolve: {
-        orderData: function (wipService, configService) {
-          return wipService.getData(configService.config('open', ''));
-        },
-        settlementsData: function (wipService, configService) {
-          return wipService.getData(configService.config('settlement', ''));
-        },
-        completeOrders: function (wipService, configService) {
-          return wipService.getData(configService.config('complete', ''));
-        }
-
-      }
+      controller: 'OrdersCtrl'
+      //resolve: {
+      //  //orderData: function (wipService, configService) {
+      //  //  return wipService.getData(configService.config('open', ''));
+      //  //},
+        //  settlementsData: function (wipService, configService) {
+        //    return wipService.getData(configService.config('settlement', $scope.adviser));
+        //  },
+        //  completeOrders: function (wipService, configService) {
+        //    return wipService.getData(configService.config('complete', $scope.adviser));
+        //  }
+      //
+      //}
     })
     .state('orderDetail', {
       templateUrl: 'views/detail.html',

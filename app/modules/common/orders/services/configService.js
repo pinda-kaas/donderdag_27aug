@@ -4,9 +4,8 @@ var prefix='';
 //returns string url based on endpoint constants
 angular.module('WIP').factory('configService', function (DATA,$location) {
     return {
-      config: function (tabType, id) {
+      config: function (tabType, adviserId) {
         var host=$location.absUrl();
-        //var host='www-masdev.macquarie.com.au';
 
         console.log('location.absUrl',host);
 
@@ -22,7 +21,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceBusiness_sit1;
+                prefix=DATA.WIPServiceBusiness;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -30,8 +29,8 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
                 prefix=DATA.WIPServiceBusiness_uat1;
               }
 
-              console.log('hier',prefix + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix);
-              return prefix + DATA.businessId + '/advisers/' + DATA.adviserId + DATA.openOrdersSuffix;
+              console.log('hier',prefix + DATA.businessId + '/advisers/' + adviserId + DATA.openOrdersSuffix);
+              return prefix + DATA.businessId + '/advisers/' + adviserId + DATA.openOrdersSuffix;
             }
             else {
               return '/modules/common/orders/mock/ordersTabMockData.json';
@@ -48,7 +47,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0 )
               {
-                prefix=DATA.WIPServiceBusiness_sit1;
+                prefix=DATA.WIPServiceBusiness;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -56,7 +55,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
                 prefix=DATA.WIPServiceBusiness_uat1;
               }
 
-              return prefix+ DATA.businessId + '/advisers/' + DATA.adviserId + '/' + DATA.awaitingSettlementsSuffix;
+              return prefix+ DATA.businessId + '/advisers/' + adviserId + '/' + DATA.awaitingSettlementsSuffix;
             }
             else {
               return '/modules/common/orders/mock/settlementsTabMockData.json';
@@ -72,7 +71,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceBusiness_sit1;
+                prefix=DATA.WIPServiceBusiness;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -80,7 +79,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
                 prefix=DATA.WIPServiceBusiness_uat1;
               }
 
-              return prefix+ DATA.businessId + '/advisers/' + DATA.adviserId + '/' + DATA.completedOrdersSuffix;
+              return prefix+ DATA.businessId + '/advisers/' + adviserId + '/' + DATA.completedOrdersSuffix;
             }
             else {
               return '/modules/common/orders/mock/completeOrdersTabMockData.json';
@@ -96,7 +95,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceClient_sit1;
+                prefix=DATA.WIPServiceClient;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -104,8 +103,9 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
                 prefix=DATA.WIPServiceClient_uat1;
               }
 
-              console.log('hier',prefix + DATA.detailsSuffix + id + '/orders');
-              return prefix + DATA.detailsSuffix + id + '/orders';
+              console.log('hier',prefix + DATA.detailsSuffix + adviserId + '/orders');
+
+              return prefix + DATA.detailsSuffix + adviserId + '/orders';
 
             }
             else {
@@ -122,7 +122,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceBusiness_sit1;
+                prefix=DATA.WIPServiceBusiness;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -130,7 +130,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
                 prefix=DATA.WIPServiceBusiness_uat1;
               }
 
-              return DATA.WIPTypeAheadServicePrefix +id + DATA.WIPTypeAheadServiceSuffix;
+              return DATA.WIPTypeAheadServicePrefix +adviserId + DATA.WIPTypeAheadServiceSuffix;
             }
             break;
 
@@ -144,7 +144,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceClient_sit1;
+                prefix=DATA.WIPServiceClient;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -169,7 +169,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceClient_sit1;
+                prefix=DATA.WIPServiceClient;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -193,7 +193,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceClient_sit1;
+                prefix=DATA.WIPServiceClient;
               }
 
               if (host.indexOf('uat1') >= 0)
@@ -217,7 +217,7 @@ angular.module('WIP').factory('configService', function (DATA,$location) {
 
               if (host.indexOf('sit1') >= 0 || host.indexOf('www-masdev.macquarie.com.au') >=0)
               {
-                prefix=DATA.WIPServiceClient_sit1;
+                prefix=DATA.WIPServiceClient;
               }
 
               if (host.indexOf('uat1') >= 0)

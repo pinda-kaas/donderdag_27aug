@@ -37,26 +37,26 @@ app.directive('tableFilter', function (wipService, configService) {
                 $scope.orderStatuses = data;
             });
 
-            $scope.periodTypes = ['today', 'last week', 'last month'];
+            $scope.periodTypes = ['Today', 'Last week', 'Last month'];
 
             $scope.changePeriod = function () {
 
                 switch ($scope.period) {
-                    case 'today':
+                    case 'Today':
 
                         $scope.dateFrom = new Date();
                         $scope.dateTo = new Date();
                         console.log('chanegeperiod', $scope.period);
                         break;
 
-                    case 'last week':
+                    case 'Last week':
 
                         $scope.dateFrom = new Date();
                         $scope.dateFrom.setDate($scope.dateFrom.getDate() - 7);
                         console.log('chanegeperiod', $scope.period);
                         break;
 
-                    case 'last month':
+                    case 'Last month':
 
                         $scope.dateFrom = new Date();
                         $scope.dateFrom.setDate($scope.dateFrom.getDate() - 30);

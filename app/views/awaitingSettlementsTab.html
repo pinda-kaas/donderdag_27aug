@@ -1,6 +1,6 @@
 
 <div>
-  {{displayedRows.length}} results match your search selection.
+  <!--{{displayedRows.length}} results match your search selection.-->
   <div>
 
     <table st-set-filter="customFilter"  st-table="displayedRows"  st-safe-src="settlements" class="table table-striped">
@@ -21,25 +21,19 @@
         <th></th>
       </tr>
 
-      <tr>
-          <th>
-              <st-date-range predicate="birthDate" before="query.before" after="query.after"></st-date-range>
-          </th>
-          <th></th>
-          <th>
-              <st-number-range predicate="balance" lower="query.lower" higher="query.higher"></st-number-range>
-          </th>
-      </tr>
+      <!--<tr>-->
+          <!--<th>-->
+              <!--<st-date-range predicate="settlementDate" before="query.before" after="query.after"></st-date-range>-->
+          <!--</th>-->
+      <!--</tr>-->
 
       </thead>
       <tbody>
 
-     nr of displayed rows {{displayedRows.length }}
-     nr of sett rows {{settlements.length }}
 
-     <tr ng-repeat="account in displayedRows">
+     <!--<tr ng-repeat="account in displayedRows">-->
 
-      <!--<tr ng-repeat="account in settlements | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:accountName ">-->
+      <tr ng-repeat="account in settlements | dateRange:dateFrom:dateTo:'settlementDate' | filter:account.orderType.code | filter:account.assetType.code | filter:accountName ">
 
         <td st-ratio="25"><a ui-sref="orderDetail({accountId:account.account.accountId.key})">{{account.account.accountName | limitTo:30}}</a>
         </td>

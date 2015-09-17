@@ -1,5 +1,4 @@
 <div class="main">
-
   <div class="well search form-inline">
     <div class="row">
       <div class="col-sm-8">
@@ -22,10 +21,9 @@
 
           <label for="">Adviser:</label>
 
-          <select id="selectadviser" class="form-control" name="" id="" ng-options="adviser for adviser in advisers"
-                  ng-model="account.adviser">
+          <select id="selectadviser" class="form-control" name="" id="" ng-change="changeAdviser()" ng-options="adviser for adviser in advisers"
+                  ng-model="adviser">
           </select>
-
 
       </div>
     </div>
@@ -46,8 +44,9 @@
               <orders-tab></orders-tab>
             </tab>
 
-            <tab heading="Awaiting settlement" active="settlementsTabActive">
 
+            <tab heading="Awaiting settlement" active="settlementsTabActive">
+              <table-filter></table-filter>
               <awaiting-settlements-tab></awaiting-settlements-tab>
             </tab>
 

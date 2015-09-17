@@ -109,6 +109,7 @@ app.directive('stDateRange', ['$timeout', function ($timeout) {
                 input.bind('blur', function () {
 
 
+                    debugger;
                     var query = {};
 
                     if (!scope.isBeforeOpen && !scope.isAfterOpen) {
